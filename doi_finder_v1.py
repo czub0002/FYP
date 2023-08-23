@@ -2,14 +2,24 @@ from bs4 import BeautifulSoup
 from dateutil import parser
 import html
 import re
+import cProfile
+import time
 
 
 class DataScraper:
     def __init__(self, html_content):
+        """
+        Scrapes data from a HTML script on each listed article
+        :param html_content: the webpage scraping the data from
+        """
         self.html_content = html_content
         self.data = self.find_doi()
 
     def find_doi(self):
+        """
+        Extracts the DOIs of each article in the journal
+        :return: List of each DOI and its associated information
+        """
         query = "doi/ref/"
         start_index = 0
         appearances = []
@@ -40,6 +50,11 @@ class DataScraper:
 
 class ArticleInfo:
     def __init__(self, html_content, doi):
+        """
+        Extracts all the relevant data from each article
+        :param html_content: the webpage html
+        :param doi: the doi of each article
+        """
         self.html_content = html_content
         self.doi = doi
 
@@ -58,6 +73,10 @@ class ArticleInfo:
         self.dates = detailed_article.dates
 
     def get_title(self):
+        """
+        Gets the title of the journal
+        :return: string containing journal title
+        """
         title_query = "hlFld-Title"
         title_index = self.html_content.find(title_query, self.doi_index)
 
@@ -71,6 +90,10 @@ class ArticleInfo:
         return title
 
     def get_authors(self):
+        """
+        Retrieves a list of the authors for each paper
+        :return: List of authors
+        """
         author_list = []
         last_author = False
         doi_index = self.doi_index
@@ -96,27 +119,11 @@ class ArticleInfo:
 
         return author_list
 
-    """
-    def get_pubdate(self):
-        pubdate_query = "tocEPubDate"
-        pubdate_div = self.html_content.find(pubdate_query, self.doi_index)
-
-        # searches for start and end indexes of the title
-        start_of_div = self.html_content.find("date", pubdate_div)
-        end_of_div = self.html_content.find("</div>", start_of_div)
-
-        input_string = self.html_content[start_of_div:end_of_div]
-
-        try:
-            extracted_date = parser.parse(input_string, fuzzy=True)
-            pubdate = extracted_date.date()
-        except ValueError:
-            pubdate = "Not Found"
-
-        return pubdate
-    """
-
     def get_journal(self):
+        """
+        Gets the journal name
+        :return: string containing journal name
+        """
         # searches for start and end indexes of the title
         start_of_title = self.html_content.find("<title>") + len("<title>")
         end_of_title = self.html_content.find("</title>")
@@ -205,10 +212,16 @@ class DetailedArticleInfo:
         return Dates(rec_date, acc_date, pub_date)
 
     def search_date_extractor(self, query):
-        end_query = "</div>"
+        end_query1, end_query2 = ",", "</div>"
 
         search_query = self.article.find(query)
-        date_string = self.article[search_query:self.article.find(end_query, search_query)]
+        date_string1 = self.article[search_query:self.article.find(end_query1, search_query)]
+        date_string2 = self.article[search_query:self.article.find(end_query2, search_query)]
+
+        if date_string1 < date_string2:
+            date_string = date_string1
+        else:
+            date_string = date_string2
 
         try:
             extracted_date = parser.parse(date_string, fuzzy=True)
@@ -267,6 +280,11 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    start_time = time.time()  # Measure start time
 
+    cProfile.run("main()")
+
+    end_time = time.time()  # Measure end time
+    elapsed_time = end_time - start_time
+    print(f"Script execution time: {elapsed_time:.2f} seconds")
 
