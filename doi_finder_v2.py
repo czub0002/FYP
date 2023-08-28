@@ -305,7 +305,10 @@ def main():
     info = DataScraper(html_content, scraper)
 
     big_end = time.time()
-    print(f"Total Time: {big_end - big_start:.4f}")
+    total_time = big_end - big_start
+    ave_time = total_time/len(info.data)
+    print(f"Total Time: {total_time:.4f}")
+    print(f"Average Article Time: {ave_time:.4f}")
 
     # print("No. of unique DOIs: " + str(len(info.data)) + '\n')
 
