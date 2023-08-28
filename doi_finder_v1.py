@@ -4,6 +4,7 @@ import html
 import re
 import cProfile
 import time
+from selenium import webdriver
 
 
 class DataScraper:
@@ -13,6 +14,7 @@ class DataScraper:
         :param html_content: the webpage scraping the data from
         """
         self.html_content = html_content
+        self.browser = webdriver.Chrome()
         self.data = self.find_doi()
 
     def find_doi(self):
@@ -42,51 +44,62 @@ class DataScraper:
 
             # Checks for duplicate doi
             if doi not in doi_list:
-                doi_info = ArticleInfo(self.html_content, doi)
+                doi_info = ArticleInfo(self.html_content, doi, self.browser)
                 doi_list.append(doi_info)
 
         return doi_list
 
 
 class ArticleInfo:
-    def __init__(self, html_content, doi):
+    def __init__(self, html_content, doi, browser):
         """
         Extracts all the relevant data from each article
         :param html_content: the webpage html
         :param doi: the doi of each article
         """
+        start_time = time.time()
+
         self.html_content = html_content
+        self.soup = BeautifulSoup(self.html_content, 'html.parser')
         self.doi = doi
 
         self.doi_index = html_content.find(self.doi)
 
+        start_ops = time.time()
+
         self.title = self.get_title()
+
+        title_time = time.time()
+
         self.authors = self.get_authors()
-        # self.pubdate = self.get_pubdate()
+        authors_time = time.time()
         self.journal = self.get_journal()
+        journal_time = time.time()
         self.url = self.get_article_link()
+        url_time = time.time()
+
+        self.times = [start_time, start_ops, title_time, authors_time, journal_time, url_time]
 
         # Information from article webpage
-        detailed_article = DetailedArticleInfo(self.doi)
+        detailed_article = DetailedArticleInfo(self.url, browser)
+
+        self.times += detailed_article.times
+        time_names = ['start_time', 'start_ops', 'title_time', 'authors_time', 'journal_time', 'url_time',
+                      'article_time', 'soup_time', 'type_time', 'ref_time', 'dates_time']
+
         self.type = detailed_article.type
         self.references = detailed_article.references
         self.dates = detailed_article.dates
 
+        print(f"doi - {self.doi}")
+        for i in range(len(self.times)-1):
+            time_elapsed = self.times[i+1] - self.times[i]
+            print(f"{time_names[i+1]}: {time_elapsed:.4f}")
+        print('\n')
+
     def get_title(self):
-        """
-        Gets the title of the journal
-        :return: string containing journal title
-        """
-        title_query = "hlFld-Title"
-        title_index = self.html_content.find(title_query, self.doi_index)
-
-        # searches for start and end indexes of the title
-        start_of_title = self.html_content.find(">", title_index) + 1
-        end_of_title = self.html_content.find("</span>", start_of_title)
-
-        # cleans string if it contains html tags
-        title = string_cleaner(self.html_content[start_of_title:end_of_title])
-
+        title_element = self.soup.select_one('.hlFld-Title')
+        title = string_cleaner(title_element.get_text())
         return title
 
     def get_authors(self):
@@ -95,27 +108,13 @@ class ArticleInfo:
         :return: List of authors
         """
         author_list = []
-        last_author = False
-        doi_index = self.doi_index
 
-        while not last_author:
-            author_query = "/author/"
-            author_index = self.html_content.find(author_query, doi_index)
-
-            # searches for start and end indexes of the author name
-            start_of_name = self.html_content.find(">", author_index) + 1
-            end_name_index = self.html_content.find("</a>", start_of_name)
-
-            # cleans string if it contains html tags
-            author = string_cleaner(self.html_content[start_of_name:end_name_index])
-            author_list.append(author)
-
-            doi_index = end_name_index
-
-            # check if final author name
-            last_author_query = '</a></span></span>'
-            if self.html_content[end_name_index:end_name_index + len(last_author_query)] == last_author_query:
-                last_author = True
+        author_container = self.soup.select_one('.tocAuthors.afterTitle .articleEntryAuthorsLinks')
+        if author_container:
+            author_elements = author_container.find_all('a')
+            for author_element in author_elements:
+                author_name = string_cleaner(author_element.get_text())
+                author_list.append(author_name)
 
         return author_list
 
@@ -124,12 +123,11 @@ class ArticleInfo:
         Gets the journal name
         :return: string containing journal name
         """
-        # searches for start and end indexes of the title
-        start_of_title = self.html_content.find("<title>") + len("<title>")
-        end_of_title = self.html_content.find("</title>")
-
-        # cleans string if it contains html tags
-        journal_title = string_cleaner(self.html_content[start_of_title:end_of_title])
+        title_element = self.soup.select_one('title')
+        if title_element:
+            journal_title = string_cleaner(title_element.get_text())
+        else:
+            journal_title = "Journal title not found."
 
         return journal_title
 
@@ -149,14 +147,27 @@ class ArticleInfo:
 
 
 class DetailedArticleInfo:
-    def __init__(self, doi):
-        self.doi = doi
-        self.article = self.get_article()
-        self.type = self.get_article_type()
-        self.references = self.get_references()
-        self.dates = self.get_dates()
+    def __init__(self, article_url, browser):
+        # self.doi = doi
+        self.article = self.get_article(browser, article_url)
+        article_time = time.time()
 
-    def get_article(self):
+        self.soup = BeautifulSoup(self.article, 'html.parser')
+        soup_time = time.time()
+
+        self.type = self.get_article_type()
+        type_time = time.time()
+
+        self.references = self.get_references()
+        ref_time = time.time()
+
+        self.dates = self.get_dates()
+        dates_time = time.time()
+
+        self.times = [article_time, soup_time, type_time, ref_time, dates_time]
+
+    def get_article(self, browser, article_url):
+        '''
         # -----------------------------------------------------------------
         # TODO - Remove when web scraping
         with open('web_link.html', 'r', encoding='utf-8') as html_file:
@@ -166,37 +177,40 @@ class DetailedArticleInfo:
         article = soup.get_text()
 
         return article
+        '''
+        browser.delete_all_cookies()
+        browser.get(article_url)
+
+        html_content = browser.page_source
+
+        return html_content
         # ------------------------------------------------------------------
 
+    '''
+    def get_title(self):
+        soup = BeautifulSoup(self.article, 'html.parser')  # Create the BeautifulSoup object
+        title_element = soup.select_one('.NLM_article-title.hlFld-Title')
+        title = string_cleaner(title_element.get_text())
+        return title
+    '''
+
     def get_article_type(self):
-        query = "toc-heading"
-        # searches for start and end indexes of the article link
-        search_query = self.article.find(query)
-        start_of_type = self.article.find(">", search_query) + 1
-        end_of_type = self.article.find("</div>", start_of_type)
+        article_heading_element = self.soup.select_one('.toc-heading')
+        if article_heading_element:
+            article_type = article_heading_element.get_text()
+        else:
+            article_type = 'Type not found.'
 
-        article_type = self.article[start_of_type:end_of_type]
-
-        return article_type
+        return article_type  # Return None if article heading element not found
 
     def get_references(self):
         ref_list = []
-        query = "class=\"references"
-        # searches for start and end indexes of the article link
-        search_query = self.article.find(query)
-        last_ref = False
-        last_ref_id = self.article.find('</li></ul></div>', search_query)
-
-        while not last_ref:
-            start_of_ref = self.article.find("<li", search_query)
-            end_of_ref = self.article.find("</li>", start_of_ref)
-
-            if start_of_ref < last_ref_id:
-                ref = string_cleaner(self.article[start_of_ref:end_of_ref])
+        references_container = self.soup.select_one('.references')
+        if references_container:
+            reference_elements = references_container.find_all('li')
+            for reference_element in reference_elements:
+                ref = string_cleaner(reference_element.get_text())
                 ref_list.append(ref)
-                search_query = end_of_ref
-            else:
-                last_ref = True
 
         return ref_list
 
@@ -252,6 +266,7 @@ def string_cleaner(original_string):
 
 
 def main():
+    big_start = time.time()
     # Read the HTML file
     with open('webpage.html', 'r', encoding='utf-8') as html_file:
         source_content = html_file.read()
@@ -264,8 +279,13 @@ def main():
 
     info = DataScraper(html_file)
 
-    print("No. of unique DOIs: " + str(len(info.data)))
+    big_end = time.time()
 
+    print(f"Total Time: {big_end-big_start:.4f}")
+
+    # print("No. of unique DOIs: " + str(len(info.data)))
+
+    '''
     for article in info.data:
         print('Doi: ' + article.doi + '\n' +
               'Type: ' + article.type + '\n' +
@@ -277,14 +297,9 @@ def main():
               'Journal: ' + article.journal + '\n' +
               'url: ' + article.url + '\n' +
               'References: ' + str(article.references) + '\n\n')
+        '''
 
 
-if __name__ == '__main__':
-    start_time = time.time()  # Measure start time
-
-    cProfile.run("main()")
-
-    end_time = time.time()  # Measure end time
-    elapsed_time = end_time - start_time
-    print(f"Script execution time: {elapsed_time:.2f} seconds")
+if __name__ == '__main__':  # Measure start time
+    main()
 
