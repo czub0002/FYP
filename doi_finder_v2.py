@@ -84,7 +84,7 @@ class ArticleInfo:
 
         self.times += detailed_article.times
         time_names = ['start_time', 'start_ops', 'title_time', 'authors_time', 'journal_time', 'url_time',
-                      'article_time', 'soup_time', 'type_time', 'ref_time', 'dates_time']
+                      'article_time', 'type_time', 'ref_time', 'dates_time']
 
         self.type = detailed_article.type
         self.references = detailed_article.references
