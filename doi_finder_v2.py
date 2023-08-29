@@ -1,8 +1,11 @@
+import os
+
 import cloudscraper
 from dateutil import parser
 import html
 import re
 import time
+import csv
 
 
 class DataScraper:
@@ -89,25 +92,35 @@ class ArticleInfo:
         self.type = detailed_article.type
         self.references = detailed_article.references
         self.dates = detailed_article.dates
-        print(f"doi - {self.doi}")
 
+        '''
         for i in range(len(self.times)-1):
             time_elapsed = self.times[i+1] - self.times[i]
             print(f"{time_names[i+1]}: {time_elapsed:.4f}")
         print('\n')
+        '''
 
-        """
-        print('Doi: ' + self.doi + '\n' +
-              'Type: ' + self.type + '\n' +
-              'Title: ' + self.title + '\n' +
-              'Authors: ' + str(self.authors) + '\n' +
-              'Received Date: ' + str(self.dates.received_date) + '\n' +
-              'Accepted Date: ' + str(self.dates.accepted_date) + '\n' +
-              'Published Date: ' + str(self.dates.published_date) + '\n' +
-              'Journal: ' + self.journal + '\n' +
-              'url: ' + self.url + '\n' +
-              'References: ' + str(self.references) + '\n\n')
-        """
+        data = {
+            "doi": self.doi,
+            "type": self.type,
+            "title": self.title,
+            "authors": self.authors,
+            "received_date": self.dates.received_date,
+            "accepted_date": self.dates.accepted_date,
+            "published_date": self.dates.published_date,
+            "journal": self.journal,
+            "url": self.url,
+            "references": self.references
+        }
+
+        self.add_to_csv(data, 'tandf_database.csv')
+
+    def add_to_csv(self, data, file_path):
+        # Open the CSV file with write permission
+        with open(file_path, "a", newline="") as csvfile:
+            # Create a CSV writer using the field/column names
+            writer = csv.DictWriter(csvfile, fieldnames=data.keys())
+            writer.writerow(data)
 
     def get_title(self):
         """
@@ -294,7 +307,28 @@ def string_cleaner(original_string):
     return cleaned_string
 
 
+class DataProcessor:
+    def __init__(self, data):
+        self.data = data
+        self.fields = list(data.keys())
+
+    def add_to_csv(self, file_path):
+        # Open the CSV file with write permission
+        with open(file_path, "a", newline="") as csvfile:
+            # Create a CSV writer using the field/column names
+            writer = csv.DictWriter(csvfile, fieldnames=self.fields)
+            writer.writerow(self.data)
+
+
 def main():
+    fields = ['doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date', 'journal', 'url', 'references']
+    file_path = 'tandf_database.csv'
+
+    with open(file_path, "w", newline="") as csvfile:
+        # Create a CSV writer using the field/column names
+        writer = csv.DictWriter(csvfile, fieldnames=fields)
+        writer.writeheader()
+
     big_start = time.time()
     url = 'https://www.tandfonline.com/toc/twas20/36/1?nav=tocList'
     # url = 'https://www.tandfonline.com/toc/rabf21/33/1?nav=tocList'
