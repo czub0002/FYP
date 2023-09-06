@@ -11,16 +11,13 @@ import time
 # Define function to run initial scrape
 driver = webdriver.Chrome()
 driver.get("https://go.openathens.net/redirector/www.monash.edu?url=https://www.webofscience.com/wos/woscc/basic-search")
+# driver.get("https://go.openathens.net/redirector/www.monash.edu\?url=https%3A%2F%2Fwww.webofknowledge.com%2F%3FDestApp%3DWOS")
 
-
-           
-           #"https://go.openathens.net/redirector/www.monash.edu\?url=https%3A%2F%2Fwww.webofknowledge.com%2F%3FDestApp%3DWOS")
-
-#log into monash OKTA
+# log into monash OKTA
 time.sleep(2)
 
-urname = 'bfry0001@student.monash.edu'
-pword = 'POSTts177AU'
+urname = 'czub0002@student.monash.edu'
+pword = 'IvoKarlovicACE'
 
 xgrabuser = driver.find_element(By.XPATH, '//*[@id="okta-signin-username"]')
 xgrabuser.send_keys(urname)

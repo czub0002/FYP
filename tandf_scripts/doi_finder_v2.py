@@ -1,5 +1,5 @@
 import os
-
+from bs4 import BeautifulSoup
 import cloudscraper
 from dateutil import parser
 import html
@@ -307,19 +307,6 @@ def string_cleaner(original_string):
     return cleaned_string
 
 
-class DataProcessor:
-    def __init__(self, data):
-        self.data = data
-        self.fields = list(data.keys())
-
-    def add_to_csv(self, file_path):
-        # Open the CSV file with write permission
-        with open(file_path, "a", newline="") as csvfile:
-            # Create a CSV writer using the field/column names
-            writer = csv.DictWriter(csvfile, fieldnames=self.fields)
-            writer.writerow(self.data)
-
-
 def main():
     fields = ['doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date', 'journal', 'url', 'references']
     file_path = 'tandf_database.csv'
@@ -335,8 +322,9 @@ def main():
 
     # start WebDriver
     scraper = cloudscraper.create_scraper()
-    html_content = scraper.get(url).text
-    info = DataScraper(html_content, scraper)
+    source_content = scraper.get(url).text
+
+    info = DataScraper(source_content, scraper)
 
     big_end = time.time()
     total_time = big_end - big_start
