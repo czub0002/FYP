@@ -39,7 +39,7 @@ class DataScraper:
 
         print(data)
 
-        self.add_to_csv(data, 'tandf_database.csv')
+        self.add_to_csv(data, 'wiley_database.csv')
 
     def add_to_csv(self, data, file_path):
         """
@@ -58,7 +58,7 @@ class DataScraper:
         Extracts the DOIs of the paper
         :return: DOI of the article
         """
-        doi_element = self.html_content.select_one('.dx-doi')
+        doi_element = self.html_content.select_one('.epub-doi')
         if doi_element:
             doi_url = self.string_cleaner(doi_element.get_text())
 
@@ -75,7 +75,7 @@ class DataScraper:
         Gets the type of article
         :return: String describing the paper type
         """
-        article_heading_element = self.html_content.select_one('.toc-heading')
+        article_heading_element = self.html_content.select_one('.doi-access-container')
         if article_heading_element:
             article_type = self.string_cleaner(article_heading_element.get_text())
         else:
@@ -89,7 +89,7 @@ class DataScraper:
         Gets the title of the paper
         :return: string containing paper title
         """
-        title_element = self.html_content.select_one('.hlFld-Title')
+        title_element = self.html_content.select_one('.citation__title')
 
         if title_element:
             title = self.string_cleaner(title_element.get_text())
@@ -105,11 +105,11 @@ class DataScraper:
         :return: List of authors
         """
         author_list = []
-        author_container = self.html_content.select_one('.literatumAuthors')
+        author_container = self.html_content.select_one('.loa-authors')
 
         # Searches and extracts each listed author
         if author_container:
-            author_elements = author_container.find_all('a', class_='author')
+            author_elements = author_container.find_all('a', class_='author-name')
             # Adding each author to a list
             for author_element in author_elements:
                 author_name = self.string_cleaner(author_element.get_text())
@@ -125,40 +125,22 @@ class DataScraper:
         Searches for Received, Accepted and Published dates of the paper
         :return: Date object containing Received, Accepted and Published dates
         """
-        date_container = self.html_content.select_one('.literatumContentItemHistory')
+        date_container = self.html_content.select_one('.epub-date')
 
         if not date_container:
             print("Dates: Not Found")
             return None
 
         # Initialize variables to store the dates
-        # Find the div containing the date information
-        date_div = date_container.find('div', class_='widget-body')
-
-        # Initialize variables to store the dates
         received_date = None
         accepted_date = None
         published_date = None
 
-        # Define keywords to identify the date types
-        date_keywords = ["Received", "Accepted", "Published online"]
-
-        # Extract and store the dates
-        for div in date_div.find_all('div'):
-            for keyword in date_keywords:
-                if keyword in div.text:
-                    date_str = re.sub(rf"{keyword}(\s*:\s*)?", "", div.text).strip()
-                    try:
-                        extracted_date = parser.parse(date_str, fuzzy=True)
-                        parsed_date = extracted_date.date()
-                        if keyword == "Received":
-                            received_date = parsed_date
-                        elif keyword == "Accepted":
-                            accepted_date = parsed_date
-                        elif keyword == "Published online":
-                            published_date = parsed_date
-                    except ValueError:
-                        print(keyword + " Date: Parsing Error")
+        try:
+            date_str = self.string_cleaner(date_container.get_text())
+            published_date = parser.parse(date_str, fuzzy=True).date()
+        except ValueError:
+            print("Received Date: Parsing Error")
 
         return Dates(received_date, accepted_date, published_date)
 
@@ -167,7 +149,7 @@ class DataScraper:
         Gets the journal name
         :return: string containing journal name
         """
-        journal_element = self.html_content.select_one('.journal-heading')
+        journal_element = self.html_content.select_one('.journal-banner-text')
         if journal_element:
             journal_title = self.string_cleaner(journal_element.get_text())
         else:
@@ -181,7 +163,7 @@ class DataScraper:
         Gets the journal edition
         :return: string containing journal name
         """
-        journal_ed_element = self.html_content.select_one('.issue-heading')
+        journal_ed_element = self.html_content.select_one('.volume-issue')
         if journal_ed_element:
             journal_ed = self.string_cleaner(journal_ed_element.get_text())
         else:
@@ -196,7 +178,7 @@ class DataScraper:
         :return: string containing the url to access the paper
         """
         if self.doi:
-            url = "https://www.tandfonline.com/doi/" + self.doi
+            url = "https://acsess.onlinelibrary.wiley.com/doi/" + self.doi
         else:
             print("url: Not Found - Missing DOI")
             url = None
@@ -209,7 +191,7 @@ class DataScraper:
         :return: a list, with each item in the list being a reference cited by the authors
         """
         ref_list = []
-        references_container = self.html_content.select_one('.references')
+        references_container = self.html_content.select_one('.article-section__references')
 
         if references_container:
             reference_elements = references_container.find_all('li')
@@ -245,14 +227,14 @@ def main():
 
     fields = ['doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date', 'journal',
               'journal_edition', 'url', 'references']
-    file_path = 'tandf_database.csv'
+    file_path = 'wiley_database.csv'
 
     with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
         # Create a CSV writer using the field/column names
         writer = csv.DictWriter(csvfile, fieldnames=fields)
         writer.writeheader()
 
-    url = 'https://www.tandfonline.com/doi/full/10.1080/23570008.2021.2018540'
+    url = 'https://acsess.onlinelibrary.wiley.com/doi/10.1002/crso.20301'
 
     # start WebDriver
     scraper = cloudscraper.create_scraper()

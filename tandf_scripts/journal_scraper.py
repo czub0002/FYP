@@ -1,9 +1,7 @@
 import time
 from bs4 import BeautifulSoup
 import cloudscraper
-from dateutil import parser
 import csv
-import re
 import tandf_webscraper
 
 
@@ -15,7 +13,7 @@ class JournalScraper:
         """
         self.html_content = html_content
         self.scraper = scraper
-        self.data = self.find_doi()
+        self.find_doi()
 
     def find_doi(self):
         """
@@ -42,7 +40,7 @@ class JournalScraper:
             end_of_doi = self.html_content.find("\"", start_of_doi)
             doi = self.html_content[start_of_doi:end_of_doi]
 
-            paper_url = "https://www.tandfonline.com/doi/full/" + doi
+            paper_url = "https://www.tandfonline.com/doi/" + doi
 
             source_content = self.scraper.get(paper_url).text
             paper_html = BeautifulSoup(source_content, 'html.parser')
@@ -52,12 +50,13 @@ class JournalScraper:
                 doi_info = tandf_webscraper.DataScraper(paper_html)
                 doi_list.append(doi_info)
 
+
 def main():
     fields = ['doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date', 'journal', 'url',
               'references']
     file_path = 'tandf_database.csv'
 
-    with open(file_path, "w", newline="") as csvfile:
+    with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
         # Create a CSV writer using the field/column names
         writer = csv.DictWriter(csvfile, fieldnames=fields)
         writer.writeheader()
