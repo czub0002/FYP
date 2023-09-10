@@ -7,12 +7,15 @@ import re
 
 
 class DataScraper:
-    def __init__(self, html_content):
+    def __init__(self, scraper):
         """
         Scrapes data from an HTML script on each listed article
-        :param html_content: the webpage scraping the data from
+        :param scraper: webdriver used for webscraping = cloudscraper.create_scraper().get(url)
         """
-        self.html_content = html_content
+        self.scraper = scraper
+        source_content = scraper.text
+
+        self.html_content = BeautifulSoup(source_content, 'html.parser')
         self.doi = self.get_doi()
         self.type = self.get_type()
         self.title = self.get_title()
@@ -195,11 +198,17 @@ class DataScraper:
         Gets the url of the paper
         :return: string containing the url to access the paper
         """
-        if self.doi:
-            url = "https://www.tandfonline.com/doi/" + self.doi
-        else:
-            print("url: Not Found - Missing DOI")
-            url = None
+        # initialise url variable
+        url = None
+
+        try:
+            url = self.scraper.url
+        except self.scraper.exceptions.RequestException as e:
+            print("RequestException:", e)
+        except cloudscraper.exceptions.CloudflareException as e:
+            print("CloudflareException:", e)
+        except AttributeError as e:
+            print("AttributeError:", e)
 
         return url
 
@@ -255,11 +264,8 @@ def main():
     url = 'https://www.tandfonline.com/doi/full/10.1080/23570008.2021.2018540'
 
     # start WebDriver
-    scraper = cloudscraper.create_scraper()
-    source_content = scraper.get(url).text
-    html_content = BeautifulSoup(source_content, 'html.parser')
-
-    DataScraper(html_content)
+    scraper = cloudscraper.create_scraper().get(url)
+    DataScraper(scraper)
 
     big_end = time.time()
     total_time = big_end - big_start
