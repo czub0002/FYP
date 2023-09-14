@@ -4,7 +4,12 @@ the relevant data. This is then stored in a csv (depending on the publisher) to 
 """
 
 import csv
-import clarivate_API_test
+import sys
+
+import starter_API_getter
+import time
+
+start_time = time.time()
 
 publishers = ["elsevier", "springer", ["taylor", "francis"], "wiley"]
 # core_files = ["wos-core_SCIE 2023-August-22.csv", "wos-core_SSCI_2023-August-22.csv"]
@@ -19,12 +24,17 @@ for publisher in publishers:
 
         # Create header for WoS data
         # TODO - update after determining the data to pull
-        writer.writerow(["uid", "title", "doi", "issn", "eissn"])
+        fieldnames = [
+                'uid', 'doi', 'issn', 'eissn', 'pmid', 'authors', 'title', 'types',
+                'sourceTitle', 'volume', 'issue', 'publishMonth', 'publishYear', 'citations',
+                'keywords', 'record', 'citingArticles', 'references', 'related'
+            ]
+        writer.writerow(fieldnames)
 
 # Initialise API caller
-api_key = 'd8563637cb760fd52eb2d1dde0293b6e24752e74'
+api_key = 'db9a7cce984907c62edd05528d3de1ab87af6159'        # Journal API
 host = "https://api.clarivate.com/apis/wos-starter/v1"
-wos_extractor = clarivate_API_test.WoSDataExtractor(api_key, host)
+wos_extractor = starter_API_getter.WoSDataExtractor(api_key, host)
 
 # Open the CSV file for reading and make API calls in WoS
 with open(core_file, mode='r', encoding='utf-8') as file:
@@ -43,6 +53,15 @@ with open(core_file, mode='r', encoding='utf-8') as file:
         published_by = row[3].lower()
 
         for publisher in publishers:
+            timeout = 30
+            time_elapsed = time.time() - start_time
+            if time_elapsed >= timeout:
+                for key, value in wos_extractor.counter.items():
+                    print(f'{key}: {value}')
+                print(f"Time elapsed: {time_elapsed: .2f} seconds.")
+                print(f"Average: {wos_extractor.counter['total']/time_elapsed: .2f} papers per second.")
+                exit()
+
             if type(publisher) is not list:
                 if publisher in published_by:
                     wos_extractor.api_caller(journal_title, issn, eissn, publisher)

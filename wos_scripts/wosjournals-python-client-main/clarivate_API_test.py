@@ -1,55 +1,52 @@
-"""
-Script interacts with Web Of Science API to retrieve information
-"""
 import csv
-import clarivate.wos_starter.client
-from clarivate.wos_starter.client.apis.tags import documents_api
+from pprint import pprint
 
-# api_key = 'd8563637cb760fd52eb2d1dde0293b6e24752e74'
-# "https://api.clarivate.com/apis/wos-starter/v1"
+import clarivate.wos_journals.client
+from clarivate.wos_journals.client.api import journals_api
+
+# https://github.com/clarivate/wosjournals-python-client
 
 
 class WoSDataExtractor:
     def __init__(self, api_key, host):
         self.api_key = api_key
-        self.configuration = clarivate.wos_starter.client.Configuration(
+        self.configuration = clarivate.wos_journals.client.Configuration(
             host=host
         )
 
-    def api_caller(self, issn, eissn, journal_title, publisher):
+    def api_caller(self, journal_title, issn, eissn, publisher):
         # Enter a context with an instance of the API client
-        with clarivate.wos_starter.client.ApiClient(self.configuration) as api_client:
+        with clarivate.wos_journals.client.ApiClient(self.configuration) as api_client:
             # Set the API key in the headers
             api_client.default_headers['X-ApiKey'] = self.api_key
 
             # Create an instance of the API class
-            api_instance = documents_api.DocumentsApi(api_client)
+            api_instance = journals_api.JournalsApi(api_client)
 
             # Create the query string based on whether ISSN and EISSN are available
-            if issn and eissn:
-                query = f"IS=({issn} OR {eissn})"
-            elif issn:
-                query = f"IS={issn}"
+            # if issn and eissn:
+                # query = f"{issn} OR IS={eissn}"
+            # TODO - fix
+            if issn:
+                query = issn
             elif eissn:
-                query = f"IS={eissn}"
+                query = eissn
             elif journal_title:
-                query = f"SO={journal_title.lower()}"
+                query = journal_title.lower()
             else:
                 print("ISSN, eISSN, and Journal Title are None")
 
-            # example passing only optional values
-            # TODO - change to get all hits when API token is better
-            query_params = {
-                'q': query,
-                'limit': 1,
-                'page': 1,
-            }
+            print(query)
 
             try:
                 # Query Web of Science documents
-                api_response = api_instance.documents_get(
-                    query_params=query_params,
+                api_response = api_instance.journals_get(
+                    q=query,
+                    limit=1,
+                    page=1,
                 )
+
+                pprint(api_response)
 
                 # Iterate over the 'hits' in the API response body
                 # TODO reject if specific data is missing (i.e. dois)
@@ -84,7 +81,7 @@ class WoSDataExtractor:
                 # TODO - make call to relevent csv file to write to
                 # Make write once per query
 
-            except clarivate.wos_starter.client.ApiException as e:
+            except clarivate.wos_journals.client.ApiException as e:
                 print("Exception when calling DocumentsApi->documents_get: %s\n" % e)
 
 
