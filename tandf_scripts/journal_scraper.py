@@ -42,18 +42,17 @@ class JournalScraper:
 
             paper_url = "https://www.tandfonline.com/doi/" + doi
 
-            source_content = self.scraper.get(paper_url).text
-            paper_html = BeautifulSoup(source_content, 'html.parser')
+            source_content = self.scraper.get(paper_url)
 
             # Checks for duplicate doi
             if doi not in doi_list:
-                doi_info = tandf_webscraper.DataScraper(paper_html)
+                doi_info = tandf_webscraper.DataScraper(source_content)
                 doi_list.append(doi_info)
 
 
 def main():
-    fields = ['doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date', 'journal', 'url',
-              'references']
+    fields = ['doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date', 'journal',
+              'journal_edition', 'url', 'references']
     file_path = 'tandf_database.csv'
 
     with open(file_path, "w", newline="", encoding="utf-8") as csvfile:

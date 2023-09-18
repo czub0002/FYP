@@ -9,6 +9,7 @@ from clarivate.wos_starter.client.apis.tags import documents_api
 # api_key = 'd8563637cb760fd52eb2d1dde0293b6e24752e74'
 # "https://api.clarivate.com/apis/wos-starter/v1"
 
+
 class WoSDataExtractor:
     def __init__(self, api_key, host):
         self.api_key = api_key
