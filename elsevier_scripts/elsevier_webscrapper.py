@@ -1,5 +1,6 @@
 import json
 import time
+import requests
 from bs4 import BeautifulSoup
 import cloudscraper
 from dateutil import parser
@@ -15,6 +16,8 @@ class DataScraper:
         """
         self.scraper = scraper
         source_content = scraper.text
+
+        self.data_dict = None
 
         self.html_content = BeautifulSoup(source_content, 'html.parser')
         self.doi = self.get_doi()
@@ -93,7 +96,7 @@ class DataScraper:
         Gets the title of the paper
         :return: string containing paper title
         """
-        title_element = self.html_content.select_one('.article-dochead')
+        title_element = self.html_content.select_one('.title-text')
 
         if title_element:
             title = self.string_cleaner(title_element.get_text())
@@ -140,11 +143,11 @@ class DataScraper:
 
         try:
             json_container = self.html_content.find('script', attrs={'type': 'application/json'}).text
-            data_dict = json.loads(json_container)
+            self.data_dict = json.loads(json_container)
 
             # Initialize variables to store the dates
             # Find the div containing the date information
-            dates = data_dict['article']['dates']
+            dates = self.data_dict['article']['dates']
 
             for key, date in dates.items():
                 if type(date) is not list:
@@ -153,7 +156,7 @@ class DataScraper:
                     for i in range(len(date)):
                         date[i] = parser.parse(date[i], fuzzy=True).date()
 
-            # Now you can use the 'dates' variable for further processing
+        # Now you can use the 'dates' variable for further processing
         except KeyError as e:
             # Handle the case where the 'dates' key is not found in the dictionary
             print(f"KeyError: {e}. 'dates' key not found in the JSON data.")
@@ -230,16 +233,18 @@ class DataScraper:
         :return: a list, with each item in the list being a reference cited by the authors
         """
         ref_list = []
-        references_container = self.html_content.select_one('.paginatedReferences')
 
-        if references_container:
-            reference_elements = references_container.find_all('li')
-            for reference_element in reference_elements:
-                ref = self.string_cleaner(reference_element.get_text())
-                ref_list.append(ref)
-        else:
-            print("References: Not Found")
-            ref_list = None
+        references = self.data_dict["references"]["content"][0]['$$'][1]['$$']
+        for ref in references:
+            ref = ref['$$'][-1]
+
+            if ref['#name'] == 'source-text':
+                ref = ref['_']
+            elif ref['#name'] == 'other-ref':
+                ref = ref['$$'][0]['_']
+            else:
+                print('\nATTENZIONE (unaccounted #name type): ' + str(ref) + '\n')
+            print(ref)
 
         return ref_list
 
@@ -276,11 +281,17 @@ def main():
         writer.writeheader()
 
     url = 'https://www.sciencedirect.com/science/article/pii/S0022169423009253#ab005'
+    # url = 'https://www.sciencedirect.com/science/article/abs/pii/S0022169423009253?fbclid=IwAR0l24p7LP6XwDFI-NT48xV366oNS9lasrqzD86wxgwpOQ1WLbR-d5dPwhU'
 
     # start WebDriver
-    scraper = cloudscraper.create_scraper().get(url)
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    }
+    response = requests.get(url, headers=headers)
 
-    DataScraper(scraper)
+    # scraper = cloudscraper.create_scraper().get(url)
+
+    DataScraper(response)
 
     big_end = time.time()
     total_time = big_end - big_start
