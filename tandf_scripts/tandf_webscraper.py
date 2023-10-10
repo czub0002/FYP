@@ -4,6 +4,7 @@ import cloudscraper
 from dateutil import parser
 import csv
 import re
+import pandas as pd
 
 
 class DataScraper:
@@ -40,8 +41,6 @@ class DataScraper:
             "references": self.references
         }
 
-        print(data)
-
         self.add_to_csv(data, 'tandf_database.csv')
 
     def add_to_csv(self, data, file_path):
@@ -67,6 +66,7 @@ class DataScraper:
 
             url_prefix = "https://doi.org/"
             doi = doi_url[len(url_prefix):]
+            print(doi)
         else:
             print('DOI: Not Found')
             doi = None
@@ -92,7 +92,10 @@ class DataScraper:
         Gets the title of the paper
         :return: string containing paper title
         """
-        title_element = self.html_content.select_one('.hlFld-Title')
+        title_element = self.html_content.select_one('.hlFld-title')
+
+        if not title_element:
+            self.html_content.select_one('.hlFld-Title')
 
         if title_element:
             title = self.string_cleaner(title_element.get_text())
@@ -261,11 +264,36 @@ def main():
         writer = csv.DictWriter(csvfile, fieldnames=fields)
         writer.writeheader()
 
-    url = 'https://www.tandfonline.com/doi/full/10.1080/23570008.2021.2018540'
+    # TODO - add if path exists statement here
 
-    # start WebDriver
-    scraper = cloudscraper.create_scraper().get(url)
-    DataScraper(scraper)
+    # url = 'https://www.tandfonline.com/doi/full/10.1080/23570008.2021.2018540'
+
+    cloud_scraper = cloudscraper.create_scraper()
+    df = pd.read_excel('Taylor-and-Francis.xlsx')
+    counter = 0
+
+    if 'DOI Link' in df.columns:
+        for index, row in df.iterrows():
+            counter += 1
+            print(f"{counter} ------------------")
+
+            if counter == 50:
+                break
+
+            doi_link_value = row["DOI Link"]
+
+            if doi_link_value:
+                # First response is the html landing page which is NOT the page
+                response = cloud_scraper.get(doi_link_value)
+
+                # TODO - check it lands on the correct website
+
+                # status_code 200 means get was successful
+                if response.status_code == 200:
+                    DataScraper(response)
+                else:
+                    # TODO - create better handling of consecutive status_codes
+                    print(f"ERROR: Status {response.status_code}")
 
     big_end = time.time()
     total_time = big_end - big_start

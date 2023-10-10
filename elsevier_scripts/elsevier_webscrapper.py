@@ -1,10 +1,13 @@
 import json
 import time
+from html import unescape
+from urllib.parse import unquote
 from bs4 import BeautifulSoup
 import cloudscraper
 from dateutil import parser
 import csv
 import re
+import pandas as pd
 
 
 class DataScraper:
@@ -15,6 +18,8 @@ class DataScraper:
         """
         self.scraper = scraper
         source_content = scraper.text
+
+        self.data_dict = None
 
         self.html_content = BeautifulSoup(source_content, 'html.parser')
         self.doi = self.get_doi()
@@ -68,6 +73,7 @@ class DataScraper:
 
             url_prefix = "https://doi.org/"
             doi = doi_url[len(url_prefix):]
+            print(f"doi: {doi}")
         else:
             print('DOI: Not Found')
             doi = None
@@ -94,6 +100,8 @@ class DataScraper:
         :return: string containing paper title
         """
         title_element = self.html_content.select_one('.article-dochead')
+        if not title_element:
+            title_element = self.html_content.select_one('.title-text')
 
         if title_element:
             title = self.string_cleaner(title_element.get_text())
@@ -140,20 +148,18 @@ class DataScraper:
 
         try:
             json_container = self.html_content.find('script', attrs={'type': 'application/json'}).text
-            data_dict = json.loads(json_container)
+            self.data_dict = json.loads(json_container)
 
             # Initialize variables to store the dates
             # Find the div containing the date information
-            dates = data_dict['article']['dates']
+            paper_dates = self.data_dict['article']['dates']
 
-            for key, date in dates.items():
+            for key, date in paper_dates.items():
                 if type(date) is not list:
                     dates[key] = parser.parse(date, fuzzy=True).date()
                 else:
                     for i in range(len(date)):
                         date[i] = parser.parse(date[i], fuzzy=True).date()
-
-            # Now you can use the 'dates' variable for further processing
         except KeyError as e:
             # Handle the case where the 'dates' key is not found in the dictionary
             print(f"KeyError: {e}. 'dates' key not found in the JSON data.")
@@ -163,14 +169,6 @@ class DataScraper:
         except Exception as e:
             # Handle other exceptions that may occur
             print(f"An error occurred: {e}")
-
-        """
-        received_date = dates["Received"]
-        revised_date = dates["Revised"]     # List type
-        accepted_date = dates["Publication date"]
-        published_date = dates["Available online"]   # 'Available online'
-        version_date = dates["Version of Record"]
-        """
 
         return Dates(dates["Received"], dates["Revised"], dates["Publication date"],
                      dates["Available online"], dates["Version of Record"])
@@ -230,16 +228,18 @@ class DataScraper:
         :return: a list, with each item in the list being a reference cited by the authors
         """
         ref_list = []
-        references_container = self.html_content.select_one('.paginatedReferences')
 
-        if references_container:
-            reference_elements = references_container.find_all('li')
-            for reference_element in reference_elements:
-                ref = self.string_cleaner(reference_element.get_text())
-                ref_list.append(ref)
-        else:
-            print("References: Not Found")
-            ref_list = None
+        try:
+            if self.data_dict:
+                references = self.data_dict["references"]["sourceTextMap"]
+            else:
+                return ref_list
+        except KeyError:
+            print("References not found!")
+            return ref_list
+
+        for ref in references.values():
+            ref_list.append(ref)
 
         return ref_list
 
@@ -275,12 +275,38 @@ def main():
         writer = csv.DictWriter(csvfile, fieldnames=fields)
         writer.writeheader()
 
-    url = 'https://www.sciencedirect.com/science/article/pii/S0022169423009253#ab005'
+    # url = 'https://www.sciencedirect.com/science/article/pii/S0022169423009253#ab005'
 
-    # start WebDriver
-    scraper = cloudscraper.create_scraper().get(url)
+    df = pd.read_excel('Elsevier.xlsx')
+    counter = 0
+    cloud_scraper = cloudscraper.create_scraper()
 
-    DataScraper(scraper)
+    if 'DOI Link' in df.columns:
+        for index, row in df.iterrows():
+            counter += 1
+            print(str(counter) + ' ------------------')
+
+            # Stops at 50, remove later
+            if counter == 50:
+                break
+
+            doi_link_value = row["DOI Link"]
+
+            if doi_link_value:
+                # First response is the html landing page which is NOT the page
+                response = cloud_scraper.get(doi_link_value)
+
+                soup = BeautifulSoup(response.text, 'html.parser')
+                redirect_url = soup.find(name="input", attrs={"name": "redirectURL"})["value"]
+                final_url = unescape(unquote(redirect_url))
+                response = cloud_scraper.get(final_url)
+
+                # This code finds where the landing page tries to redirect to (JavaScript)
+                if response.status_code == 200:
+                    DataScraper(response)
+
+                else:
+                    print(f"ERROR: Status {response.status_code}")
 
     big_end = time.time()
     total_time = big_end - big_start

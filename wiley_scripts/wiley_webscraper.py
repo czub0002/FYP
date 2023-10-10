@@ -4,6 +4,7 @@ import cloudscraper
 from dateutil import parser
 import csv
 import re
+import pandas as pd
 
 
 class DataScraper:
@@ -40,8 +41,6 @@ class DataScraper:
             "references": self.references
         }
 
-        print(data)
-
         self.add_to_csv(data, 'wiley_database.csv')
 
     def add_to_csv(self, data, file_path):
@@ -67,6 +66,8 @@ class DataScraper:
 
             url_prefix = "https://doi.org/"
             doi = doi_url[len(url_prefix):]
+
+            print(doi)
         else:
             print('DOI: Not Found')
             doi = None
@@ -79,8 +80,10 @@ class DataScraper:
         :return: String describing the paper type
         """
         article_heading_element = self.html_content.select_one('.doi-access-container')
-        if article_heading_element:
-            article_type = self.string_cleaner(article_heading_element.get_text())
+        type_element = article_heading_element.find('span', class_='primary-heading')
+
+        if type_element:
+            article_type = self.string_cleaner(type_element.get_text())
         else:
             print('Type: Not Found')
             article_type = None
@@ -243,11 +246,45 @@ def main():
         writer = csv.DictWriter(csvfile, fieldnames=fields)
         writer.writeheader()
 
-    url = 'https://acsess.onlinelibrary.wiley.com/doi/10.1002/crso.20301'
+    # url = 'https://acsess.onlinelibrary.wiley.com/doi/10.1002/crso.20301'
 
     # start WebDriver
-    scraper = cloudscraper.create_scraper().get(url)
-    DataScraper(scraper)
+    scraper = cloudscraper.create_scraper()
+
+    cloud_scraper = cloudscraper.create_scraper()
+    df = pd.read_excel('Wiley.xlsx')
+    counter = 0
+
+    if 'DOI Link' in df.columns:
+        for index, row in df.iterrows():
+            counter += 1
+
+            print(f"{counter} ------------------")
+
+            if counter == 15:
+                break
+
+            doi_link_value = row["DOI Link"]
+
+            if doi_link_value:
+                # First response is the html landing page which is NOT the page
+                response_url = cloud_scraper.get(doi_link_value).url
+
+                if "epdf" in response_url:
+                    modified_url = response_url.replace("/epdf/", "/abs/")
+                else:
+                    modified_url = response_url.replace("/doi/", "/doi/abs/")
+
+                response = scraper.get(modified_url)
+
+                # TODO - check it lands on the correct website
+
+                # status_code 200 means get was successful
+                if response.status_code == 200:
+                    DataScraper(response)
+                else:
+                    # TODO - create better handling of consecutive status_codes
+                    print(f"ERROR: Status {response.status_code}")
 
     big_end = time.time()
     total_time = big_end - big_start
