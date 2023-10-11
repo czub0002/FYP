@@ -1,4 +1,6 @@
 import time
+from pathlib import Path
+
 from bs4 import BeautifulSoup
 import cloudscraper
 from dateutil import parser
@@ -258,42 +260,47 @@ def main():
     fields = ['doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date', 'journal',
               'journal_edition', 'url', 'references']
     file_path = 'tandf_database.csv'
+    start_index = 0
+    path = Path(file_path)
+    df = pd.read_excel('Taylor-and-Francis.xlsx')
 
-    with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
-        # Create a CSV writer using the field/column names
-        writer = csv.DictWriter(csvfile, fieldnames=fields)
-        writer.writeheader()
+    if not path.is_file():
+        with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
+            # Create a CSV writer using the field/column names
+            writer = csv.DictWriter(csvfile, fieldnames=fields)
+            writer.writeheader()
+    else:
+        tandf_df = pd.read_csv(file_path)
 
-    # TODO - add if path exists statement here
+        if not tandf_df.empty:
+            last_doi = tandf_df.iloc[-1]["doi"]
+            matching_rows = df[df["DOI"] == last_doi]
+            start_index = matching_rows.index[-1] + 1
 
-    # url = 'https://www.tandfonline.com/doi/full/10.1080/23570008.2021.2018540'
+    # TODO - Proxy/user agent rotate?? research this
 
     cloud_scraper = cloudscraper.create_scraper()
-    df = pd.read_excel('Taylor-and-Francis.xlsx')
     counter = 0
 
-    if 'DOI Link' in df.columns:
-        for index, row in df.iterrows():
-            counter += 1
-            print(f"{counter} ------------------")
+    for index, row in df.iloc[start_index:].iterrows():
+        counter += 1
+        print(f"{counter} ------------------")
 
-            if counter == 50:
-                break
+        if counter == 50:
+            break
 
-            doi_link_value = row["DOI Link"]
+        doi_link_value = row["DOI Link"]
 
-            if doi_link_value:
-                # First response is the html landing page which is NOT the page
-                response = cloud_scraper.get(doi_link_value)
+        if doi_link_value:
+            # First response is the html landing page which is NOT the page
+            response = cloud_scraper.get(doi_link_value)
 
-                # TODO - check it lands on the correct website
-
-                # status_code 200 means get was successful
-                if response.status_code == 200:
-                    DataScraper(response)
-                else:
-                    # TODO - create better handling of consecutive status_codes
-                    print(f"ERROR: Status {response.status_code}")
+            # status_code 200 means get was successful
+            if response.status_code == 200 and 'tandfonline' in response.url:
+                DataScraper(response)
+            else:
+                # TODO - create better handling of consecutive status_codes
+                print(f"ERROR: Status {response.status_code}")
 
     big_end = time.time()
     total_time = big_end - big_start
