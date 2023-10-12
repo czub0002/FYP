@@ -59,7 +59,6 @@ class DataScraper:
         :param data: article data being written to the csv file
         :param file_path: the path where the csv file is stored
         """
-        # TODO - Use Pandas (set types for strings so dont turn into dates)
         # Open the CSV file with write permission
         with open(file_path, "a", newline="", encoding="utf-8") as csvfile:
             # Create a CSV writer using the field/column names

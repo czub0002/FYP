@@ -1,0 +1,32 @@
+
+Start Time: 22:44:49	12/10/2023
+End Time: 22:45:23	12/10/2023
+Total Runtime: 0 hours, 0 minutes, 33.92 seconds.
+______________________________________________________
+-------------- Summary of Status Errors --------------
+Status Code    Index    DOI
+-------------  -------  -----
+
+Total Status Errors: 0
+
+
+SUCCESS: Script ran until completion!
+
+
+
+
+Start Time: 22:49:04	12/10/2023
+End Time: 22:49:33	12/10/2023
+Total Runtime: 0 hours, 0 minutes, 29.43 seconds.
+______________________________________________________
+-------------- Summary of Status Errors --------------
+Status Code    Index    DOI
+-------------  -------  -----
+
+Total Status Errors: 0
+
+
+SUCCESS: Script ran until completion!
+
+
+
