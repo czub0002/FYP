@@ -1,16 +1,18 @@
+from time import strftime, localtime
 import time
 from pathlib import Path
-
+import tabulate
 from bs4 import BeautifulSoup
 import cloudscraper
 from dateutil import parser
 import csv
 import re
 import pandas as pd
+import requests
 
 
 class DataScraper:
-    def __init__(self, scraper):
+    def __init__(self, scraper, wos_doi):
         """
         Scrapes data from an HTML script on each listed article
         :param scraper: webdriver used for webscraping = cloudscraper.create_scraper().get(url)
@@ -19,6 +21,8 @@ class DataScraper:
         source_content = scraper.text
 
         self.html_content = BeautifulSoup(source_content, 'html.parser')
+
+        self.wos_doi = wos_doi
         self.doi = self.get_doi()
         self.type = self.get_type()
         self.title = self.get_title()
@@ -30,6 +34,7 @@ class DataScraper:
         self.references = self.get_references()
 
         data = {
+            "wos_doi": self.wos_doi,
             "doi": self.doi,
             "type": self.type,
             "title": self.title,
@@ -38,7 +43,10 @@ class DataScraper:
             "accepted_date": self.dates.accepted_date,
             "published_date": self.dates.published_date,
             "journal": self.journal,
-            "journal_edition": self.journal_edition,
+            "journal_edition": self.journal_edition["journal_ed"],
+            "publication_year": self.journal_edition["pub_year"],
+            "uid": self.journal_edition["uid"],
+            "issue": self.journal_edition["issue"],
             "url": self.url,
             "references": self.references
         }
@@ -51,6 +59,7 @@ class DataScraper:
         :param data: article data being written to the csv file
         :param file_path: the path where the csv file is stored
         """
+        # TODO - Use Pandas (set types for strings so dont turn into dates)
         # Open the CSV file with write permission
         with open(file_path, "a", newline="", encoding="utf-8") as csvfile:
             # Create a CSV writer using the field/column names
@@ -186,9 +195,11 @@ class DataScraper:
 
     def get_journal_edition(self):
         """
-        Gets the journal edition
-        :return: string containing journal name
+        Gets the journal edition information
+        :return: dictionary containing journal edition information
         """
+        journal_edition = {'journal_ed': None, 'uid': None, 'issue': None, 'pub_year': None}
+
         journal_ed_element = self.html_content.select_one('.issue-heading')
         if journal_ed_element:
             journal_ed = self.string_cleaner(journal_ed_element.get_text())
@@ -196,7 +207,20 @@ class DataScraper:
             print("Journal Edition: Not Found")
             journal_ed = None
 
-        return journal_ed
+        journal_edition['journal_ed'] = journal_ed
+
+        # Define a regular expression pattern to extract information
+        pattern = r'Volume (\d+)[^\d]*(\d+)[^\d]*Issue ([\w\s-]+)'
+        match = re.search(pattern, journal_ed, re.IGNORECASE)
+
+        if match:
+            # Extract information from the match object
+            volume, year, issue = match.groups()
+            journal_edition['uid'] = volume
+            journal_edition['issue'] = issue
+            journal_edition['pub_year'] = year
+
+        return journal_edition
 
     def get_url(self):
         """
@@ -237,6 +261,11 @@ class DataScraper:
         return ref_list
 
     def string_cleaner(self, text):
+        """
+        Removes tags and non-text in strings
+        :param text: string of text
+        :return: string of text with only text
+        """
         cleaned_text = re.sub(r'\s+', ' ', text).strip()
         return cleaned_text
 
@@ -255,10 +284,13 @@ class Dates:
 
 
 def main():
-    big_start = time.time()
+    start_time = time.time()
+    summary_of_errors = "______________________________________________________\n" \
+                        "-------------- Summary of Status Errors --------------\n"
+    termination_statement = 'SUCCESS: Script ran until completion!'
 
-    fields = ['doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date', 'journal',
-              'journal_edition', 'url', 'references']
+    fields = ['wos_doi', 'doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date',
+              'journal', 'journal_edition', 'publication_year', 'uid', 'issue', 'url', 'references']
     file_path = 'tandf_database.csv'
     start_index = 0
     path = Path(file_path)
@@ -273,38 +305,115 @@ def main():
         tandf_df = pd.read_csv(file_path)
 
         if not tandf_df.empty:
-            last_doi = tandf_df.iloc[-1]["doi"]
+            last_doi = tandf_df.iloc[-1]["wos_doi"]
             matching_rows = df[df["DOI"] == last_doi]
             start_index = matching_rows.index[-1] + 1
 
-    # TODO - Proxy/user agent rotate?? research this
+    # TODO - Proxy/user agent rotation
 
     cloud_scraper = cloudscraper.create_scraper()
     counter = 0
 
+    # keep record of status errors
+    status_errors = []
+    previous_identifier = (None, None, None)       # (ISSN, eISSN, ISBN)
+
+    # TODO - Remove before completion
+    # Test execution log output
+    error_evoker = []
+
     for index, row in df.iloc[start_index:].iterrows():
         counter += 1
-        print(f"{counter} ------------------")
 
-        if counter == 50:
+        # TODO - Remove before completion
+        if counter == 20:
             break
 
+        print(f"{counter} -----------------------------")
+
+        # TODO - Check DOI always exists when DOI Link does in WoS database before executing script
         doi_link_value = row["DOI Link"]
+        wos_doi = row["DOI"]
 
         if doi_link_value:
-            # First response is the html landing page which is NOT the page
-            response = cloud_scraper.get(doi_link_value)
+
+            # TODO - Remove before completion
+            if counter not in error_evoker:
+                response = cloud_scraper.get(doi_link_value)
+            else:
+                response = requests.get(doi_link_value)
 
             # status_code 200 means get was successful
             if response.status_code == 200 and 'tandfonline' in response.url:
-                DataScraper(response)
-            else:
-                # TODO - create better handling of consecutive status_codes
+                DataScraper(response, wos_doi)
+            elif response.status_code != 200:
                 print(f"ERROR: Status {response.status_code}")
+                current_error = {"status_code": response.status_code, "index": index, "data": row}
+                current_identifier = (row["ISSN"], row["eISSN"], row["ISBN"])
 
-    big_end = time.time()
-    total_time = big_end - big_start
-    print(f"Total Time: {total_time:.4f}")
+                if status_errors:
+                    # Conditions of termination: Previous error same as current and must belong to different journals
+                    # and indexes must be consecutive
+                    # TODO - add journal condition back in later and confirm this is a good strategy
+                    """
+                    if previous_error["status_code"] == current_error["status_code"] \
+                            and (current_identifier != previous_identifier) and \
+                            (previous_error["index"] == current_error["index"]-1):
+                    """
+                    previous_error = status_errors[-1]
+                    if previous_error["status_code"] == current_error["status_code"] \
+                            and (previous_error["index"] == current_error["index"]-1):
+                        # Terminate Program and print errors
+                        status_errors.append(current_error)
+
+                        # Terminate program
+                        termination_statement = f'FAIL: The script terminated due to ' \
+                                                f'{current_error["status_code"]} status errors!'
+                        break
+
+                status_errors.append(current_error)
+                previous_identifier = current_identifier
+
+    end_time = time.time()
+    total_time = end_time - start_time
+
+    m, s = divmod(total_time, 60)
+    h, m = divmod(m, 60)
+    total_runtime = f'Total Runtime: {h:0.0f} hours, {m:0.0f} minutes, {s:02.2f} seconds.'
+
+    # Structure summary of errors output
+    header = ["Status Code", "Index", "DOI"]
+    error_list = []
+    for error in status_errors:
+        error_list.append([error["status_code"], error["index"], error["data"]["DOI"]])
+
+    error_table = tabulate.tabulate(error_list, header)
+    summary_of_errors += error_table
+    total_errors = f"Total Status Errors: {str(len(error_list))}"
+
+    lines = ['\n',
+             strftime('Start Time: %H:%M:%S\t%d/%m/%Y\n', localtime(start_time)),
+             strftime('End Time: %H:%M:%S\t%d/%m/%Y\n', localtime(end_time)),
+             total_runtime + '\n',
+             summary_of_errors + '\n\n',
+             total_errors + '\n\n\n',
+             termination_statement + '\n\n\n\n'
+             ]
+
+    # Summary of Execution Log
+    with open('Execution_Log.txt', "a", encoding="utf-8") as txtfile:
+        """
+        Start Time:
+        End Time:
+        Total Runtime:
+        Summary of Status Errors
+        Total Status Errors:
+        Termination Statement:
+        
+        """
+        for line in lines:
+            print(line)
+            txtfile.write(line)
 
 
 if __name__ == '__main__':
