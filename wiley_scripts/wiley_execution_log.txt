@@ -1,0 +1,51 @@
+
+Start Time: 14:46:31	13/10/2023
+End Time: 14:47:23	13/10/2023
+Total Runtime: 0 hours, 0 minutes, 51.93 seconds.
+Papers: 20
+______________________________________________________
+-------------- Summary of Status Errors --------------
+Status Code    Index    DOI
+-------------  -------  -----
+
+Total Status Errors: 0
+
+
+SUCCESS: Script ran until completion!
+
+
+
+
+Start Time: 15:16:27	13/10/2023
+End Time: 15:17:32	13/10/2023
+Total Runtime: 0 hours, 1 minutes, 5.24 seconds.
+Papers: 20
+______________________________________________________
+-------------- Summary of Status Errors --------------
+Status Code    Index    DOI
+-------------  -------  -----
+
+Total Status Errors: 0
+
+
+SUCCESS: Script ran until completion!
+
+
+
+
+Start Time: 15:48:22	13/10/2023
+End Time: 15:49:00	13/10/2023
+Total Runtime: 0 hours, 0 minutes, 37.29 seconds.
+Papers: 20
+______________________________________________________
+-------------- Summary of Status Errors --------------
+Status Code    Index    DOI
+-------------  -------  -----
+
+Total Status Errors: 0
+
+
+SUCCESS: Script ran until completion!
+
+
+

@@ -16,6 +16,7 @@ class DataScraper:
         """
         Scrapes data from an HTML script on each listed article
         :param scraper: webdriver used for webscraping = cloudscraper.create_scraper().get(url)
+        :param wos_doi: DOI listed in the Web of Science database
         """
         self.scraper = scraper
         source_content = scraper.text
@@ -202,22 +203,22 @@ class DataScraper:
         journal_ed_element = self.html_content.select_one('.issue-heading')
         if journal_ed_element:
             journal_ed = self.string_cleaner(journal_ed_element.get_text())
+
+            # Define a regular expression pattern to extract information
+            pattern = r'Volume (\d+)[^\d]*(\d+)[^\d]*Issue ([\w\s-]+)'
+            match = re.search(pattern, journal_ed, re.IGNORECASE)
+
+            if match:
+                # Extract information from the match object
+                volume, year, issue = match.groups()
+                journal_edition['uid'] = volume
+                journal_edition['issue'] = issue
+                journal_edition['pub_year'] = year
         else:
             print("Journal Edition: Not Found")
             journal_ed = None
 
         journal_edition['journal_ed'] = journal_ed
-
-        # Define a regular expression pattern to extract information
-        pattern = r'Volume (\d+)[^\d]*(\d+)[^\d]*Issue ([\w\s-]+)'
-        match = re.search(pattern, journal_ed, re.IGNORECASE)
-
-        if match:
-            # Extract information from the match object
-            volume, year, issue = match.groups()
-            journal_edition['uid'] = volume
-            journal_edition['issue'] = issue
-            journal_edition['pub_year'] = year
 
         return journal_edition
 
@@ -394,17 +395,19 @@ def main():
              strftime('Start Time: %H:%M:%S\t%d/%m/%Y\n', localtime(start_time)),
              strftime('End Time: %H:%M:%S\t%d/%m/%Y\n', localtime(end_time)),
              total_runtime + '\n',
+             'Papers: ' + str(counter) + '\n',
              summary_of_errors + '\n\n',
              total_errors + '\n\n\n',
              termination_statement + '\n\n\n\n'
              ]
 
     # Summary of Execution Log
-    with open('Execution_Log.txt', "a", encoding="utf-8") as txtfile:
+    with open('tandf_execution_log.txt', "a", encoding="utf-8") as txtfile:
         """
         Start Time:
         End Time:
         Total Runtime:
+        Papers:
         Summary of Status Errors
         Total Status Errors:
         Termination Statement:
