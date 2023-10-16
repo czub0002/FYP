@@ -1,3 +1,4 @@
+import math
 from time import strftime, localtime
 import time
 from pathlib import Path
@@ -8,7 +9,6 @@ from dateutil import parser
 import csv
 import re
 import pandas as pd
-import requests
 
 
 class DataScraper:
@@ -318,16 +318,11 @@ def main():
     status_errors = []
     previous_identifier = (None, None, None)       # (ISSN, eISSN, ISBN)
 
-    # TODO - Remove before completion
-    # Test execution log output
-    error_evoker = []
-
     for index, row in df.iloc[start_index:].iterrows():
         counter += 1
 
-        # TODO - Remove before completion
-        if counter == 20:
-            break
+        # if counter == 20:
+        #     break
 
         print(f"{counter} -----------------------------")
 
@@ -335,13 +330,16 @@ def main():
         doi_link_value = row["DOI Link"]
         wos_doi = row["DOI"]
 
-        if doi_link_value:
+        has_url = False
 
-            # TODO - Remove before completion
-            if counter not in error_evoker:
-                response = cloud_scraper.get(doi_link_value)
-            else:
-                response = requests.get(doi_link_value)
+        try:
+            if math.isnan(doi_link_value):
+                print("Paper has no URL!")
+        except TypeError:
+            has_url = True
+
+        if has_url:
+            response = cloud_scraper.get(doi_link_value)
 
             # status_code 200 means get was successful
             if response.status_code == 200 and 'tandfonline' in response.url:
@@ -354,15 +352,10 @@ def main():
                 if status_errors:
                     # Conditions of termination: Previous error same as current and must belong to different journals
                     # and indexes must be consecutive
-                    # TODO - add journal condition back in later and confirm this is a good strategy
-                    """
-                    if previous_error["status_code"] == current_error["status_code"] \
-                            and (current_identifier != previous_identifier) and \
-                            (previous_error["index"] == current_error["index"]-1):
-                    """
                     previous_error = status_errors[-1]
                     if previous_error["status_code"] == current_error["status_code"] \
-                            and (previous_error["index"] == current_error["index"]-1):
+                            and (current_identifier != previous_identifier) and \
+                            (previous_error["index"] == current_error["index"] - 1):
                         # Terminate Program and print errors
                         status_errors.append(current_error)
 
