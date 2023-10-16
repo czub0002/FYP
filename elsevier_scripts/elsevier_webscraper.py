@@ -1,11 +1,14 @@
 import json
-import time
+import math
 from html import unescape
+from time import strftime, localtime
+import time
+from pathlib import Path
 from urllib.parse import unquote
 
-import requests
+import tabulate
 from bs4 import BeautifulSoup
-import cloudscraper
+import requests
 from dateutil import parser
 import csv
 import re
@@ -13,10 +16,11 @@ import pandas as pd
 
 
 class DataScraper:
-    def __init__(self, scraper):
+    def __init__(self, scraper, wos_doi):
         """
         Scrapes data from an HTML script on each listed article
         :param scraper: webdriver used for webscraping = cloudscraper.create_scraper().get(url)
+        :param wos_doi: DOI listed in the Web of Science database
         """
         self.scraper = scraper
         source_content = scraper.text
@@ -24,6 +28,7 @@ class DataScraper:
         self.data_dict = None
 
         self.html_content = BeautifulSoup(source_content, 'html.parser')
+        self.wos_doi = wos_doi
         self.doi = self.get_doi()
         self.type = self.get_type()
         self.title = self.get_title()
@@ -45,7 +50,11 @@ class DataScraper:
             "published_date": self.dates.published_date,
             "version_date": self.dates.version_date,
             "journal": self.journal,
-            "journal_edition": self.journal_edition,
+            "journal_edition": self.journal_edition["journal_ed"],
+            "publication_year": self.journal_edition["pub_year"],
+            "uid": self.journal_edition["volume"],
+            "issue": self.journal_edition["issue"],
+            "part": self.journal_edition["part"],
             "url": self.url,
             "references": self.references
         }
@@ -194,16 +203,29 @@ class DataScraper:
         Gets the journal edition
         :return: string containing journal name
         """
+        journal_edition = {'journal_ed': None, 'volume': None, 'issue': None, 'part': None, 'pub_year': None}
+
         journal_ed_element = self.html_content.select_one('.publication-volume')
         journal_ed_element = journal_ed_element.select_one('div', class_='text-xs')
 
         if journal_ed_element:
             journal_ed = self.string_cleaner(journal_ed_element.get_text())
+
+            pattern = r"Volume (\d+), (?:Part ([A-Za-z\d]+), )?(?:Issue (\d+), )?.* (\d{4}), \d+"
+            match = re.match(pattern, journal_ed, re.IGNORECASE)
+
+            if match:
+                # Extract the matched groups
+                journal_edition['volume'] = match.group(1)
+                journal_edition['part'] = match.group(2)
+                journal_edition['issue'] = match.group(3)
+                journal_edition['pub_year'] = match.group(4)
         else:
             print("Journal Edition: Not Found")
-            journal_ed = None
 
-        return journal_ed
+        journal_edition['journal_ed'] = None
+
+        return journal_edition
 
     def get_url(self):
         """
@@ -217,8 +239,6 @@ class DataScraper:
             url = self.scraper.url
         except self.scraper.exceptions.RequestException as e:
             print("RequestException:", e)
-        except cloudscraper.exceptions.CloudflareException as e:
-            print("CloudflareException:", e)
         except AttributeError as e:
             print("AttributeError:", e)
 
@@ -246,6 +266,11 @@ class DataScraper:
         return ref_list
 
     def string_cleaner(self, text):
+        """
+        Removes tags and non-text in strings
+        :param text: string of text
+        :return: string of text with only text
+        """
         cleaned_text = re.sub(r'\s+', ' ', text).strip()
         return cleaned_text
 
@@ -255,8 +280,10 @@ class Dates:
         """
         Class stores all the dates in their own Dates object
         :param received_date: the date which the paper was received
+        :param received_date: the dates which the paper was revised
         :param accepted_date: the date which the paper was accepted
         :param published_date: the date which the paper was published
+        :param version_date: the published date of the current version
         """
         self.received_date = received_date
         self.revised_date = revised_date
@@ -266,56 +293,138 @@ class Dates:
 
 
 def main():
-    big_start = time.time()
+    start_time = time.time()
+    summary_of_errors = "______________________________________________________\n" \
+                        "-------------- Summary of Status Errors --------------\n"
+    termination_statement = 'SUCCESS: Script ran until completion!'
+    fields = ['wos_doi', 'doi', 'type', 'title', 'authors', 'received_date', 'revised_date', 'accepted_date',
+              'published_date', 'version_date', 'journal', 'journal_edition', 'publication_year', 'uid', 'issue',
+              'part', 'url', 'references']
 
-    fields = ['doi', 'type', 'title', 'authors', 'received_date', 'revised_date', 'accepted_date', 'published_date',
-              'version_date', 'journal', 'journal_edition', 'url', 'references']
+    start_index = 0
     file_path = 'elsevier_database.csv'
-
-    with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
-        # Create a CSV writer using the field/column names
-        writer = csv.DictWriter(csvfile, fieldnames=fields)
-        writer.writeheader()
-
-    # url = 'https://www.sciencedirect.com/science/article/pii/S0022169423009253#ab005'
-
+    path = Path(file_path)
     df = pd.read_excel('Elsevier.xlsx')
-    counter = 0
-    cloud_scraper = cloudscraper.create_scraper()
+
+    if not path.is_file():
+        with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
+            # Create a CSV writer using the field/column names
+            writer = csv.DictWriter(csvfile, fieldnames=fields)
+            writer.writeheader()
+    else:
+        elsevier_df = pd.read_csv(file_path)
+
+        if not elsevier_df.empty:
+            last_doi = elsevier_df.iloc[-1]["wos_doi"]
+            matching_rows = df[df["DOI"] == last_doi]
+            start_index = matching_rows.index[-1] + 1
+
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                      'Chrome/109.0.0.0 Safari/537.36',
     }
+    counter = 0
 
-    if 'DOI Link' in df.columns:
-        for index, row in df.iterrows():
-            counter += 1
-            print(str(counter) + ' ------------------')
+    # keep record of status errors
+    status_errors = []
+    previous_identifier = (None, None, None)       # (ISSN, eISSN, ISBN)
 
-            # Stops at 50, remove later
-            if counter == 50:
-                break
+    for index, row in df.iloc[start_index:].iterrows():
+        counter += 1
 
-            doi_link_value = row["DOI Link"]
+        # if counter == 20:
+        #     break
 
-            if doi_link_value:
-                # First response is the html landing page which is NOT the page
-                response = requests.get(doi_link_value)
+        print(f"{counter} -----------------------------")
 
-                soup = BeautifulSoup(response.text, 'html.parser')
-                redirect_url = soup.find(name="input", attrs={"name": "redirectURL"})["value"]
-                final_url = unescape(unquote(redirect_url))
-                response = requests.get(final_url, headers=headers)
+        # TODO - Check DOI always exists when DOI Link does in WoS database before executing script
+        doi_link_value = row["DOI Link"]
+        wos_doi = row["DOI"]
 
-                # This code finds where the landing page tries to redirect to (JavaScript)
-                if response.status_code == 200:
-                    DataScraper(response)
+        has_url = False
 
-                else:
-                    print(f"ERROR: Status {response.status_code}")
+        try:
+            if math.isnan(doi_link_value):
+                print("Paper has no URL!")
+        except TypeError:
+            has_url = True
 
-    big_end = time.time()
-    total_time = big_end - big_start
-    print(f"Total Time: {total_time:.4f}")
+        if has_url:
+            response = requests.get(doi_link_value)
+
+            soup = BeautifulSoup(response.text, 'html.parser')
+            redirect_url = soup.find(name="input", attrs={"name": "redirectURL"})["value"]
+            final_url = unescape(unquote(redirect_url))
+            response = requests.get(final_url, headers=headers)
+
+            # status_code 200 means get was successful
+            if response.status_code == 200 and 'sciencedirect.com' in response.url:
+                DataScraper(response, wos_doi)
+            elif response.status_code != 200:
+                print(f"ERROR: Status {response.status_code}")
+                current_error = {"status_code": response.status_code, "index": index, "data": row}
+                current_identifier = (row["ISSN"], row["eISSN"], row["ISBN"])
+
+                if status_errors:
+                    # Conditions of termination: Previous error same as current and must belong to different journals
+                    # and indexes must be consecutive
+                    previous_error = status_errors[-1]
+                    if previous_error["status_code"] == current_error["status_code"] \
+                            and (current_identifier != previous_identifier) and \
+                            (previous_error["index"] == current_error["index"] - 1):
+                        # Terminate Program and print errors
+                        status_errors.append(current_error)
+
+                        # Terminate program
+                        termination_statement = f'FAIL: The script terminated due to ' \
+                                                f'{current_error["status_code"]} status errors!'
+                        break
+
+                status_errors.append(current_error)
+                previous_identifier = current_identifier
+
+    end_time = time.time()
+    total_time = end_time - start_time
+
+    m, s = divmod(total_time, 60)
+    h, m = divmod(m, 60)
+    total_runtime = f'Total Runtime: {h:0.0f} hours, {m:0.0f} minutes, {s:02.2f} seconds.'
+
+    # Structure summary of errors output
+    header = ["Status Code", "Index", "DOI"]
+    error_list = []
+    for error in status_errors:
+        error_list.append([error["status_code"], error["index"], error["data"]["DOI"]])
+
+    error_table = tabulate.tabulate(error_list, header)
+    summary_of_errors += error_table
+    total_errors = f"Total Status Errors: {str(len(error_list))}"
+
+    lines = ['\n',
+             strftime('Start Time: %H:%M:%S\t%d/%m/%Y\n', localtime(start_time)),
+             strftime('End Time: %H:%M:%S\t%d/%m/%Y\n', localtime(end_time)),
+             total_runtime + '\n',
+             'Papers: ' + str(counter) + '\n',
+             summary_of_errors + '\n\n',
+             total_errors + '\n\n\n',
+             termination_statement + '\n\n\n\n'
+             ]
+
+    # Summary of Execution Log
+    with open('elsevier_execution_log.txt', "a", encoding="utf-8") as txtfile:
+        """
+        Start Time:
+        End Time:
+        Total Runtime:
+        Papers:
+        Summary of Status Errors
+        Total Status Errors:
+        Termination Statement:
+
+        """
+        for line in lines:
+            print(line)
+            txtfile.write(line)
 
 
 if __name__ == '__main__':
