@@ -1,3 +1,4 @@
+import math
 import time
 from bs4 import BeautifulSoup
 import cloudscraper
@@ -321,7 +322,15 @@ def main():
         doi_link_value = row["DOI Link"]
         wos_doi = row["DOI"]
 
-        if doi_link_value:
+        has_url = False
+
+        try:
+            if math.isnan(doi_link_value):
+                print("Paper has no URL!")
+        except TypeError:
+            has_url = True
+
+        if has_url:
             response_url = cloud_scraper.get(doi_link_value).url
 
             if "epdf" in response_url:
