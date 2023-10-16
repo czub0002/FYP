@@ -2,6 +2,8 @@ import json
 import time
 from html import unescape
 from urllib.parse import unquote
+
+import requests
 from bs4 import BeautifulSoup
 import cloudscraper
 from dateutil import parser
@@ -280,6 +282,9 @@ def main():
     df = pd.read_excel('Elsevier.xlsx')
     counter = 0
     cloud_scraper = cloudscraper.create_scraper()
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    }
 
     if 'DOI Link' in df.columns:
         for index, row in df.iterrows():
@@ -294,12 +299,12 @@ def main():
 
             if doi_link_value:
                 # First response is the html landing page which is NOT the page
-                response = cloud_scraper.get(doi_link_value)
+                response = requests.get(doi_link_value)
 
                 soup = BeautifulSoup(response.text, 'html.parser')
                 redirect_url = soup.find(name="input", attrs={"name": "redirectURL"})["value"]
                 final_url = unescape(unquote(redirect_url))
-                response = cloud_scraper.get(final_url)
+                response = requests.get(final_url, headers=headers)
 
                 # This code finds where the landing page tries to redirect to (JavaScript)
                 if response.status_code == 200:

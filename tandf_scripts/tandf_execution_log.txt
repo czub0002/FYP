@@ -73,3 +73,20 @@ SUCCESS: Script ran until completion!
 
 
 
+
+Start Time: 18:56:38	16/10/2023
+End Time: 18:56:39	16/10/2023
+Total Runtime: 0 hours, 0 minutes, 1.09 seconds.
+Papers: 0
+______________________________________________________
+-------------- Summary of Status Errors --------------
+Status Code    Index    DOI
+-------------  -------  -----
+
+Total Status Errors: 0
+
+
+SUCCESS: Script ran until completion!
+
+
+
