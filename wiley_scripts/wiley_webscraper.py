@@ -351,15 +351,10 @@ def main():
                 if status_errors:
                     # Conditions of termination: Previous error same as current and must belong to different journals
                     # and indexes must be consecutive
-                    # TODO - add journal condition back in later and confirm this is a good strategy
-                    """
+                    previous_error = status_errors[-1]
                     if previous_error["status_code"] == current_error["status_code"] \
                             and (current_identifier != previous_identifier) and \
                             (previous_error["index"] == current_error["index"]-1):
-                    """
-                    previous_error = status_errors[-1]
-                    if previous_error["status_code"] == current_error["status_code"] \
-                            and (previous_error["index"] == current_error["index"] - 1):
                         # Terminate Program and print errors
                         status_errors.append(current_error)
 
