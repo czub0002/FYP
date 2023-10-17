@@ -40,7 +40,6 @@ class DataScraper:
         self.references = self.get_references()
 
         data = {
-            "wos_doi": self.wos_doi,
             "doi": self.doi,
             "type": self.type,
             "title": self.title,
@@ -333,8 +332,10 @@ def main():
     for index, row in df.iloc[start_index:].iterrows():
         counter += 1
 
+        # if counter == 20:
+        #     break
+
         print(f"{counter} -----------------------------")
-        # print(f"Open Access Designation: {row['Open Access Designations']}")
 
         # TODO - Check DOI always exists when DOI Link does in WoS database before executing script
         doi_link_value = row["DOI Link"]
