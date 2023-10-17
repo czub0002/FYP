@@ -142,20 +142,20 @@ class DataScraper:
         Searches for Received, Accepted and Published dates of the paper
         :return: Date object containing Received, Accepted and Published dates
         """
-        date_container = self.html_content.select_one('.literatumContentItemHistory')
-
-        if not date_container:
-            print("Dates: Not Found")
-            return None
-
-        # Initialize variables to store the dates
-        # Find the div containing the date information
-        date_div = date_container.find('div', class_='widget-body')
-
         # Initialize variables to store the dates
         received_date = None
         accepted_date = None
         published_date = None
+
+        date_container = self.html_content.select_one('.literatumContentItemHistory')
+
+        if not date_container:
+            print("Dates: Not Found")
+            return Dates(received_date, accepted_date, published_date)
+
+        # Initialize variables to store the dates
+        # Find the div containing the date information
+        date_div = date_container.find('div', class_='widget-body')
 
         # Define keywords to identify the date types
         date_keywords = ["Received", "Accepted", "Published online"]
