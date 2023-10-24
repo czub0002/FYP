@@ -40,6 +40,7 @@ class DataScraper:
         self.references = self.get_references()
 
         data = {
+            "wos_doi": self.wos_doi,
             "doi": self.doi,
             "type": self.type,
             "title": self.title,
