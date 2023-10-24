@@ -1,3 +1,4 @@
+import json
 import math
 from time import strftime, localtime
 import time
@@ -21,8 +22,9 @@ class DataScraper:
         self.scraper = scraper
         source_content = scraper.page_source
 
-        self.html_content = BeautifulSoup(source_content, 'html.parser')
+        self.data_dict = None
 
+        self.html_content = BeautifulSoup(source_content, 'html.parser')
         self.wos_doi = wos_doi
         self.doi = self.get_doi()
         self.type = self.get_type()
@@ -41,18 +43,21 @@ class DataScraper:
             "title": self.title,
             "authors": self.authors,
             "received_date": self.dates.received_date,
+            "revised_date": self.dates.revised_date,
             "accepted_date": self.dates.accepted_date,
             "published_date": self.dates.published_date,
+            "version_date": self.dates.version_date,
             "journal": self.journal,
             "journal_edition": self.journal_edition["journal_ed"],
             "publication_year": self.journal_edition["pub_year"],
-            "uid": self.journal_edition["uid"],
+            "uid": self.journal_edition["volume"],
             "issue": self.journal_edition["issue"],
+            "part": self.journal_edition["part"],
             "url": self.url,
             "references": self.references
         }
 
-        self.add_to_csv(data, 'tandf_database.csv')
+        self.add_to_csv(data, 'elsevier_database.csv')
 
     def add_to_csv(self, data, file_path):
         """
@@ -71,13 +76,13 @@ class DataScraper:
         Extracts the DOIs of the paper
         :return: DOI of the article
         """
-        doi_element = self.html_content.select_one('.dx-doi')
+        doi_element = self.html_content.select_one('.doi')
         if doi_element:
             doi_url = self.string_cleaner(doi_element.get_text())
 
             url_prefix = "https://doi.org/"
             doi = doi_url[len(url_prefix):]
-            print(doi)
+            print(f"doi: {doi}")
         else:
             print('DOI: Not Found')
             doi = None
@@ -89,7 +94,7 @@ class DataScraper:
         Gets the type of article
         :return: String describing the paper type
         """
-        article_heading_element = self.html_content.select_one('.toc-heading')
+        article_heading_element = self.html_content.select_one('.article-dochead')
         if article_heading_element:
             article_type = self.string_cleaner(article_heading_element.get_text())
         else:
@@ -103,10 +108,9 @@ class DataScraper:
         Gets the title of the paper
         :return: string containing paper title
         """
-        title_element = self.html_content.select_one('.hlFld-title')
-
+        title_element = self.html_content.select_one('.article-dochead')
         if not title_element:
-            self.html_content.select_one('.hlFld-Title')
+            title_element = self.html_content.select_one('.title-text')
 
         if title_element:
             title = self.string_cleaner(title_element.get_text())
@@ -122,11 +126,11 @@ class DataScraper:
         :return: List of authors
         """
         author_list = []
-        author_container = self.html_content.select_one('.literatumAuthors')
+        author_container = self.html_content.select_one('.author-group')
 
         # Searches and extracts each listed author
         if author_container:
-            author_elements = author_container.find_all('a', class_='author')
+            author_elements = author_container.find_all('span', class_='react-xocs-alternative-link')
             # Adding each author to a list
             for author_element in author_elements:
                 author_name = self.string_cleaner(author_element.get_text())
@@ -142,49 +146,48 @@ class DataScraper:
         Searches for Received, Accepted and Published dates of the paper
         :return: Date object containing Received, Accepted and Published dates
         """
-        date_container = self.html_content.select_one('.literatumContentItemHistory')
+        # Initialise variables
+        dates = {
+            "Received": None,
+            "Revised": None,
+            "Publication date": None,
+            "Available online": None,
+            "Version of Record": None
+        }
 
-        if not date_container:
-            print("Dates: Not Found")
-            return None
+        try:
+            json_container = self.html_content.find('script', attrs={'type': 'application/json'}).text
+            self.data_dict = json.loads(json_container)
 
-        # Initialize variables to store the dates
-        # Find the div containing the date information
-        date_div = date_container.find('div', class_='widget-body')
+            # Initialize variables to store the dates
+            # Find the div containing the date information
+            paper_dates = self.data_dict['article']['dates']
 
-        # Initialize variables to store the dates
-        received_date = None
-        accepted_date = None
-        published_date = None
+            for key, date in paper_dates.items():
+                if type(date) is not list:
+                    dates[key] = parser.parse(date, fuzzy=True).date()
+                else:
+                    for i in range(len(date)):
+                        date[i] = parser.parse(date[i], fuzzy=True).date()
+        except KeyError as e:
+            # Handle the case where the 'dates' key is not found in the dictionary
+            print(f"KeyError: {e}. 'dates' key not found in the JSON data.")
+        except json.JSONDecodeError as e:
+            # Handle JSON decoding errors
+            print(f"JSONDecodeError: {e}. There was an error decoding JSON data.")
+        except Exception as e:
+            # Handle other exceptions that may occur
+            print(f"An error occurred: {e}")
 
-        # Define keywords to identify the date types
-        date_keywords = ["Received", "Accepted", "Published online"]
-
-        # Extract and store the dates
-        for div in date_div.find_all('div'):
-            for keyword in date_keywords:
-                if keyword in div.text:
-                    date_str = re.sub(rf"{keyword}(\s*:\s*)?", "", div.text).strip()
-                    try:
-                        extracted_date = parser.parse(date_str, fuzzy=True)
-                        parsed_date = extracted_date.date()
-                        if keyword == "Received":
-                            received_date = parsed_date
-                        elif keyword == "Accepted":
-                            accepted_date = parsed_date
-                        elif keyword == "Published online":
-                            published_date = parsed_date
-                    except ValueError:
-                        print(keyword + " Date: Parsing Error")
-
-        return Dates(received_date, accepted_date, published_date)
+        return Dates(dates["Received"], dates["Revised"], dates["Publication date"],
+                     dates["Available online"], dates["Version of Record"])
 
     def get_journal(self):
         """
         Gets the journal name
         :return: string containing journal name
         """
-        journal_element = self.html_content.select_one('.journal-heading')
+        journal_element = self.html_content.select_one('.publication-title')
         if journal_element:
             journal_title = self.string_cleaner(journal_element.get_text())
         else:
@@ -195,30 +198,30 @@ class DataScraper:
 
     def get_journal_edition(self):
         """
-        Gets the journal edition information
-        :return: dictionary containing journal edition information
+        Gets the journal edition
+        :return: string containing journal name
         """
-        journal_edition = {'journal_ed': None, 'uid': None, 'issue': None, 'pub_year': None}
+        journal_edition = {'journal_ed': None, 'volume': None, 'issue': None, 'part': None, 'pub_year': None}
 
-        journal_ed_element = self.html_content.select_one('.issue-heading')
+        journal_ed_element = self.html_content.select_one('.publication-volume')
+        journal_ed_element = journal_ed_element.select_one('div', class_='text-xs')
+
         if journal_ed_element:
             journal_ed = self.string_cleaner(journal_ed_element.get_text())
 
-            # Define a regular expression pattern to extract information
-            pattern = r'Volume (\d+)[^\d]*(\d+)[^\d]*Issue ([\w\s-]+)'
-            match = re.search(pattern, journal_ed, re.IGNORECASE)
+            pattern = r"Volume (\d+), (?:Part ([A-Za-z\d]+), )?(?:Issue (\d+), )?.* (\d{4}), \d+"
+            match = re.match(pattern, journal_ed, re.IGNORECASE)
 
             if match:
-                # Extract information from the match object
-                volume, year, issue = match.groups()
-                journal_edition['uid'] = volume
-                journal_edition['issue'] = issue
-                journal_edition['pub_year'] = year
+                # Extract the matched groups
+                journal_edition['volume'] = match.group(1)
+                journal_edition['part'] = match.group(2)
+                journal_edition['issue'] = match.group(3)
+                journal_edition['pub_year'] = match.group(4)
         else:
             print("Journal Edition: Not Found")
-            journal_ed = None
 
-        journal_edition['journal_ed'] = journal_ed
+        journal_edition['journal_ed'] = None
 
         return journal_edition
 
@@ -243,16 +246,18 @@ class DataScraper:
         :return: a list, with each item in the list being a reference cited by the authors
         """
         ref_list = []
-        references_container = self.html_content.select_one('.references')
 
-        if references_container:
-            reference_elements = references_container.find_all('li')
-            for reference_element in reference_elements:
-                ref = self.string_cleaner(reference_element.get_text())
-                ref_list.append(ref)
-        else:
-            print("References: Not Found")
-            ref_list = None
+        try:
+            if self.data_dict:
+                references = self.data_dict["references"]["sourceTextMap"]
+            else:
+                return ref_list
+        except KeyError:
+            print("References not found!")
+            return ref_list
+
+        for ref in references.values():
+            ref_list.append(ref)
 
         return ref_list
 
@@ -267,16 +272,20 @@ class DataScraper:
 
 
 class Dates:
-    def __init__(self, received_date, accepted_date, published_date):
+    def __init__(self, received_date, revised_date, accepted_date, published_date, version_date):
         """
         Class stores all the dates in their own Dates object
         :param received_date: the date which the paper was received
+        :param received_date: the dates which the paper was revised
         :param accepted_date: the date which the paper was accepted
         :param published_date: the date which the paper was published
+        :param version_date: the published date of the current version
         """
         self.received_date = received_date
+        self.revised_date = revised_date
         self.accepted_date = accepted_date
         self.published_date = published_date
+        self.version_date = version_date
 
 
 def main():
@@ -284,13 +293,14 @@ def main():
     summary_of_errors = "______________________________________________________\n" \
                         "-------------- Summary of Status Errors --------------\n"
     termination_statement = 'SUCCESS: Script ran until completion!'
+    fields = ['wos_doi', 'doi', 'type', 'title', 'authors', 'received_date', 'revised_date', 'accepted_date',
+              'published_date', 'version_date', 'journal', 'journal_edition', 'publication_year', 'uid', 'issue',
+              'part', 'url', 'references']
 
-    fields = ['wos_doi', 'doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date',
-              'journal', 'journal_edition', 'publication_year', 'uid', 'issue', 'url', 'references']
-    file_path = 'tandf_database.csv'
     start_index = 0
+    file_path = 'elsevier_database.csv'
     path = Path(file_path)
-    df = pd.read_excel('Taylor-and-Francis.xlsx')
+    df = pd.read_excel('Elsevier.xlsx')
 
     if not path.is_file():
         with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
@@ -298,21 +308,19 @@ def main():
             writer = csv.DictWriter(csvfile, fieldnames=fields)
             writer.writeheader()
     else:
-        tandf_df = pd.read_csv(file_path)
+        elsevier_df = pd.read_csv(file_path)
 
-        if not tandf_df.empty:
-            last_doi = tandf_df.iloc[-1]["wos_doi"]
+        if not elsevier_df.empty:
+            last_doi = elsevier_df.iloc[-1]["wos_doi"]
             matching_rows = df[df["DOI"] == last_doi]
             start_index = matching_rows.index[-1] + 1
-
-    # TODO - Proxy/user agent rotation
 
     browser = webdriver.Chrome()
     counter = 0
 
     # keep record of status errors
     status_errors = []
-    previous_identifier = (None, None, None)  # (ISSN, eISSN, ISBN)
+    previous_identifier = (None, None, None)       # (ISSN, eISSN, ISBN)
 
     for index, row in df.iloc[start_index:].iterrows():
         counter += 1
@@ -334,6 +342,12 @@ def main():
         if has_url:
             browser.delete_all_cookies()
             browser.get(doi_link_value)
+
+            # soup = BeautifulSoup(browser.page_source, 'html.parser')
+            # redirect_url = soup.find(name="input", attrs={"name": "redirectURL"})["value"]
+            # final_url = unescape(unquote(redirect_url))
+            # browser.get(final_url)
+
             DataScraper(browser, wos_doi)
 
     end_time = time.time()
@@ -364,7 +378,7 @@ def main():
              ]
 
     # Summary of Execution Log
-    with open('tandf_execution_log.txt', "a", encoding="utf-8") as txtfile:
+    with open('elsevier_execution_log.txt', "a", encoding="utf-8") as txtfile:
         """
         Start Time:
         End Time:

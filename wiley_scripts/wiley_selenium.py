@@ -1,13 +1,14 @@
 import math
-from time import strftime, localtime
 import time
-from pathlib import Path
-import tabulate
 from bs4 import BeautifulSoup
+import cloudscraper
 from dateutil import parser
 import csv
 import re
 import pandas as pd
+from time import strftime, localtime
+import tabulate
+from pathlib import Path
 from selenium import webdriver
 
 
@@ -52,7 +53,7 @@ class DataScraper:
             "references": self.references
         }
 
-        self.add_to_csv(data, 'tandf_database.csv')
+        self.add_to_csv(data, 'wiley_database.csv')
 
     def add_to_csv(self, data, file_path):
         """
@@ -71,12 +72,13 @@ class DataScraper:
         Extracts the DOIs of the paper
         :return: DOI of the article
         """
-        doi_element = self.html_content.select_one('.dx-doi')
+        doi_element = self.html_content.select_one('.epub-doi')
         if doi_element:
             doi_url = self.string_cleaner(doi_element.get_text())
 
             url_prefix = "https://doi.org/"
             doi = doi_url[len(url_prefix):]
+
             print(doi)
         else:
             print('DOI: Not Found')
@@ -89,9 +91,11 @@ class DataScraper:
         Gets the type of article
         :return: String describing the paper type
         """
-        article_heading_element = self.html_content.select_one('.toc-heading')
-        if article_heading_element:
-            article_type = self.string_cleaner(article_heading_element.get_text())
+        article_heading_element = self.html_content.select_one('.doi-access-container')
+        type_element = article_heading_element.find('span', class_='primary-heading')
+
+        if type_element:
+            article_type = self.string_cleaner(type_element.get_text())
         else:
             print('Type: Not Found')
             article_type = None
@@ -103,10 +107,7 @@ class DataScraper:
         Gets the title of the paper
         :return: string containing paper title
         """
-        title_element = self.html_content.select_one('.hlFld-title')
-
-        if not title_element:
-            self.html_content.select_one('.hlFld-Title')
+        title_element = self.html_content.select_one('.citation__title')
 
         if title_element:
             title = self.string_cleaner(title_element.get_text())
@@ -122,11 +123,11 @@ class DataScraper:
         :return: List of authors
         """
         author_list = []
-        author_container = self.html_content.select_one('.literatumAuthors')
+        author_container = self.html_content.select_one('.loa-authors')
 
         # Searches and extracts each listed author
         if author_container:
-            author_elements = author_container.find_all('a', class_='author')
+            author_elements = author_container.find_all('a', class_='author-name')
             # Adding each author to a list
             for author_element in author_elements:
                 author_name = self.string_cleaner(author_element.get_text())
@@ -142,40 +143,22 @@ class DataScraper:
         Searches for Received, Accepted and Published dates of the paper
         :return: Date object containing Received, Accepted and Published dates
         """
-        date_container = self.html_content.select_one('.literatumContentItemHistory')
-
-        if not date_container:
-            print("Dates: Not Found")
-            return None
-
-        # Initialize variables to store the dates
-        # Find the div containing the date information
-        date_div = date_container.find('div', class_='widget-body')
-
         # Initialize variables to store the dates
         received_date = None
         accepted_date = None
         published_date = None
 
-        # Define keywords to identify the date types
-        date_keywords = ["Received", "Accepted", "Published online"]
+        published_date_container = self.html_content.select_one('.epub-date')
 
-        # Extract and store the dates
-        for div in date_div.find_all('div'):
-            for keyword in date_keywords:
-                if keyword in div.text:
-                    date_str = re.sub(rf"{keyword}(\s*:\s*)?", "", div.text).strip()
-                    try:
-                        extracted_date = parser.parse(date_str, fuzzy=True)
-                        parsed_date = extracted_date.date()
-                        if keyword == "Received":
-                            received_date = parsed_date
-                        elif keyword == "Accepted":
-                            accepted_date = parsed_date
-                        elif keyword == "Published online":
-                            published_date = parsed_date
-                    except ValueError:
-                        print(keyword + " Date: Parsing Error")
+        if not published_date_container:
+            print("Dates: Not Found")
+            return None
+
+        try:
+            date_str = self.string_cleaner(published_date_container.get_text())
+            published_date = parser.parse(date_str, fuzzy=True).date()
+        except ValueError:
+            print("Received Date: Parsing Error")
 
         return Dates(received_date, accepted_date, published_date)
 
@@ -184,7 +167,7 @@ class DataScraper:
         Gets the journal name
         :return: string containing journal name
         """
-        journal_element = self.html_content.select_one('.journal-heading')
+        journal_element = self.html_content.select_one('.journal-banner-text')
         if journal_element:
             journal_title = self.string_cleaner(journal_element.get_text())
         else:
@@ -195,25 +178,41 @@ class DataScraper:
 
     def get_journal_edition(self):
         """
-        Gets the journal edition information
-        :return: dictionary containing journal edition information
+        Gets the journal edition
+        :return: string containing journal name
         """
         journal_edition = {'journal_ed': None, 'uid': None, 'issue': None, 'pub_year': None}
 
-        journal_ed_element = self.html_content.select_one('.issue-heading')
+        journal_ed_element = self.html_content.select_one('.volume-issue')
         if journal_ed_element:
             journal_ed = self.string_cleaner(journal_ed_element.get_text())
 
-            # Define a regular expression pattern to extract information
-            pattern = r'Volume (\d+)[^\d]*(\d+)[^\d]*Issue ([\w\s-]+)'
-            match = re.search(pattern, journal_ed, re.IGNORECASE)
+            # Define a regular expression pattern to match numbers
+            pattern = r'\d+'
 
-            if match:
-                # Extract information from the match object
-                volume, year, issue = match.groups()
-                journal_edition['uid'] = volume
-                journal_edition['issue'] = issue
-                journal_edition['pub_year'] = year
+            # Use re.findall to extract all numbers from the string
+            matches = re.findall(pattern, journal_ed, re.IGNORECASE)
+
+            # Extract information from the matches
+            # Assuming you want the first number to be the 'uid' and the second to be the 'issue'
+            journal_edition["uid"] = int(matches[0]) if matches else None
+            journal_edition["issue"] = int(matches[1]) if len(matches) > 1 else None
+
+            # Get publication year
+            pub_year_element = self.html_content.select('.extra-info-wrapper p')[1]
+
+            if pub_year_element:
+                try:
+                    pub_year = self.string_cleaner(pub_year_element.get_text())
+                    extracted_date = parser.parse(pub_year, fuzzy=True)
+                    pub_year = extracted_date.date().year
+                except ValueError:
+                    pub_year = None
+            else:
+                print("Journal Edition: Not Found")
+                pub_year = None
+
+            journal_edition['pub_year'] = pub_year
         else:
             print("Journal Edition: Not Found")
             journal_ed = None
@@ -243,7 +242,7 @@ class DataScraper:
         :return: a list, with each item in the list being a reference cited by the authors
         """
         ref_list = []
-        references_container = self.html_content.select_one('.references')
+        references_container = self.html_content.select_one('.article-section__references')
 
         if references_container:
             reference_elements = references_container.find_all('li')
@@ -257,11 +256,6 @@ class DataScraper:
         return ref_list
 
     def string_cleaner(self, text):
-        """
-        Removes tags and non-text in strings
-        :param text: string of text
-        :return: string of text with only text
-        """
         cleaned_text = re.sub(r'\s+', ' ', text).strip()
         return cleaned_text
 
@@ -287,10 +281,10 @@ def main():
 
     fields = ['wos_doi', 'doi', 'type', 'title', 'authors', 'received_date', 'accepted_date', 'published_date',
               'journal', 'journal_edition', 'publication_year', 'uid', 'issue', 'url', 'references']
-    file_path = 'tandf_database.csv'
+    file_path = 'wiley_database.csv'
     start_index = 0
     path = Path(file_path)
-    df = pd.read_excel('Taylor-and-Francis.xlsx')
+    df = pd.read_excel('Wiley.xlsx')
 
     if not path.is_file():
         with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
@@ -298,15 +292,14 @@ def main():
             writer = csv.DictWriter(csvfile, fieldnames=fields)
             writer.writeheader()
     else:
-        tandf_df = pd.read_csv(file_path)
+        wiley_df = pd.read_csv(file_path)
 
-        if not tandf_df.empty:
-            last_doi = tandf_df.iloc[-1]["wos_doi"]
+        if not wiley_df.empty:
+            last_doi = wiley_df.iloc[-1]["wos_doi"]
             matching_rows = df[df["DOI"] == last_doi]
             start_index = matching_rows.index[-1] + 1
 
     # TODO - Proxy/user agent rotation
-
     browser = webdriver.Chrome()
     counter = 0
 
@@ -334,6 +327,15 @@ def main():
         if has_url:
             browser.delete_all_cookies()
             browser.get(doi_link_value)
+            response_url = browser.current_url
+
+            if "epdf" in response_url:
+                modified_url = response_url.replace("/epdf/", "/abs/")
+                browser.get(modified_url)
+            else:
+                modified_url = response_url.replace("/doi/", "/doi/abs/")
+                browser.get(modified_url)
+
             DataScraper(browser, wos_doi)
 
     end_time = time.time()
@@ -364,7 +366,7 @@ def main():
              ]
 
     # Summary of Execution Log
-    with open('tandf_execution_log.txt', "a", encoding="utf-8") as txtfile:
+    with open('wiley_execution_log.txt', "a", encoding="utf-8") as txtfile:
         """
         Start Time:
         End Time:
