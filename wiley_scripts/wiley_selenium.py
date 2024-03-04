@@ -334,6 +334,7 @@ def main():
                 browser.get(modified_url)
             else:
                 modified_url = response_url.replace("/doi/", "/doi/abs/")
+                browser.delete_all_cookies()
                 browser.get(modified_url)
 
             DataScraper(browser, wos_doi)

@@ -40,9 +40,9 @@ class DataScraper:
             "type": self.type,
             "title": self.title,
             "authors": self.authors,
-            "received_date": self.dates.received_date,
-            "accepted_date": self.dates.accepted_date,
-            "published_date": self.dates.published_date,
+            "received_date": None,
+            "accepted_date": None,
+            "published_date": None,
             "journal": self.journal,
             "journal_edition": self.journal_edition["journal_ed"],
             "publication_year": self.journal_edition["pub_year"],
@@ -51,6 +51,11 @@ class DataScraper:
             "url": self.url,
             "references": self.references
         }
+
+        if self.dates:
+            data["received_date"] = self.dates.received_date
+            data["accepted_date"] = self.dates.received_date
+            data["published_date"] = self.dates.received_date
 
         self.add_to_csv(data, 'tandf_database.csv')
 
@@ -145,6 +150,9 @@ class DataScraper:
         date_container = self.html_content.select_one('.literatumContentItemHistory')
 
         if not date_container:
+            date_container = self.html_content.select_one('.literatumContentItemPageRangeHistory')
+
+        if not date_container:
             print("Dates: Not Found")
             return None
 
@@ -164,6 +172,21 @@ class DataScraper:
         for div in date_div.find_all('div'):
             for keyword in date_keywords:
                 if keyword in div.text:
+                    match = re.search(rf"{keyword}\s+([^,]+)", div.text)
+                    if match:
+                        date_str = match.group(1)  # Extract the date string
+                        try:
+                            extracted_date = parser.parse(date_str, fuzzy=True)
+                            parsed_date = extracted_date.date()
+                            if keyword == "Received":
+                                received_date = parsed_date
+                            elif keyword == "Accepted":
+                                accepted_date = parsed_date
+                            elif keyword == "Published online":
+                                published_date = parsed_date
+                        except ValueError:
+                            print(keyword + " Date: Parsing Error")
+                    """
                     date_str = re.sub(rf"{keyword}(\s*:\s*)?", "", div.text).strip()
                     try:
                         extracted_date = parser.parse(date_str, fuzzy=True)
@@ -176,6 +199,7 @@ class DataScraper:
                             published_date = parsed_date
                     except ValueError:
                         print(keyword + " Date: Parsing Error")
+                    """
 
         return Dates(received_date, accepted_date, published_date)
 
