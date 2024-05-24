@@ -1,0 +1,1211 @@
+/usr/bin/python3 /Users/christianzubcic/Documents/Monash University/2023/Semester 2/FYP/FYP/data/correctness_analyser.py
+PUBLISH YEAR
+Correct: 97.45%
+Incorrect: 2.55%
+Missing: 0.00%
+
+
+JOURNAL NAME
+{'correct_counter': 2130, 'likely_correct': 87, 'missing_counter': 0, 'incorrect_counter': 241, 'total': 2458}
+correct_counter: 86.66%
+likely_correct: 3.54%
+missing_counter: 0.00%
+incorrect_counter: 9.80%
+
+JOURNAL EDITION
+{'all_correct_counter': 1960, 'correct_volume': 2434, 'correct_issue': 1960, 'correct_part': 0, 'missing_volume': 20, 'missing_issue': 362, 'missing_part': 0, 'incorrect_volume': 1, 'incorrect_issue': 133, 'incorrect_part': 0, 'incorrect_counter': 134, 'total_volume': 2455, 'total_issue': 2455, 'total_part': 0, 'total': 2455}
+all_correct_counter: 79.84%
+correct_volume: 99.14%
+correct_issue: 79.84%
+missing_volume: 0.81%
+missing_issue: 14.75%
+incorrect_volume: 0.04%
+incorrect_issue: 5.42%
+incorrect_counter: 5.46%
+
+INCORRECT TYPES
+  Counter  WoS Type                          Publisher Type
+---------  --------------------------------  ---------------------------------------------------------------------------------------
+       63  article                           case report
+       21  article                           special issue paper
+       19  editorial material                commentary
+       19  article                           contributed paper
+       18  article                           research report
+       13  article; proceedings paper        research article
+       10  article                           clinical investigations
+       10  article                           brief communication
+       10  note                              brief communication
+        8  article                           crop breeding, genetics & cytology
+        7  book review                       christian origins
+        7  editorial material                clinical image
+        7  article                           clinical investigation
+        7  article                           research
+        6  correction                        erratum
+        6  article                           brief report
+        6  review                            case report
+        5  article; early access             original article
+        5  article; proceedings paper        original article
+        5  book review                       short reviews of recent publications: east asia
+        5  review                            neurological progress
+        5  article                           letter
+        5  note                              registration of cultivars
+        4  editorial material                introduction
+        4  article; early access             research article
+        4  correction                        corrigendum
+        4  article                           neurological progress
+        4  article; proceedings paper        annals of the new york academy of sciences
+        4  editorial material                images for surgeons
+        4  article; proceedings paper        special issue paper
+        4  editorial material                contact points
+        4  article                           crop breeding & genetic
+        3  review                            original article
+        3  article                           paper
+        3  article                           original research
+        3  letter; early access              letter to the editor
+        3  article                           note
+        3  article                           conservation practice and policy
+        3  editorial material                contact point
+        3  article                           crop physiology & metabolism
+        3  note                              registration of crop cultivars
+        3  article                           turfgrass science
+        3  article                           crop breeding & genetics
+        3  note                              registration of germplasm
+        2  article                           symposium
+        2  editorial material                symposium
+        2  book review                       islam
+        2  book review                       short reviews of recent publications: christian origins
+        2  book review                       short reviews of recent publications
+        2  book review                       short reviews of recent publications: history of christianity: early
+        2  book review                       south asia
+        2  review                            research article
+        2  letter                            reply
+        2  biographical-item                 obituary
+        2  letter                            research studies
+        2  article                           drugs & pharmacology
+        2  editorial material                controversies in geriatrics and gerontology
+        2  article                           health policy and economics
+        2  biographical-item                 in memoriam
+        2  editorial material                perspective
+        2  article                           colorectal surgery
+        2  article                           contributed papers
+        2  article                           special section: conserving nature's stage
+        2  article                           registrations of germplasm
+        2  article                           cell biology & molecular genetics
+        2  article                           crop ecology, management & quality
+        2  article                           registration of germplasm
+        2  article                           crop breeding, genetics, & cytology
+        2  article                           forage & grazingland
+        2  note                              brief articles
+        1  editorial material                original article
+        1  article; book chapter             original article
+        1  editorial material                foreword
+        1  article                           introduction
+        1  editorial material; book chapter  introduction
+        1  article                           chapter
+        1  article                           the history of parliament annual lecture, 2015
+        1  book review                       book symposium
+        1  book review                       short reviews of recent publications: ancient near east
+        1  editorial material                new religious movements and documentary film
+        1  book review                       ethics
+        1  book review                       short reviews on recent publications: religion and science
+        1  book review                       judaism: modern
+        1  book review                       short reviews of recent publications: history of christianity (modern/global)
+        1  book review                       comparative studies
+        1  book review                       short reviews of recent publications: the americas
+        1  book review                       arts, literature, culture, and religion
+        1  book review                       east asia
+        1  book review                       short reviews of recent publications: gender and sexuality studies
+        1  book review                       short reviews of recent publications: new and alternative religious movements
+        1  book review                       buddhism
+        1  book review                       sociology and anthropology of religion
+        1  book review                       reviews
+        1  editorial material                comment and response
+        1  article                           philosophical questions and biological findings
+        1  article                           how to do religion and science?
+        1  article                           rick repetti's buddhism, meditation, and free will
+        1  article                           the historiography of science and religion in europe
+        1  review; early access              research article
+        1  editorial material                editorial comment
+        1  editorial material                invited comment
+        1  article                           discussion paper
+        1  article                           basic aspects of treatment
+        1  article                           commentary
+        1  editorial material                addiction classics
+        1  editorial material                editorial note
+        1  article                           short report
+        1  editorial material                commentaries on taylor & dhillon (2013)
+        1  article                           national gambling experiences
+        1  article                           special section: life span longitudinal studies of aggressive and criminal behavior
+        1  editorial material                article
+        1  correction; book chapter          erratum
+        1  editorial material                special section: anthropology of white supremacy
+        1  editorial material                vital topics forum
+        1  article                           essay
+        1  article                           symposium on location problems: in memory of leon cooper
+        1  article; early access             quality improvement
+        1  article                           special issue
+        1  article                           special section-issue
+        1  article; early access             brief report
+        1  article                           clinical image
+        1  article                           case image
+        1  correction; book chapter          corrigendum
+        1  review                            featured article
+        1  article                           the altruism puzzle: a symposium
+        1  article                           theme series
+        1  editorial material                commentaries
+        1  editorial material                dialogue: commentary
+        1  article                           brief methodological report
+        1  review                            clinical investigation
+        1  article; early access             clinical investigation
+        1  article; proceedings paper        clinical investigation
+        1  article                           updates on aging
+        1  letter; early access              research letter
+        1  article                           research letter
+        1  article                           ethics, public policy, & economics
+        1  editorial material                ars longa:humanities and aging
+        1  letter                            comments/responses
+        1  review                            education and training
+        1  article                           education and training
+        1  article                           brief methodological reports
+        1  article                           progress in geriatrics
+        1  article                           brief reports
+        1  article                           symposium on ‚äúthe emotional basis of illness. iii. man-the mature years and beyond‚äù
+        1  article                           proceedings of the american geriatrics society seminar
+        1  editorial material                old lives tale
+        1  editorial material                old lives tales
+        1  review                            technical article
+        1  article                           technical report
+        1  editorial material                miscellaneous
+        1  editorial material                guest editors' preface
+        1  book review                       book and film review
+        1  book review                       book and film reviews
+        1  editorial material                editorials
+        1  editorial material                message from the editor
+        1  editorial material                nerve center
+        1  letter                            brief communications and case report
+        1  article                           brief communications
+        1  meeting abstract                  asni abstract
+        1  article; book chapter             annals of the new york academy of sciences
+        1  article; proceedings paper        review
+        1  article                           part vii. original new approaches
+        1  article                           perspective
+        1  editorial material                how to do it
+        1  article                           perioperative care
+        1  article                           orthopaedic surgery
+        1  review; early access              comprehensive review
+        1  article                           industrial application
+        1  article; proceedings paper        motion capture and retrieval
+        1  review                            special issue paper
+        1  article                           interaction and interfaces
+        1  article; proceedings paper        st3
+        1  article                           topological and geometric shape understanding
+        1  article; proceedings paper        time series data and sequences
+        1  article; proceedings paper        simulation of soft materials
+        1  article; proceedings paper        bodies in motion
+        1  article; proceedings paper        appearance and shading
+        1  article; proceedings paper        material appearance
+        1  editorial material                2011 cover image
+        1  article                           computational geometry and fabrication
+        1  article                           interaction techniques
+        1  article; proceedings paper        biomedical visualization
+        1  article                           character animation 1
+        1  article; proceedings paper        functional maps
+        1  article                           engineering and physical sciences
+        1  article; proceedings paper        image enhancement
+        1  article                           flow visualization
+        1  article                           graph visualization
+        1  article                           major revision from eurovis symposium
+        1  article; proceedings paper        efficient rendering
+        1  article                           deformable & soft objects
+        1  article                           perception and simplification
+        1  article; retracted publication    this article has been retracted
+        1  editorial material                note
+        1  article; early access             contributed papers
+        1  article; early access             contributed paper
+        1  review                            registered report
+        1  editorial material                conservation and policy
+        1  editorial material                diversity
+        1  article                           research notes
+        1  article                           policy perspective
+        1  article                           perspectives and notes
+        1  article                           contact points
+        1  article                           white paper
+        1  article                           tutorial
+        1  article; proceedings paper        crop breeding, genetics & cytology
+        1  article                           registration of cultivars
+        1  note                              registration of germplasms
+        1  article                           special issue: adapting agriculture to climate change: a walk on the wild side
+        1  article                           seed physiology, production & technology
+        1  article; proceedings paper        seed physiology, production & technology
+        1  article                           crop ecology, production, & management
+        1  note                              registration of parental line
+        1  note                              registration of crop cultivar
+        1  article                           crop ecology, production & management
+        1  article                           registration of cultivar
+        1  note                              registration of parental lines
+        1  article                           genomics, molecular genetics & biotechnology
+        1  article                           registration of genetic stocks
+        1  article                           other forage crops
+        1  article                           seed physiology, production, & technology
+        1  article                           plant genetic resource
+
+ARTICLE TYPE
+{'correct_counter': 580, 'missing_counter': 0, 'incorrect_counter': 543, 'total': 1123}
+Correct: 51.65%
+Incorrect: 48.35%
+Missing: 0.00%
+
+INCORRECT AUTHORS - doi: 10.1111/rsr.12112_3
+['Daniel Ross Goodman']
+['Ury, Scott']
+
+MISSING AUTHORS - doi: 10.1111/j.1600-0447.1962.tb01782.x
+No. Authors: 1     ['N. Retterst√∂l']
+No. Authors: 2     ['RETTERSTOL, N', ' SUND, A']
+
+INCORRECT AUTHORS - doi: 10.1111/j.1600-0447.1969.tb10368.x
+['Adis Storm-Mathisen']
+['STORMMAT A']
+
+MISSING AUTHORS - doi: 10.1111/j.1360-0443.2012.03988.x
+No. Authors: 2     ['Ambrose John Melson', 'John B. Davies']
+No. Authors: 3     ['Gupta, Rishab', ' Sarkar, Siddharth', ' Balhara, Yatan Pal Singh']
+
+INCORRECT AUTHORS - doi: 10.1525/aa.1997.99.4.859.1
+['Helena Wulff']
+['Schneider, M. J.']
+
+MISSING AUTHORS - doi: 10.1525/aa.1981.83.3.02a00130
+No. Authors: 1     ["KRISTEN HAWKES JAMES F. O'CONNELL"]
+No. Authors: 2     ['HAWKES, K', ' OCONNELL, JF']
+
+MISSING AUTHORS - doi: 10.1111/jgs.15937
+No. Authors: 16     ['Yanin Chavarri-Guerra MD, MSc', 'Carolyn B. Hendricks MD', 'Sandra Brown MS', 'Catherine Marcum DPN, APN', 'Mary Hander RN/OCN', 'Zdenka E. Segota MD', 'Chris Hake MD', 'Sharon Sand BA', 'Thomas P. Slavin MD', 'Arti Hurria MD', 'Enrique Soto-Perez-de-Celis MD, MSc', 'Bita Nehoray MS', 'Kenneth B. Blankstein MD', 'Kathleen R. Blazer EdD, MS', 'Jeffrey N. Weitzel MD', 'for the Clinical Cancer Genomics Community Research Network']
+No. Authors: 15     ['Chavarri-Guerra, Yanin', ' Hendricks, Carolyn B.', ' Brown, Sandra', ' Marcum, Catherine', ' Hander, Mary', ' Segota, Zdenka E.', ' Hake, Chris', ' Sand, Sharon', ' Slavin, Thomas P.', ' Hurria, Arti', ' Soto-Perez-de-Celis, Enrique', ' Nehoray, Bita', ' Blankstein, Kenneth B.', ' Blazer, Kathleen R.', ' Weitzel, Jeffrey N.']
+
+MISSING AUTHORS - doi: 10.1111/j.1532-5415.2008.01658.x
+No. Authors: 4     ['Melinda Martin-Khan MHSc', 'Paul Varghese MD', 'Richard Wootton DSc', 'Len Gray MD, PhD']
+No. Authors: 1     ['Martin-Khan, Melinda']
+
+MISSING AUTHORS - doi: 10.1111/j.1532-5415.1974.tb05412.x
+No. Authors: 4     ['M. GORDON MD', 'B. RUDENSKY PhD', 'Prof. J. MENCZEL MD', 'M. S. GOLDSTEIN MD']
+No. Authors: 3     ['GORDON, M', ' MENCZEL, J', ' GOLDSTEIN, MS']
+
+MISSING AUTHORS - doi: 10.1111/j.1532-5415.2012.04115.x
+No. Authors: 7     ['Caryn K. Snyder MPH', 'Jodi A. Lapidus PhD', 'Peggy M. Cawthon PhD, MPH', 'Thuy-Tien L. Dam MD', 'Lynn Y. Sakai PhD', 'Lynn M. Marshall ScD', 'the Osteoporotic Fractures in Men (MrOS) Research Group']
+No. Authors: 6     ['Snyder, Caryn K.', ' Lapidus, Jodi A.', ' Cawthon, Peggy M.', ' Dam, Thuy-Tien L.', ' Sakai, Lynn Y.', ' Marshall, Lynn M.']
+
+MISSING AUTHORS - doi: 10.1111/j.1532-5415.2007.01306.x
+No. Authors: 13     ['Stefano Spiezia MD', 'Roberto Garberoglio MD', 'Carolina Di Somma MD, PhD', 'Maurilio Deandrea MD', 'Edoardo Basso MD', 'Paolo P. Limone MD', 'F. Milone MD', 'V. Ramundo MD', 'Paolo E. Macchia MD, PhD', 'Bernadette Biondi MD', 'Gaetano Lombardi MD, PhD', 'Annamaria Colao MD, PhD', 'Antongiulio Faggiano MD, PhD']
+No. Authors: 3     ['Spiezia, Stefano', ' Garberoglio, Roberto', ' Di Somma, Carolina']
+
+MISSING AUTHORS - doi: 10.1111/jgs.12381
+No. Authors: 13     ['Anna Solini MD, PhD', 'Giuseppe Penno MD', 'Enzo Bonora MD', 'Cecilia Fondelli MD', 'Emanuela Orsi MD', 'Roberto Trevisan MD, PhD', 'Monica Vedovato MD, PhD', 'Franco Cavalot MD', 'Mauro Cignarelli MD', 'Susanna Morano MD', 'Ele Ferrannini MD', 'Giuseppe Pugliese MD, PhD', 'Renal Insufficiency and Cardiovascular Events Study Group']
+No. Authors: 12     ['Solini, Anna', ' Penno, Giuseppe', ' Bonora, Enzo', ' Fondelli, Cecilia', ' Orsi, Emanuela', ' Trevisan, Roberto', ' Vedovato, Monica', ' Cavalot, Franco', ' Cignarelli, Mauro', ' Morano, Susanna', ' Ferrannini, Ele', ' Pugliese, Giuseppe']
+
+MISSING AUTHORS - doi: 10.1111/j.1532-5415.2011.03741.x
+No. Authors: 4     ['Christian S. Adonizio MD', 'Jane Pope BS', 'Andrea Frantz BS', 'Raymond A. Smego Jr MD, MPH']
+No. Authors: 5     ['Adonizio, Christian S.', ' Pope, Jane', ' Frantz, Andrea', ' Adonizio, Christian S.', ' Smego, Raymond A., Jr.']
+
+MISSING AUTHORS - doi: 10.1111/jgs.14414
+No. Authors: 4     ['Elodie Martin MSc', 'Doloplus Collective Team', 'Bruno Pereira PhD', 'Gis√®le Pickering MD, PhD, DPharm']
+No. Authors: 3     ['Martin, Elodie', ' Pereira, Bruno', ' Pickering, Gisele']
+
+MISSING AUTHORS - doi: 10.1111/jgs.18579
+No. Authors: 17     ['Allison E. Burnett PharmD', 'Geoffrey D. Barnes MD', 'Arthur L. Allen PharmD', 'Jack Ansell MD', 'Marilyn Blumenstein PPCNP-BC', 'Jean M. Connors MD', 'William E. Dager PharmD', 'Scott Kaatz DO', 'Jori E. May MD', 'Ronni Nemeth PharmD', "Carlee O'Connor DNP", 'Bishoy Ragheb PharmD', 'Anita Rajasekhar MD', 'Laurie Sardo DNP', 'Deborah M. Siegal MD', 'Andrea Van Beek DNP', 'The Anticoagulation Forum Board of Directors']
+No. Authors: 16     ['Burnett, Allison E.', ' Barnes, Geoffrey D.', ' Allen, Arthur L.', ' Ansell, Jack', ' Blumenstein, Marilyn', ' Connors, Jean M.', ' Dager, William E.', ' Kaatz, Scott', ' May, Jori E.', ' Nemeth, Ronni', " O'Connor, Carlee", ' Ragheb, Bishoy', ' Rajasekhar, Anita', ' Sardo, Laurie', ' Siegal, Deborah M.', ' Van Beek, Andrea']
+
+MISSING AUTHORS - doi: 10.1111/jgs.13099
+No. Authors: 16     ['Jacob Gindin MD', 'Tamar Shochat DSc', 'Angela Chetrit MSc', 'Shulamit Epstein PhD', 'Yehoshua Ben Israel MD', 'Sarah Levi PhD', 'Graziano Onder MD, PhD', 'Ian Carpenter MD', 'Harriet Finne-Soveri MD, PhD', 'Hein van Hout PhD', 'Jean-Claude Henrard PhD', 'Thorsten Nikolaus MD', 'Eva Topinkova MD, PhD', 'Daniela Fialov√° PharmD', 'Roberto Bernabei MD', 'the SHELTER project']
+No. Authors: 15     ['Gindin, Jacob', ' Shochat, Tamar', ' Chetrit, Angela', ' Epstein, Shulamit', ' Ben Israel, Yehoshua', ' Levi, Sarah', ' Onder, Graziano', ' Carpenter, Ian', ' Finne-Soveri, Harriet', ' van Hout, Hein', ' Henrard, Jean-Claude', ' Nikolaus, Thorsten', ' Topinkova, Eva', ' Fialova, Daniela', ' Bernabei, Roberto']
+
+MISSING AUTHORS - doi: 10.1111/jgs.17997
+No. Authors: 5     ['Catherine M. P. Dawson MD', 'Aanuoluwa O. Abiola MD', 'Amy M. Sullivan EdD', 'Andrea W. Schwartz MD, MPH, AGSF', 'the members of the GERI Team Research Group']
+No. Authors: 4     ['Dawson, Catherine M. P.', ' Abiola, Aanuoluwa O.', ' Sullivan, Amy M.', ' Schwartz, Andrea W.']
+
+INCORRECT AUTHORS - doi: 10.1111/j.1532-5415.1971.tb02532.x
+['Rafael Garcia-Bunuel M.D.']
+['GARCIABU R']
+
+MISSING AUTHORS - doi: 10.1111/j.1532-5415.2010.03224.x
+No. Authors: 4     ['Renzo Rozzini MD', 'Intissar Sleiman MD', 'Marco Trabucchi MD', 'for the Diabete in Residenza Sanitaria Assistenziale Group']
+No. Authors: 3     ['Rozzini, Renzo', ' Sleiman, Intissar', ' Trabucchi, Marco']
+
+MISSING AUTHORS - doi: 10.1111/j.1532-5415.1995.tb07069.x
+No. Authors: 2     ['Verona Hogarty MRCPI', 'Helen May MRCP']
+No. Authors: 3     ['HOGARTY, V', ' MAY, H', ' KHAW, KT']
+
+MISSING AUTHORS - doi: 10.1111/j.1532-5415.2004.52025.x
+No. Authors: 3     ['Claire C. Wang MD', 'David B. Carr MD', 'for the Older Drivers Project']
+No. Authors: 2     ['Wang, CC', ' Carr, DB']
+
+MISSING AUTHORS - doi: 10.1111/1467-9655.00090
+No. Authors: 4     ['James Woodburn', 'Thomas Widlok', 'Edwin N. Wilmsen', 'Tim Ingold']
+No. Authors: 1     ['Woodburn, J']
+
+MISSING AUTHORS - doi: 10.1002/ana.26587
+No. Authors: 49     ['Amrou Sarraj MD', 'Deep K. Pujara MBBS, MPH, MS', 'Leonid Churilov PhD', 'Clark W. Sitton MD', 'Felix Ng MD', 'Ameer E. Hassan DO', 'Michael G. Abraham MD', 'Spiros L. Blackburn MD', 'Gagan Sharma MS', 'Nawaf Yassi PhD', 'Timothy Kleinig PhD', 'Darshan Shah MBBS', 'Teddy Y. Wu PhD', 'Wondwossen G. Tekle MD', 'Ronald F. Budzik MD', 'William J. Hicks II MD', 'Nirav Vora MD', 'Randall C. Edgell MD', 'Diogo Haussen MD', 'Santiago Ortega-Gutierrez MD', 'Gabor Toth MD', 'Laith Maali MD', 'Mohammad Ammar Abdulrazzak MD', 'Faisal Al-Shaibi MD', 'Tareq AlMaghrabi MD', 'Vignan Yogendrakumar MD', 'Faris Shaker MBChB', 'Osman Mir MD', 'Ashish Arora MD', 'Kelsey Duncan MD', 'Sophia Sundararajan MD, PhD', 'Amanda Opaskar MD', 'Yin Hu MD', 'Abhishek Ray MD', 'Jeffrey Sunshine MD', 'Nicholas Bambakidis MD', 'Sheryl Martin-Schild MD', 'M. Shazam Hussain MD', 'Raul Nogueira MD', 'Anthony Furlan MD', 'Cathy A. Sila MD, MS', 'James C. Grotta MD', 'Mark Parsons BMed, PhD', 'Peter J. Mitchell MMed', 'Geoffrey A. Donnan MD', 'Stephen M. Davis MD', 'Gregory W. Albers MD', 'Bruce C. V. Campbell MBBS, PhD', 'the SELECT, EXTEND-IA, EXTEND-IA TNK, and EXTEND-IA TNK Part II Investigators']
+No. Authors: 48     ['Sarraj, Amrou', ' Pujara, Deep K.', ' Churilov, Leonid', ' Sitton, Clark W.', ' Ng, Felix', ' Hassan, Ameer E.', ' Abraham, Michael G.', ' Blackburn, Spiros L.', ' Sharma, Gagan', ' Yassi, Nawaf', ' Kleinig, Timothy', ' Shah, Darshan', ' Wu, Teddy Y.', ' Tekle, Wondwossen G.', ' Budzik, Ronald F.', ' Hicks, William J.', ' Vora, Nirav', ' Edgell, Randall C.', ' Haussen, Diogo', ' Ortega-Gutierrez, Santiago', ' Toth, Gabor', ' Maali, Laith', ' Abdulrazzak, Mohammad Ammar', ' Al-Shaibi, Faisal', ' AlMaghrabi, Tareq', ' Yogendrakumar, Vignan', ' Shaker, Faris', ' Mir, Osman', ' Arora, Ashish', ' Duncan, Kelsey', ' Sundararajan, Sophia', ' Opaskar, Amanda', ' Hu, Yin', ' Ray, Abhishek', ' Sunshine, Jeffrey', ' Bambakidis, Nicholas', ' Martin-Schild, Sheryl', ' Hussain, M. Shazam', ' Nogueira, Raul', ' Furlan, Anthony', ' Sila, Cathy A.', ' Grotta, James C.', ' Parsons, Mark', ' Mitchell, Peter J.', ' Donnan, Geoffrey A.', ' Davis, Stephen M.', ' Albers, Gregory W.', ' Campbell, Bruce C. V.']
+
+MISSING AUTHORS - doi: 10.1002/ana.21757
+No. Authors: 26     ['M. Trojano MD', 'F. Pellegrini MDeStat', 'D. Paolicelli MD', 'A. Fuiani MD', 'G.B. Zimatore MD', 'C. Tortorella MD', 'I.L. Simone MD', 'F. Patti MD', 'A. Ghezzi MD', 'V. Zipoli MD', 'P. Rossi MD', 'C. Pozzilli MD', 'G. Salemi MD', 'A. Lugaresi MD', 'R. Bergamaschi MD', 'E. Millefiorini MD', 'M. Clerico MD', 'G. Lus MD', 'M. Vianello MD', 'C. Avolio MD', 'P. Cavalla MD', 'V. Lepore MD', 'P. Livrea MD', 'G. Comi MD', 'M.P. Amato MD', 'Italian Multiple Sclerosis Database Network (MSDN) Group']
+No. Authors: 25     ['Trojano, M.', ' Pellegrin, F.', ' Paolicelli, D.', ' Fuiani, A.', ' Zimatore, G. B.', ' Tortorella, C.', ' Simone, I. L.', ' Patti, F.', ' Ghezzi, A.', ' Zipoli, V.', ' Rossi, P.', ' Pozzilli, C.', ' Salemi, G.', ' Lugaresi, A.', ' Bergamaschi, R.', ' Milleflorini, E.', ' Clerico, M.', ' Lus, G.', ' Vianello, M.', ' Avolio, C.', ' Cavalla, P.', ' Lepore, V.', ' Livrea, P.', ' Comi, G.', ' Amato, M. P.']
+
+MISSING AUTHORS - doi: 10.1002/ana.25524
+No. Authors: 39     ['Viorica Chelban MD, MSc', 'Matthew P. Wilson PhD', 'Jodi Warman Chardon MD', 'Jana Vandrovcova PhD', 'M. Natalia Zanetti PhD', 'Eleni Zamba-Papanicolaou MD', 'Stephanie Efthymiou MSc', 'Simon Pope PhD', 'Maria R. Conte PhD', 'Giancarlo Abis PhD', 'Yo-Tsen Liu PhD', 'Eloise Tribollet MS', 'Nourelhoda A. Haridy MD', 'Juan A. Bot√≠a PhD', 'Mina Ryten PhD', 'Paschalis Nicolaou PhD', 'Anna Minaidou PhD', 'Kyproula Christodoulou PhD', 'Kristin D. Kernohan PhD', 'Alison Eaton MD', 'Matthew Osmond MSc', 'Yoko Ito PhD', 'Pierre Bourque MD', 'James E. C. Jepson PhD', 'Oscar Bello PhD', 'Fion Bremner MD', 'Carla Cordivari MD', 'Mary M. Reilly MD, FRCP, FRCPI, PhD', 'Martha Foiani MSc', 'Amanda Heslegrave PhD', 'Henrik Zetterberg PhD', 'Simon J. R. Heales PhD', 'Nicholas W. Wood PhD', 'James E. Rothman PhD', 'Kym M. Boycott MD, PhD', 'Philippa B. Mills PhD', 'Peter T. Clayton PhD', 'Henry Houlden PhD', 'for the Care4Rare Canada Consortium and the SYNaPS Study Group']
+No. Authors: 38     ['Chelban, Viorica', ' Wilson, Matthew P.', ' Chardon, Jodi Warman', ' Vandrovcova, Jana', ' Zanetti, M. Natalia', ' Zamba-Papanicolaou, Eleni', ' Efthymiou, Stephanie', ' Pope, Simon', ' Conte, Maria R.', ' Abis, Giancarlo', ' Liu, Yo-Tsen', ' Tribollet, Eloise', ' Haridy, Nourelhoda A.', ' Botia, Juan A.', ' Ryten, Mina', ' Nicolaou, Paschalis', ' Minaidou, Anna', ' Christodoulou, Kyproula', ' Kernohan, Kristin D.', ' Eaton, Alison', ' Osmond, Matthew', ' Ito, Yoko', ' Bourque, Pierre', ' Jepson, James E. C.', ' Bello, Oscar', ' Bremner, Fion', ' Cordivari, Carla', ' Reilly, Mary M.', ' Foiani, Martha', ' Heslegrave, Amanda', ' Zetterberg, Henrik', ' Heales, Simon J. R.', ' Wood, Nicholas W.', ' Rothman, James E.', ' Boycott, Kym M.', ' Mills, Philippa B.', ' Clayton, Peter T.', ' Houlden, Henry']
+
+MISSING AUTHORS - doi: 10.1002/ana.10609
+No. Authors: 14     ['Alan L. Whone MBChB, MRCP', 'Ray L. Watts MD', 'A. Jon Stoessl MD, FRCPC', 'Margaret Davis MD', 'Sven Reske MD', 'Claude Nahmias PhD', 'Anthony E. Lang MD, FRCPC', 'Olivier Rascol MD, PhD', 'Maria J. Ribeiro MD', 'Philippe Remy MD, PhD', 'Werner H. Poewe MD', 'Robert A. Hauser MD', 'David J. Brooks MD, DSc, FRCP, FMed Sci', 'REAL-PET Study Group']
+No. Authors: 13     ['Whone, AL', ' Watts, RL', ' Stoessl, AJ', ' Davis, M', ' Reske, S', ' Nahmias, C', ' Lang, AE', ' Rascol, O', ' Ribeiro, MJ', ' Remy, P', ' Poewe, WH', ' Hauser, RA', ' Brooks, DJ']
+
+MISSING AUTHORS - doi: 10.1002/ana.26712
+No. Authors: 25     ['Andreas Trasch√ºtz MD, PhD', 'Astrid D. Adarmes-G√≥mez MD', 'Mathieu Anheim MD, PhD', 'Jonathan Baets MD, PhD', 'Bernard Brais MD, PhD', 'Cynthia Gagnon PhD', 'Janina Gburek-Augustat MD', 'Sarah Doss MD', 'Ha≈ümet A. Hanaƒüasƒ± MD', 'Christoph Kamm MD', 'Peter Klivenyi MD', 'Thomas Klockgether MD', 'Thomas Klopstock MD', 'Martina Minnerop MD', 'Alexander M√ºnchau MD', 'Mathilde Renaud MD', 'Filippo M. Santorelli MD', 'Ludger Sch√∂ls MD', 'Andreas Thieme MD', 'Stefan Vielhaber MD', 'Bart P. van de Warrenburg MD, PhD', 'Ginevra Zanni MD, PhD', 'Ralf-Dieter Hilgers PhD', 'PREPARE Consortium', 'Matthis Synofzik MD']
+No. Authors: 24     ['Traschuetz, Andreas D.', ' Adarmes-Gomez, Astrid', ' Anheim, Mathieu', ' Baets, Jonathan', ' Brais, Bernard', ' Gagnon, Cynthia', ' Gburek-Augustat, Janina', ' Doss, Sarah', ' Hanagasi, Hasmet A.', ' Kamm, Christoph', ' Klivenyi, Peter', ' Klockgether, Thomas', ' Klopstock, Thomas', ' Minnerop, Martina', ' Muenchau, Alexander', ' Renaud, Mathilde M.', ' Santorelli, Filippo', ' Schoels, Ludger', ' Thieme, Andreas', ' Vielhaber, Stefan P.', ' van de Warrenburg, Bart', ' Zanni, Ginevra', ' Hilgers, Ralf-Dieter', ' Synofzik, Matthis']
+
+MISSING AUTHORS - doi: 10.1002/ana.24003
+No. Authors: 9     ['Irmhild Altmann-Schneider MD', 'Anton J. M. de Craen PhD', 'Ilya M. Veer MSc', 'Annette A. van den Berg-Huysmans MSc', 'P. Eline Slagboom PhD', 'Rudi G. J. Westendorp MD, PhD', 'Mark A. van Buchem MD, PhD', 'Jeroen van der Grond PhD', 'the Leiden Longevity Study Group']
+No. Authors: 8     ['Altmann-Schneider, Irmhild', ' de Craen, Anton J. M.', ' Veer, Ilya M.', ' van den Berg-Huysmans, Annette A.', ' Slagboom, P. Eline', ' Westendorp, Rudi G. J.', ' van Buchem, Mark A.', ' van der Grond, Jeroen']
+
+MISSING AUTHORS - doi: 10.1111/j.1749-6632.1993.tb23020.x
+No. Authors: 3     ['CHRISTIAN C. FELDER', 'EILEEN M. BRILEY', 'JULIUS AXELROD']
+No. Authors: 4     ['FELDER, CC', ' MA, AL', ' BRILEY, EM', ' AXELROD, J']
+
+MISSING AUTHORS - doi: 10.1111/j.1749-6632.1963.tb13460.x
+No. Authors: 3     ['Henry D. Isenberg', 'Leroy S. Lavine', 'Owen B. Weeks']
+No. Authors: 2     ['ISENBERG, HD', ' LAVINE, LS']
+
+MISSING AUTHORS - doi: 10.1111/j.1749-6632.1965.tb56718.x
+No. Authors: 1     ['Maurice L. Tainter']
+No. Authors: 3     ['TAINTER, ML', ' ROBERTS, KA', ' KRANTZ, JC']
+
+MISSING AUTHORS - doi: 10.1196/annals.1329.063
+No. Authors: 5     ['ABDOMINAL OBESITY STUDY GROUP', 'FINN EDLER VON EYBEN', 'JENS PETER KROUSTRUP', 'JENS FROMHOLT LARSEN', 'JULIO CELIS']
+No. Authors: 4     ['Von Eyben, FE', ' Kroustrup, JP', ' Larsen, JF', ' Celis, J']
+
+MISSING AUTHORS - doi: 10.1111/j.1749-6632.1966.tb45498.x
+No. Authors: 1     ['RALFAELE LATTES']
+No. Authors: 2     ['LATTES, R', ' GENKINS, G']
+
+MISSING AUTHORS - doi: 10.1111/j.1749-6632.1982.tb21400.x
+No. Authors: 1     ['John Butler']
+No. Authors: 8     ['BUTLER, J', ' HENSON, PM', ' JACOB, HS', ' DEMLING, RH', ' SIBBALD, WJ', ' MCMILLAN, DD', ' OGLETREE, ML', ' CASEY, LC']
+
+MISSING AUTHORS - doi: 10.1111/j.1749-6632.1994.tb21701.x
+No. Authors: 8     ['HASSAN FARHOOD', 'XIANG GAO', 'KYONGHEE SON', 'JOHN S. LAZO', 'LEAF HUANG', 'JAMES BARSOUM', 'REMO BOTTEGA', 'RICHARD M. EPAND']
+No. Authors: 9     ['FARHOOD, H', ' GAO, X', ' SON, K', ' YANG, YY', ' LAZO, JS', ' HUANG, L', ' BARSOUM, J', ' BOTTEGA, R', ' EPAND, RM']
+
+MISSING AUTHORS - doi: 10.1196/annals.1303.023
+No. Authors: 7     ['SERGEI KURKIN', 'NORIHITO TAKEICHI', 'TEPPEI AKAO', 'FUMIE SATO', 'JUNKO FUKUSHIMA', 'CHRIS R.S. KANEKO', 'KIKURO FUKUSHIMA']
+No. Authors: 6     ['Kurkin, S', ' Takeichi, N', ' Akao, T', ' Sato, F', ' Fukushima, J', ' Kaneko, CRS']
+
+MISSING AUTHORS - doi: 10.1111/j.1749-6632.1984.tb37149.x
+No. Authors: 1     ['Roger Enlow Moderator']
+No. Authors: 17     ['ENLOW, R', ' SENCER, D', ' CONANT, M', ' SOSINSKY, J', ' ROTH, H', ' HANDSFIELD, HH', ' NELSON, J', ' WILLIAM, DC', ' STAMFORD, S', ' MURPHY, B', ' KLEIN, R', ' QUADLAND, M', ' EVEILLARD, JS', ' GERALD, G', ' LIPNER, J', ' CECCHI, RL', ' ROSEN, M']
+
+MISSING AUTHORS - doi: 10.1111/j.1749-6632.1991.tb43755.x
+No. Authors: 3     ['P. M. DARDEN', 'S. M. JACKSON', 'C.A.D.R.E. STUDY GROUP']
+No. Authors: 2     ['DARDEN, PM', ' JACKSON, SM']
+
+MISSING AUTHORS - doi: 10.1111/j.1749-6632.1991.tb24486.x
+No. Authors: 1     ['HANS-JOACHIM WOITOWITZ']
+No. Authors: 14     ['WOITOWITZ, HJ', ' GORMAN, E', ' MARK, E', ' KEYES, D', ' SELIKOFF, IJ', ' MILLER, J', ' MANCUSO, T', ' OTTO, JF', ' MALTONI, C', ' LILIS, R', ' KRONENBERG, R', ' GIBBS, G', ' RUTTNER, J', ' ENGLUND, A']
+
+MISSING AUTHORS - doi: 10.1046/j.1523-1739.1997.011002300.x
+No. Authors: 11     ['Yrj√∂ Haila', 'Patrick J. Comer', 'Malcolm Hunter', 'Michael J. Samways', 'Clive Hambler', 'Martin R. Speight', 'Paul Hendricks', 'Stephen Herrero', 'F. Stephen Dobson', 'Andrew T. Smith', 'Jinping Yu']
+No. Authors: 1     ['Haila, Y']
+
+MISSING AUTHORS - doi: 10.1111/cod.13839
+No. Authors: 16     ['Fabrizio Guarneri', 'Monica Corazza', 'Luca Stingeni', 'Cataldo Patruno', 'Maddalena Napolitano', 'Paolo D. M. Pigatto', 'Rosella Gallo', 'Antonio Cristaudo', 'Paolo Romita', 'Annamaria Offidani', 'Donatella Schena', 'Nicola Milanesi', 'Giuseppe Micali', 'Myriam Zucca', 'Caterina Foti', 'SIDAPA Study Group']
+No. Authors: 15     ['Guarneri, Fabrizio', ' Corazza, Monica', ' Stingeni, Luca', ' Patruno, Cataldo', ' Napolitano, Maddalena', ' Pigatto, Paolo D. M.', ' Gallo, Rosella', ' Cristaudo, Antonio', ' Romita, Paolo', ' Offidani, Annamaria', ' Schena, Donatella', ' Milanesi, Nicola', ' Micali, Giuseppe', ' Zucca, Myriam', ' Foti, Caterina']
+
+MISSING AUTHORS - doi: 10.1111/cod.13837
+No. Authors: 23     ['Pedro Mercader-Garc√≠a', 'Mar√≠a Antonia Pastor-Nieto', 'Ricardo Gonzalez-Perez', 'Susana Cordoba-Guijarro', 'Ana Mar√≠a Gimenez-Arnau', 'Inmaculada Ruiz-Gonzalez', 'Ver√≥nica Mora-Fern√°ndez', 'Javier Miquel', 'Juan Francisco Silvestre-Salvador', 'Francisco Javier Ortiz-Frutos', 'Tatiana Sanz-Sanchez', 'Mercedes Rodriguez-Serna', 'Patricia Perez-Feal', 'Javier S√°nchez-P√©rez', 'Felipe Heras-Mendaza', 'Ester Serra-Baldrich', 'Violeta Zaragoza-Ninet', 'Marcos Hervella-Garces', 'Mar√≠a Elena Gatica-Ortega', 'Ignacio Garc√≠a-Doval', 'Miguel √Ångel Descalzo', 'Leopoldo Borrego', 'the REIDAC group']
+No. Authors: 22     ['Mercader-Garcia, Pedro', ' Pastor-Nieto, Maria Antonia', ' Gonzalez-Perez, Ricardo', ' Cordoba-Guijarro, Susana', ' Gimenez-Arnau, Ana Maria', ' Ruiz-Gonzalez, Inmaculada', ' Mora-Fernandez, Veronica', ' Miquel, Javier', ' Silvestre-Salvador, Juan Francisco', ' Ortiz-Frutos, Francisco Javier', ' Sanz-Sanchez, Tatiana', ' Rodriguez-Serna, Mercedes', ' Perez-Feal, Patricia', ' Sanchez-Perez, Javier', ' Heras-Mendaza, Felipe', ' Serra-Baldrich, Ester', ' Zaragoza-Ninet, Violeta', ' Hervella-Garces, Marcos', ' Gatica-Ortega, Maria Elena', ' Garcia-Doval, Ignacio', ' Descalzo, Miguel Angel', ' Borrego, Leopoldo']
+
+MISSING AUTHORS - doi: 10.1002/psp4.12049
+No. Authors: 19     ['EFPIA MID3 Workgroup', 'SF Marshall', 'R Burghaus', 'V Cosson', 'SYA Cheung', 'M Chenel', 'O DellaPasqua', 'N Frey', 'B Hamr√©n', 'L Harnisch', 'F Ivanow', 'T Kerbusch', 'J Lippert', 'PA Milligan', 'S Rohou', 'A Staab', 'JL Steimer', 'C Torn√∏e', 'SAG Visser']
+No. Authors: 18     ['Marshall, S. F.', ' Burghaus, R.', ' Cosson, V.', ' Cheung, S. Y. A.', ' Chenel, M.', ' DellaPasqua, O.', ' Frey, N.', ' Hamren, B.', ' Harnisch, L.', ' Ivanow, F.', ' Kerbusch, T.', ' Lippert, J.', ' Milligan, P. A.', ' Rohou, S.', ' Staab, A.', ' Steimer, J. L.', ' Tornoe, C.', ' Visser, S. A. G.']
+
+MISSING AUTHORS - doi: 10.2135/cropsci2008.12.0693
+No. Authors: 6     ['Yingzhi Lu', 'Jessica Curtiss', 'R. G. Percy', 'S. E. Hughs', 'Shuxun Yu', 'Jinfa Zhang']
+No. Authors: 7     ['Lu, Yingzhi', ' Curtiss, Jessica', ' Percy, R. G.', ' Hughs, S. E.', ' Yu, Jiwen', ' Yu, Shuxun', ' Zhang, Jinfa']
+
+AUTHORS CORRECTNESS
+{'correct_counter': 2388, 'missing_authors_counter': 40, 'missing_data_counter': 0, 'incorrect_counter': 4, 'total_papers': 2432}
+Correct: 98.19%
+Missing Authors: 1.64%
+Incorrect: 0.16%
+Missing Data: 0.00%
+
+INCORRECT TITLE: doi - 10.1111/oli.12039
+Perfect Ratio: 70
+Partial Ratio: 93
+Publisher: mattias, pirholt. metamimesis. imitation in goethe's ‚äòwilhelm meisters lehrjahre‚äô and early german romanticism. rochester, n.y.: camden house, 2012, xi + 220 pp.
+WoS: metamimesis. imitation in goethe's 'wilhelm meisters lehrjahre' and early german romanticism
+
+INCORRECT TITLE: doi - 10.1111/oli.12128
+Perfect Ratio: 32
+Partial Ratio: 53
+Publisher: das schweigen der sirenen
+WoS: the silence of the sirens: to the concept of recognition in the literary science
+
+INCORRECT TITLE: doi - 10.1111/oli.12025
+Perfect Ratio: 27
+Partial Ratio: 48
+Publisher: l‚äô√©tranger intimement connu
+WoS: the intimately-known stranger self-translation and translation by an outside in nancy huston's plainsong-cantique des plaines
+
+INCORRECT TITLE: doi - 10.1111/oli.12211
+Perfect Ratio: 20
+Partial Ratio: 60
+Publisher: klage der natur
+WoS: complaint of nature. affect, hear and exchange in the scenario of the language origin by herder and benjamin
+
+INCORRECT TITLE: doi - 10.1111/j.0105-7510.2004.00818.x
+Perfect Ratio: 8
+Partial Ratio: 71
+Publisher: jensen, johannes v. trods, edited with a commentary by sven hakon rossel. copenhagen: museum tusculanums forlag, 2003 (161 pp)
+WoS: 'trods'
+
+INCORRECT TITLE: doi - 10.1111/rsr.14007
+Perfect Ratio: 21
+Partial Ratio: 46
+Publisher: children in ancient israel: the hebrew bible and mesopotamia in comparative perspective. by shawn w. flynn. oxford, uk: oxford university press, 2018. pp. xiv + 220. $75.00.
+WoS: isaiah through the centuries
+
+INCORRECT TITLE: doi - 10.1111/rsr.12112_3
+Perfect Ratio: 29
+Partial Ratio: 38
+Publisher: from defender to critic: the search for a new jewish self. by david hartman. woodstock, vt: jewish lights, 2012. pp. xix + 303. $35.00.
+WoS: beyond expulsion: jews, christians, and reformation strasbourg.
+
+INCORRECT TITLE: doi - 10.1111/rsr.16223
+Perfect Ratio: 59
+Partial Ratio: 95
+Publisher: living skillfully: buddhist philosophy of life from the vimalakƒ™rti s≈™tra. by dale s. wright. new york: oxford university press, 2021. pp. viii + 161. hardback, $29.95.
+WoS: living skillfully: buddhist philosophy of life from the vimalakirti sutra
+
+INCORRECT TITLE: doi - 10.1111/rsr.12730
+Perfect Ratio: 42
+Partial Ratio: 94
+Publisher: the jewish‚äìchristian encounter in medieval preaching edited by jonathan adams and jussi hanska. routledge research in medieval studies. new york: routledge, 2015. pp. 334. cloth, $145.00.
+WoS: the jewish-christian encounter in medieval preaching
+
+INCORRECT TITLE: doi - 10.1111/rsr.12726
+Perfect Ratio: 38
+Partial Ratio: 55
+Publisher: comment le livre s'est fait livre. la fabrication des manuscrits bibliques (ive‚äìxve siecle): bilan, resultats, perspectives de recherche edited by chiara ruzzier and xavier hermand. bibliologia, 40. turnhout, belgium: brepols, 2015. pp. 296. $110.00.
+WoS: how the book made itself book. the manufacture of biblical manuscripts (iv-xv century): balance sheet, results, research perspectives
+
+INCORRECT TITLE: doi - 10.1111/rsr.12265_3
+Perfect Ratio: 22
+Partial Ratio: 43
+Publisher: penser l'ic√¥ne en inde ancienne. by g√©rard colas. biblioth√®que de l'√âcole des hautes √âtudes, sciences religieuses, 158. turnhout, belgium: brepols, 2012. pp. 215; illustrations. ‚ç¨45.00.
+WoS: reflecting on the icon of old india
+
+INCORRECT TITLE: doi - 10.1111/j.1748-0922.2009.01345_7.x
+Perfect Ratio: 42
+Partial Ratio: 93
+Publisher: memoirs ‚äì by hans jonas
+WoS: memoirs.
+
+INCORRECT TITLE: doi - 10.1111/1467-9434.00278
+Perfect Ratio: 19
+Partial Ratio: 42
+Publisher: ideology or people?
+WoS: conversations with gorbachev on perestroika, the prague spring, and the crossroads of socialism
+
+INCORRECT TITLE: doi - 10.1111/j.1467-9744.1994.tb00677.x
+Perfect Ratio: 34
+Partial Ratio: 39
+Publisher: a new synthesis of knowledge and faith
+WoS: the human factor - evolution, culture, and religion - hefner,p
+
+INCORRECT TITLE: doi - 10.1111/j.1467-6281.2010.00303.x
+Perfect Ratio: 35
+Partial Ratio: 43
+Publisher: editorial
+WoS: untitled
+
+INCORRECT TITLE: doi - 10.1111/j.1360-0443.2012.03850.x
+Perfect Ratio: 9
+Partial Ratio: 43
+Publisher: erratum
+WoS: top priorities for alcohol regulators in the united states: protecting public health or the alcohol industry? (vol 107, pg 259, 2012)
+
+INCORRECT TITLE: doi - 10.1111/j.1360-0443.2008.02486.x
+Perfect Ratio: 78
+Partial Ratio: 87
+Publisher: [commentary] alcoholic beverage taxes, prices and drinking
+WoS: alcoholic beverage taxes, prices and drinking - commentary
+
+INCORRECT TITLE: doi - 10.1111/add.12729
+Perfect Ratio: 34
+Partial Ratio: 50
+Publisher: response to commentaries
+WoS: 'truth or consequences' - what about truth or dare response
+
+INCORRECT TITLE: doi - 10.1002/1098-2337(1980)6:1<91::AID-AB2480060108>3.0.CO;2-D
+Perfect Ratio: 64
+Partial Ratio: 80
+Publisher: aggro: the illusion of violence, by peter marsh. london: dent, 1978, 165 pp
+WoS: aggro - illusion of violence - marsh,p
+
+INCORRECT TITLE: doi - 10.1002/ab.2480150408
+Perfect Ratio: 61
+Partial Ratio: 74
+Publisher: sexual homicide: patterns and motives, by robert k. ressler, ann w. burgess, and john e. douglas. lexington, ma: lexington books, 1988, 211 pp.
+WoS: sexual homicide - patterns and motives - ressler,rk, burgess,aw, douglas,je
+
+INCORRECT TITLE: doi - 10.1525/aa.1993.95.3.02a00730
+Perfect Ratio: 69
+Partial Ratio: 77
+Publisher: applied anthropology: anthropological research: process and application. john j. poggie, jr., billie r de walt, and william w. dressler
+WoS: anthropological research - process and application - poggie,jj, dewalt,br, dressler,ww
+
+INCORRECT TITLE: doi - 10.1525/aa.1974.76.2.02a00100
+Perfect Ratio: 56
+Partial Ratio: 95
+Publisher: rejoinder to la barre
+WoS: dunns review of ghost dance - rejoinder to la-barre
+
+INCORRECT TITLE: doi - 10.1525/aa.1966.68.2.02a00250
+Perfect Ratio: 51
+Partial Ratio: 81
+Publisher: comments on barth's review of ‚äúman and society in iran‚äù
+WoS: man and society in iran - reply
+
+INCORRECT TITLE: doi - 10.1525/aa.1959.61.6.02a00320
+Perfect Ratio: 75
+Partial Ratio: 88
+Publisher: ethnology and ethnography: tribes without rulers: studies in african segmentary systems. john middleton and david tait
+WoS: tribes without rulers - studies in african segmentary systems - middleton,j, tait,d
+
+INCORRECT TITLE: doi - 10.1525/aa.1997.99.4.859.1
+Perfect Ratio: 35
+Partial Ratio: 42
+Publisher: intercultural friendship: a qualitative study
+WoS: catching sense: african american communities on a south carolina sea island - guthrie,p
+
+INCORRECT TITLE: doi - 10.1525/aa.1988.90.3.02a00430
+Perfect Ratio: 74
+Partial Ratio: 77
+Publisher: social/cultural anthropology: on the edge of the forest: cultural adaptation and cognitive development in central africa. j. w. berry, j. m. h. van de koppel, c. s√©n√©chal, r. c. annis, s. bahuchet, l. l. cavalli-sforza, and h. a. witkin.
+WoS: on the edge of the forest - cultural-adaptation and cognitive-development in central-africa - berry,jw, vandekoppel,jmh, senechal,c, annis,rc, bahuchet,s, cavallisforza,ll, witkin,ha
+
+INCORRECT TITLE: doi - 10.1525/aa.1972.74.1-2.02a00640
+Perfect Ratio: 80
+Partial Ratio: 89
+Publisher: development and change: latin america: underdevelopment or revolution. essays on the development of underdevelopment and the immediate enemy. andre gunder frank
+WoS: latin-america - underdevelopment or revolution - essays on development of underdevelopment and immediate enemy - frank,ag
+
+INCORRECT TITLE: doi - 10.1525/aa.1973.75.2.02a00560
+Perfect Ratio: 78
+Partial Ratio: 87
+Publisher: development and change: families in east and west: socialization process and kinship ties. reuben hill and rene konig
+WoS: families in east and west - socialization process and kinship ties - hill,r and konig,r
+
+INCORRECT TITLE: doi - 10.1525/aa.1970.72.1.02a00510
+Perfect Ratio: 69
+Partial Ratio: 88
+Publisher: modernization and development: aspects of social change in modern japan. r. p. dore, ed
+WoS: aspects of social change in modern japan - dore,rp
+
+INCORRECT TITLE: doi - 10.1525/aa.1962.64.6.02a00280
+Perfect Ratio: 53
+Partial Ratio: 61
+Publisher: general and ethnology: chugoku noson kanko chosa (rural customs and practices of china)
+WoS: rural customs and practices of china - comm-publicat-rural-customs-practices-china
+
+INCORRECT TITLE: doi - 10.1525/aa.1993.95.2.02a00810
+Perfect Ratio: 78
+Partial Ratio: 84
+Publisher: biological anthropology: paternity in primates: genetic tests and theories. implications of human dna fingerprinting. r. d. martin, a. f. dixson, and e. j. wickings
+WoS: paternity in primates - genetic tests and theories - implications of human dna-fingerprinting - martin,rd, dixson,af, wickings,ej
+
+INCORRECT TITLE: doi - 10.1525/aa.1985.87.4.02a00280
+Perfect Ratio: 80
+Partial Ratio: 90
+Publisher: general/theoretical anthropology: the anthropology of world's fairs: san francisco's panama pacific international exposition of 1915. burton benedict
+WoS: the anthropology of worlds fairs - san-franciscos panama pacific international exposition of 1915 - benedict,b
+
+INCORRECT TITLE: doi - 10.1525/aa.1970.72.4.02a00430
+Perfect Ratio: 79
+Partial Ratio: 92
+Publisher: ethnography and ethnology: the melanesian cargo cult: millenarianism as a factor in cultural change. palle christiansen
+WoS: melanesian cargo cult - millenarianism as a factor in cultural change - christiansen,p
+
+INCORRECT TITLE: doi - 10.1525/aa.1951.53.1.02a00230
+Perfect Ratio: 53
+Partial Ratio: 60
+Publisher: maranga: contribuci√≥n al conocimiento de los abortgenes del valle del rimac, peru. jacinto jijon y caama√±o
+WoS: maranga: contribution to knowledge of the natives of the rimac valley in peru
+
+INCORRECT TITLE: doi - 10.1525/aa.1927.29.4.02a00240
+Perfect Ratio: 23
+Partial Ratio: 49
+Publisher: primitive music: songs of the copper eskimos. helen roberts and d. jenness.
+WoS: ancient hawaiian music
+
+INCORRECT TITLE: doi - 10.1525/aa.1975.77.3.02a00860
+Perfect Ratio: 78
+Partial Ratio: 88
+Publisher: archaeology:the mound people: danish bronze-age man preserved. p. v. glob
+WoS: mound people - danish bronze-age man preserved - glob,pv
+
+INCORRECT TITLE: doi - 10.1525/aa.1967.69.1.02a00080
+Perfect Ratio: 68
+Partial Ratio: 77
+Publisher: ernest beaglehole 1906‚äì1965
+WoS: obituary - beaglehole,e 1906-1965
+
+INCORRECT TITLE: doi - 10.1525/aa.1990.92.4.02a00730
+Perfect Ratio: 57
+Partial Ratio: 83
+Publisher: applied anthropology: kava: use and abuse in australia and the south pacific. john prescott and grant mccall, eds. national drug and alcohol research centre monograph, no. 5
+WoS: kava - use and abuse in australia and the south-pacific - prescott,j, mccall,g
+
+INCORRECT TITLE: doi - 10.1525/aa.1982.84.1.02a00170
+Perfect Ratio: 72
+Partial Ratio: 80
+Publisher: physical anthropology: perspectives in ethology vol. 4: advantages of diversity. p. p. g. bateson and peter h. klopfer
+WoS: perspectives in ethology, vol 4, advantages of diversity - bateson,ppg, klopfer,ph
+
+INCORRECT TITLE: doi - 10.1525/aa.1973.75.4.02a00290
+Perfect Ratio: 75
+Partial Ratio: 80
+Publisher: ethnology: pacific island portraits. j. w. davidson and deryck scarr
+WoS: pacific island portraits - davidson,jw and scarr,d
+
+INCORRECT TITLE: doi - 10.1525/aa.1964.66.5.02a00570
+Perfect Ratio: 16
+Partial Ratio: 33
+Publisher: book reviews
+WoS: ceramic stratigraphy at santa-cruz, chiapas, mexico - sanders,wt
+
+INCORRECT TITLE: doi - 10.1525/aa.1958.60.5.02a00260
+Perfect Ratio: 71
+Partial Ratio: 85
+Publisher: ethnology and ethnography: sun circles and human hands: the southeastern indians art and industries. emma lila fundaburk and mary douglass fundaburk foreman
+WoS: sun circles and human hands - the southeastern indians art and industries - fundaburk,el, foreman,mdf
+
+INCORRECT TITLE: doi - 10.1525/aa.1972.74.3.02a00390
+Perfect Ratio: 37
+Partial Ratio: 78
+Publisher: obituaries
+WoS: lewis,o 1914-1970 - obituary
+
+INCORRECT TITLE: doi - 10.1525/aa.1956.58.3.02a00410
+Perfect Ratio: 74
+Partial Ratio: 89
+Publisher: linguistics: a prague school reader on esthetics, literary structure, and style. selected and translated by paul l. garvin
+WoS: a prague school reader on aesthetics, literary structure, and style - garvin,pl
+
+INCORRECT TITLE: doi - 10.1525/aa.1964.66.6.02a00650
+Perfect Ratio: 57
+Partial Ratio: 80
+Publisher: physical anthropology: a racial study of west nakanai. daris r. swindler. foreword by ward h. goodenough
+WoS: a racial study of west nakanai - swindler,dr
+
+INCORRECT TITLE: doi - 10.1525/aa.1998.100.1.184
+Perfect Ratio: 44
+Partial Ratio: 61
+Publisher: time, narrative, and cultural action
+WoS: memory, identity, community: the idea of narrative in the human sciences.
+
+INCORRECT TITLE: doi - 10.1525/aa.1988.90.4.02a00770
+Perfect Ratio: 57
+Partial Ratio: 57
+Publisher: biological anthropology:primate societies. barbara b. smuts, dorothy l. cheney, robert m. seyfarth, richard w. wrangham, and thomas t. struhsaker, eds
+WoS: primate societies - smuts,bb, cheney,dl, seyfarth,rm, wrangham,rw, struhsaker,tt
+
+INCORRECT TITLE: doi - 10.1525/aa.1965.67.3.02a00290
+Perfect Ratio: 73
+Partial Ratio: 81
+Publisher: ethnology: the windways of the navajo. leland c. wyman
+WoS: the windways of the navajo - wyman,lc
+
+INCORRECT TITLE: doi - 10.1525/aa.1957.59.5.02a00390
+Perfect Ratio: 67
+Partial Ratio: 71
+Publisher: de hond bij de nyanga, ritueel en sociologie. d. biebuyck.
+WoS: the dog among the nyanga, ritual and sociology - dutch - biebuyck,d
+
+INCORRECT TITLE: doi - 10.1525/aa.1981.83.3.02a00310
+Perfect Ratio: 56
+Partial Ratio: 87
+Publisher: linguistics: second international conference on austronesian linguistics: proceedings, fascicle 1. s. a. wurm and l. carrington: second international conference on austronesian linguistics: proceedings, fascicle 2. s. a. wurm and l. carrington
+WoS: 2nd international-conference on austronesian linguistics - proceedings, fascicle 1 - wurm,sa, carrington,l
+
+INCORRECT TITLE: doi - 10.1525/aa.1973.75.2.02a01230
+Perfect Ratio: 49
+Partial Ratio: 58
+Publisher: archeology: guia para o estudo das ind√ºstrias l√≠ticas da am√©rica do sul. annette lamingemperaire. foreword by igor chmyz
+WoS: guide for study on lithic industries of south america - portuguese - lamingemperaire,a
+
+INCORRECT TITLE: doi - 10.1525/aa.1965.67.1.02a00730
+Perfect Ratio: 80
+Partial Ratio: 81
+Publisher: other: race: the history of an idea in america. thomas f. gossett
+WoS: race - the history of an idea in america - gossett,tf
+
+INCORRECT TITLE: doi - 10.1525/aa.1988.90.2.02a00880
+Perfect Ratio: 71
+Partial Ratio: 85
+Publisher: biological anthropology: personal identification from human remains. spencer l. rogers
+WoS: personal identification from human remains - rogers,sl
+
+INCORRECT TITLE: doi - 10.1525/aa.1970.72.3.02a00550
+Perfect Ratio: 67
+Partial Ratio: 92
+Publisher: modernization and development: perspectives in developmental change. art gallaher, jr., ed
+WoS: perspectives in developmental change - gallagher,a
+
+INCORRECT TITLE: doi - 10.1525/aa.1962.64.4.02a00250
+Perfect Ratio: 55
+Partial Ratio: 50
+Publisher: koumen: texte initiatique des pasteurs peul. a. hampat√© ba and g. dieterlen
+WoS: koumen - initiation to the pastoral cosmology of the fulani (peul) - french - ba,ah, dieterlen,g
+
+INCORRECT TITLE: doi - 10.1525/aa.1993.95.2.02a00790
+Perfect Ratio: 75
+Partial Ratio: 88
+Publisher: biological anthropology: aggression and peacefulness in humans and other primates. james silverbergand j. patrick gray
+WoS: aggression and peacefulness in humans and other primates - silverberg,j, gray,jp
+
+INCORRECT TITLE: doi - 10.1525/aa.1973.75.4.02a00530
+Perfect Ratio: 52
+Partial Ratio: 64
+Publisher: development and change: barrio boy. ernesto galarza
+WoS: barrio boy - galarza,e
+
+INCORRECT TITLE: doi - 10.1525/aa.1972.74.4.02a00740
+Perfect Ratio: 78
+Partial Ratio: 80
+Publisher: religion: a separate reality: further conversations with don juan. carlos castaneda
+WoS: separate reality - further conversations with juna,d - castaneda,c
+
+INCORRECT TITLE: doi - 10.1525/aa.1964.66.3.02a00280
+Perfect Ratio: 78
+Partial Ratio: 70
+Publisher: a study of polyandry. h. r. h. prince peter of greece and denmark
+WoS: a study of polyandry - peter greece denmark
+
+INCORRECT TITLE: doi - 10.1525/aa.1995.97.4.02a00270
+Perfect Ratio: 34
+Partial Ratio: 39
+Publisher: working in industrial agriculture
+WoS: plantation workers - resistance and accommodation - lal,bv, munro,d, beechert,ed
+
+INCORRECT TITLE: doi - 10.1525/aa.1956.58.5.02a00360
+Perfect Ratio: 78
+Partial Ratio: 81
+Publisher: a maasai grammar with vocabulary. a. n. tucker and j. tompo ole mpaayei
+WoS: a maasai grammar with vocabulary - tucker,an, mpaayei,jto
+
+INCORRECT TITLE: doi - 10.1525/aa.1988.90.4.02a00680
+Perfect Ratio: 71
+Partial Ratio: 83
+Publisher: social/cultural anthropology:trade, traders and trading in rural java. jennifer alexander
+WoS: trade, traders and trading in rural java - alexander,j
+
+INCORRECT TITLE: doi - 10.1525/aa.1981.83.3.02a00800
+Perfect Ratio: 53
+Partial Ratio: 79
+Publisher: general and theoretical: edward evans-pritchard. mary douglas
+WoS: evans-pritchard,edward - douglas,m
+
+INCORRECT TITLE: doi - 10.1525/aa.1973.75.2.02a00770
+Perfect Ratio: 80
+Partial Ratio: 89
+Publisher: political anthropology: immigrant voters in israel: parties and congregations in a local election campaign. shlomo a. deshen
+WoS: immigrant voters in israel - parties and congregations in local election campaign - deshen,sa
+
+INCORRECT TITLE: doi - 10.1525/aa.1965.67.2.02a00660
+Perfect Ratio: 78
+Partial Ratio: 92
+Publisher: ethnomusicology and folklore: the krobo: traditional social and religious life of a west african people. hugo huber
+WoS: the krobo - traditional social and religious life of a west-african people - huber,h
+
+INCORRECT TITLE: doi - 10.1525/aa.1940.42.3.02a00180
+Perfect Ratio: 59
+Partial Ratio: 76
+Publisher: central and south america: las primeras edades del peru, por guaman poma, ensayo de interpretation, julio c. tello
+WoS: the first era of peru, by guaman poma, essay of interpretation
+
+INCORRECT TITLE: doi - 10.1525/aa.1904.6.2.02a00110
+Perfect Ratio: 45
+Partial Ratio: 56
+Publisher: islands kultur ved aarhundredskiftet 1900. af valt√ωr gu√∞mundsson
+WoS: iceland's culture in the 19th century
+
+INCORRECT TITLE: doi - 10.1525/aa.1967.69.2.02a00620
+Perfect Ratio: 22
+Partial Ratio: 58
+Publisher: physical anthropology and primatology: the primates. sarel eimerl, irven devore, and the editors of‚äúlife.‚äù
+WoS: eimerl,s - primates
+
+INCORRECT TITLE: doi - 10.1525/aa.1957.59.1.02a00600
+Perfect Ratio: 51
+Partial Ratio: 95
+Publisher: archeology: iskopaemyi chelovek i ego kul'tura na territorii sssr [fossil man and his culture in the u.s.s.r.]
+WoS: fossil man and his culture in the ussr
+
+INCORRECT TITLE: doi - 10.1525/aa.1989.91.3.02a00710
+Perfect Ratio: 72
+Partial Ratio: 87
+Publisher: social/cultural anthropology: torres strait islanders: custom and colonialism. jeremy beckett
+WoS: torres strait islanders - custom and colonialism - beckett,j
+
+INCORRECT TITLE: doi - 10.1525/aa.1982.84.1.02a00460
+Perfect Ratio: 68
+Partial Ratio: 76
+Publisher: linguistics: language and social psychology. howard giles and robert st. clair
+WoS: language and social-psychology - giles,h, stclair,r
+
+INCORRECT TITLE: doi - 10.1525/aa.1965.67.5.02a00520
+Perfect Ratio: 67
+Partial Ratio: 85
+Publisher: general and ethnology: natural environment and early cultures. robert c. west
+WoS: natural-environment and early cultures - nest,rc
+
+INCORRECT TITLE: doi - 10.1525/aa.1984.86.4.02a00280
+Perfect Ratio: 75
+Partial Ratio: 79
+Publisher: archeology: early man in the new world. richard shutler
+WoS: early man in the new world - shutler,r
+
+INCORRECT TITLE: doi - 10.1525/aa.1976.78.2.02a00050
+Perfect Ratio: 49
+Partial Ratio: 60
+Publisher: john eric sidney thompson 1898-197
+WoS: thompson,jes - 1898-1975 - obituary
+
+INCORRECT TITLE: doi - 10.1525/aa.1961.63.5.02a00490
+Perfect Ratio: 69
+Partial Ratio: 85
+Publisher: physical anthropology: manual of physical anthropology. juan comas
+WoS: manual of physical-anthropology - comas,j
+
+INCORRECT TITLE: doi - 10.1525/aa.1983.85.4.02a00370
+Perfect Ratio: 79
+Partial Ratio: 85
+Publisher: linguistics:language spread: studies in diffusion and social change. robert l. cooper, ed
+WoS: language spread - studies in diffusion and social-change - cooper,rl
+
+INCORRECT TITLE: doi - 10.1525/aa.1974.76.4.02a00430
+Perfect Ratio: 57
+Partial Ratio: 75
+Publisher: general, applied and theoretical: our people and our history. rodolphe lucien desdunes
+WoS: our people and our history - desdunes,rl
+
+INCORRECT TITLE: doi - 10.1525/aa.1965.67.6.02a00630
+Perfect Ratio: 45
+Partial Ratio: 81
+Publisher: linguistics: ethiopian argots. wolf leslau. (janua linguarum, series practica xvii.)
+WoS: ethiopian argots - leslau,w
+
+INCORRECT TITLE: doi - 10.1525/aa.1957.59.2.02a00320
+Perfect Ratio: 48
+Partial Ratio: 67
+Publisher: ethnology and ethnography: this is israel. by theodore huebener and carl hermann voss
+WoS: this is israel - huebener,t, voss,ch
+
+INCORRECT TITLE: doi - 10.1525/aa.1938.40.2.02a00220
+Perfect Ratio: 49
+Partial Ratio: 55
+Publisher: v√∂lkerkundliche ergebnisse der s√ºdafrikanischen reisen rudolf p√∂ch's in den jahren 1907 bis 1909. walter hirschberg
+WoS: ethnographic results of south african rudolf poch's travels in the years 1907 to 1909
+
+INCORRECT TITLE: doi - 10.1525/aa.1996.98.1.02a00250
+Perfect Ratio: 74
+Partial Ratio: 87
+Publisher: racialism and racist agendas: race, evolution, and behavior: a life history perspective. j. philippe rushton
+WoS: race, evolution, and behavior: a life history perspective - rushton,jp
+
+INCORRECT TITLE: doi - 10.1525/aa.1990.92.2.02a00380
+Perfect Ratio: 74
+Partial Ratio: 90
+Publisher: social/cultural anthropology: chosen voices: the story of the american cantorate. mark slobin
+WoS: chosen voices - the story of the american cantorate - slobin,m
+
+INCORRECT TITLE: doi - 10.1525/aa.1980.82.3.02a00390
+Perfect Ratio: 78
+Partial Ratio: 83
+Publisher: linguistics: language in africa: an introductory survey. edgar a. gregersen
+WoS: language in africa - an introductory survey - gregersen,ea
+
+INCORRECT TITLE: doi - 10.1525/aa.1973.75.6.02a01270
+Perfect Ratio: 65
+Partial Ratio: 79
+Publisher: archaeology: the african iron age. p. l. shinnie
+WoS: african iron age - shinnie,pl
+
+INCORRECT TITLE: doi - 10.1525/aa.1964.66.4.02a00400
+Perfect Ratio: 74
+Partial Ratio: 81
+Publisher: ethnology: japanese culture: its development and characteristics. robert j. smith, and richard k. beardsley (eds.)
+WoS: japanese culture - its development and characteristics - smith,rj, beardsley,rk
+
+INCORRECT TITLE: doi - 10.1525/aa.1956.58.3.02a00390
+Perfect Ratio: 71
+Partial Ratio: 80
+Publisher: physical anthropology: the stone age races of northwest africa. l. cabot briggs
+WoS: the stone-age races of northwest africa - briggs,lc
+
+INCORRECT TITLE: doi - 10.1525/aa.1982.84.1.02a00630
+Perfect Ratio: 53
+Partial Ratio: 53
+Publisher: cultural/applied: tanebar-evav: une soci√©t√© de maisons tourn√©e vers le large. c√©cile barraud
+WoS: tanebar-evav - a society of houses turned outward - french - barraud,c
+
+INCORRECT TITLE: doi - 10.1525/aa.1967.69.3-4.02a00100
+Perfect Ratio: 72
+Partial Ratio: 90
+Publisher: two corrections
+WoS: correstion
+
+INCORRECT TITLE: doi - 10.1525/aa.1964.66.5.02a00580
+Perfect Ratio: 58
+Partial Ratio: 56
+Publisher: archeology: el bajo de santa f√©. ursula m. cowgill and g. e. hutchinson
+WoS: the bajo-de-santa-fe - cowgill,um, hutchinson,ge
+
+INCORRECT TITLE: doi - 10.1525/aa.1970.72.5.02a00840
+Perfect Ratio: 38
+Partial Ratio: 73
+Publisher: archeology: the shermer site (32em10). james e. sperry. plains conference memoir 5, plains anthropologist 13 (42, pt. 2), 1968
+WoS: shermer site (32em10) - sperry,je
+
+INCORRECT TITLE: doi - 10.1525/aa.1959.61.4.02a00480
+Perfect Ratio: 79
+Partial Ratio: 86
+Publisher: primitive art: medicine-men on the north pacific coast. marius barbeau
+WoS: medicine-men on the north pacific coast - barbeau,m
+
+INCORRECT TITLE: doi - 10.1525/aa.1990.92.2.02a00350
+Perfect Ratio: 80
+Partial Ratio: 91
+Publisher: linguistic anthropology: on language: the diversity of human language-structure and its influence on the mental development of mankind. wilhelm von humboldt (peter heath, trans.)
+WoS: on language - the diversity of human language-structure and its influence on the mental-development of mankind - vonhumboldt,w
+
+INCORRECT TITLE: doi - 10.1525/aa.1980.82.4.02a00180
+Perfect Ratio: 78
+Partial Ratio: 84
+Publisher: linguistics: ethnolinguistics: boas, sapir and whorf revisited. madeleine mathiot, ed
+WoS: ethnolinguistics - boas, sapir and whorf revisted - mathiot,m
+
+INCORRECT TITLE: doi - 10.1525/aa.1972.74.1-2.02a00120
+Perfect Ratio: 75
+Partial Ratio: 88
+Publisher: general and theoretical: the sociology of religion: a study of christendom. vol. iv. types of religious man. werner stark
+WoS: sociology of religion - study of christendom .4. types of religious man - stark,w
+
+INCORRECT TITLE: doi - 10.1525/aa.1987.89.2.02a00240
+Perfect Ratio: 80
+Partial Ratio: 84
+Publisher: archeology: american archaeology past and future: a celebration of the society for american archaeology 1935‚äì1985. david j. meltzer, don d. fowler, and jeremy a. sabloff
+WoS: american archaeology past and future - a celebration of the society-for-american-archaeology 1935-1985 - meltzer,dj, fowler,dd, sabloff,ja
+
+INCORRECT TITLE: doi - 10.1525/aa.1970.72.5.02a00740
+Perfect Ratio: 51
+Partial Ratio: 74
+Publisher: archeology: homolka: an eneolithic site in bohemia. robert w. ehrich and emilie pleslov√°-≈útikov√°. hugh o'neill hencken, ed. american school of prehistoric research, bulletin 24
+WoS: homolka - eneolithic site in bohemia - ehrich,rw and pleslovastikova,e
+
+INCORRECT TITLE: doi - 10.1525/aa.1962.64.2.02a00530
+Perfect Ratio: 45
+Partial Ratio: 49
+Publisher: general and ethnology: les plantes utiles du gabon: essai d'inventaire et de concordance des noms vernaculaires et scientifiques des plantes spontan√©es et introduites, description des esp√®ces, propri√©t√©s utilisations √âconomiques, ethnographiques et artistiques. andr√© raponda-walker and roger sillans
+WoS: useful plants of gabon - inventory of plants used for nutritive, commercial, religious and decorative purposes with separate indexes of botanical names - french - rapondawalker,a, sillians,r
+
+INCORRECT TITLE: doi - 10.1525/aa.1983.85.2.02a00660
+Perfect Ratio: 75
+Partial Ratio: 79
+Publisher: archeology: hohokam and patayan: prehistory of southwestern arizona. randall h. mcguire and michael b. schiffer, eds
+WoS: hohokam and patayan - prehistory of southwestern arizona - mcguire,rh, schiffer,mb
+
+INCORRECT TITLE: doi - 10.1525/aa.1975.77.2.02a00080
+Perfect Ratio: 70
+Partial Ratio: 85
+Publisher: putting a cat among the red herrings: a reply to newcomer and rubenstein
+WoS: putting a cat among red herrings - reply
+
+INCORRECT TITLE: doi - 10.1111/j.1746-1561.1985.tb05664.x
+Perfect Ratio: 32
+Partial Ratio: 53
+Publisher: comments from the field
+WoS: results of the school-health education evaluation - comment
+
+INCORRECT TITLE: doi - 10.1111/j.1746-1561.1960.tb06944.x
+Perfect Ratio: 73
+Partial Ratio: 81
+Publisher: a study of four hundred and eighty-five cases of microsporon audouini
+WoS: a study of 485 cases of microsporon audouini
+
+INCORRECT TITLE: doi - 10.1111/j.1746-1561.1962.tb01558.x
+Perfect Ratio: 80
+Partial Ratio: 86
+Publisher: horace mann‚äîpioneer in health education
+WoS: mann,horace - pioneer in health-education
+
+INCORRECT TITLE: doi - 10.1111/j.1746-1561.1982.tb02277.x
+Perfect Ratio: 31
+Partial Ratio: 43
+Publisher: letters to the editor
+WoS: a suggested modification of the rustia school-health promotion model
+
+INCORRECT TITLE: doi - 10.1111/j.1540-4560.1991.tb00295.x
+Perfect Ratio: 75
+Partial Ratio: 86
+Publisher: whatever ‚ä¶
+WoS: whatever ...
+
+INCORRECT TITLE: doi - 10.1111/j.1540-4560.1973.tb00082.x
+Perfect Ratio: 73
+Partial Ratio: 83
+Publisher: comment on: ‚äúhow scientific are the social sciences?,‚äù jsi, 28 (4), 1972
+WoS: comment on - how scientific are social sciences
+
+INCORRECT TITLE: doi - 10.1111/jgs.15232
+Perfect Ratio: 29
+Partial Ratio: 52
+Publisher: response to teng et al.
+WoS: accurate etiological diagnosis of dementia contributes to better clinical care response
+
+INCORRECT TITLE: doi - 10.1111/jgs.12788_4
+Perfect Ratio: 28
+Partial Ratio: 46
+Publisher: response by michael w. rich
+WoS: aggressive lipid management in very elderly adults: less is more response
+
+INCORRECT TITLE: doi - 10.1111/j.1532-5415.1993.tb06961.x
+Perfect Ratio: 41
+Partial Ratio: 86
+Publisher: in reply
+WoS: drinking in the elderly - reply
+
+INCORRECT TITLE: doi - 10.1002/1520-6696(198204)18:2<192::AID-JHBS2300180213>3.0.CO;2-M
+Perfect Ratio: 70
+Partial Ratio: 87
+Publisher: taylor stoehr. hawthorne's mad scientists: pseudoscience and social science in nineteenth-century life and letters. hamden, connecticut: archon, 1978. 313 pp. $19.50
+WoS: hawthornes mad scientists - pseudoscience and social-science in 19th-century life and letters - stoehr,t
+
+INCORRECT TITLE: doi - 10.1002/1520-6696(198707)23:3<283::AID-JHBS2300230329>3.0.CO;2-C
+Perfect Ratio: 57
+Partial Ratio: 85
+Publisher: william j. mcgrath. freud's discovery of psychoanalysis: the politics of hysteria. ithaca, n.y.: cornell university press, 1986. 336 pp. $25.00 (cloth)
+WoS: freud discovery of psychoanalysis - the politics of hysteria - mcgrath,wj
+
+INCORRECT TITLE: doi - 10.1002/jhbs.10025
+Perfect Ratio: 58
+Partial Ratio: 62
+Publisher: existe-t-il une nature humaine? la psychologie historique, objective, comparative
+WoS: is there such a thing as human nature? historical, objective and comparative psychology
+
+INCORRECT TITLE: doi - 10.1002/1520-6696(198707)23:3<222::AID-JHBS2300230308>3.0.CO;2-Q
+Perfect Ratio: 34
+Partial Ratio: 71
+Publisher: david herlihy. medieval housholds. cambridge: harvard university press, 1985. xii + 227 pp. $30.00 (cloth); $11.95 (paper)
+WoS: medieval households - herlihy,d
+
+INCORRECT TITLE: doi - 10.1111/j.1467-9655.2010.01661_30.x
+Perfect Ratio: 41
+Partial Ratio: 87
+Publisher: culture + rhetoric ‚äì edited by ivo strecker & stephen tyler
+WoS: culture plus rhetoric
+
+INCORRECT TITLE: doi - 10.1111/1467-9655.00090
+Perfect Ratio: 67
+Partial Ratio: 81
+Publisher: comment: primitive mentality
+WoS: primitive mentality - comment
+
+INCORRECT TITLE: doi - 10.1111/1467-9655.12430
+Perfect Ratio: 56
+Partial Ratio: 94
+Publisher: esp√≠rito santo, diana & nico tassi (eds). making spirits: materiality and transcendence in contemporary religions. x, 260 pp., illus., bibliogrs. london, new york: i.b. tauris, 2013. ¬£59.50 (cloth)
+WoS: making spirits: materiality and transcendence in contemporary religions, vol 10
+
+INCORRECT TITLE: doi - 10.1111/1467-9655.13366
+Perfect Ratio: 11
+Partial Ratio: 52
+Publisher: godelier, , , maurice. claude l√©vi-strauss: a critical study of his thought. xx, 540 pp., table, figs, bibliogr. london: verso, 2018. ¬£29.99 (paper) l√©vi-strauss, , , claude; foreword by maurice olender; trans. jane marie todd. anthropology confronts the problems of the modern world. xii, 129 pp. cambridge, mass.: belknap press of harvard univ. press, 2013. ¬£15.00 (cloth) l√©vi-strauss, , , claude; foreword by maurice olender; trans. jane marie todd. we are all cannibals and other essays. viii, 159 pp., bibliogr. new york: columbia univ. press, 2016. ¬£20.00 (cloth) loyer, , , emmanuelle; trans. ninon vinsonneau & jonathan magidoff. l√©vi-strauss: a biography. xlii, 709 pp., illus., bibliogr. cambridge: polity, 2018. ¬£35.00 (paper)
+WoS: celebrations of levi-strauss's heroic legacy
+
+INCORRECT TITLE: doi - 10.1002/jts.2490060212
+Perfect Ratio: 38
+Partial Ratio: 74
+Publisher: children of trauma. by jane middelton-moz. deerfield beach, fl: health communications, inc. (publisher), 1989, 185 pp., $9.95 paperback
+WoS: children of trauma - middletonmoz,j
+
+INCORRECT TITLE: doi - 10.1002/jts.2490080219
+Perfect Ratio: 59
+Partial Ratio: 86
+Publisher: i can't get over it. a handbook for trauma survivors. by aphrodite matsakis. oakland, ca: new harbinger publications, inc. 1992, 373 pages. $12.95
+WoS: i cant get over it - a handbook for trauma survivors - matsakis,a
+
+INCORRECT TITLE: doi - 10.1002/jts.2490070420
+Perfect Ratio: 71
+Partial Ratio: 85
+Publisher: monitoring the health and rehabilitation of torture survivors: a management information system for a rehabilitation and research unit for torture victims: by s√∏ren b√∏jholm, anders foldspang, marianne juhler, marianne kastrup, grethe skylv, and finn somnier. rehabilitation and research centre for torture victims, copenhagen, 1992, 59 pages. no price given
+WoS: monitoring the health and rehabilitation of torture survivors - a management-information-system for a rehabilitation and research unit for torture victims - bojholm,s, foldspang,a, juhler,m, kastrup,m, skylv,g, somnier,f
+
+INCORRECT TITLE: doi - 10.1002/jts.2490070422
+Perfect Ratio: 58
+Partial Ratio: 89
+Publisher: something bad happened: a series of six creative books for healing post-traumatic stress. by debra whiting alexander, huntington. new york, bureau for at-risk youth, 1992, 16‚äì24 pages each book. $3.95 per book (less for quantity)
+WoS: something bad happened - a series of 6 creative books for healing posttraumatic stress - alexander,dw
+
+INCORRECT TITLE: doi - 10.1111/j.1467-6435.1979.tb02595.x
+Perfect Ratio: 54
+Partial Ratio: 58
+Publisher: arbeitslosigkeitstypen und einkommensverteilung in der <<neuen makro√ñkonomischen theorie>>
+WoS: types of unemployment and income-distribution in new macroeconomic theory
+
+INCORRECT TITLE: doi - 10.1002/ana.11479
+Perfect Ratio: 26
+Partial Ratio: 35
+Publisher: platform session 3 (28‚äì35)
+WoS: blinded, crossover, placebo-controlled study of the effectiveness of the ketogenic diet (kjd)
+
+INCORRECT TITLE: doi - 10.1002/ana.21946
+Perfect Ratio: 9
+Partial Ratio: 67
+Publisher: errata
+WoS: a disconnection account of gerstmann syndrome: functional neuroanatomy evidence (vol 66, pg 654, 2009)
+
+INCORRECT TITLE: doi - 10.1111/nyas.12598
+Perfect Ratio: 31
+Partial Ratio: 40
+Publisher: corrigendum for ann. n.y. acad. sci. 1327: 62‚äì78
+WoS: a dual- systems perspective on addiction: contributions from neuroimaging and cognitive training (vol 1327, pg 62, 2014)
+
+INCORRECT TITLE: doi - 10.1111/j.1749-6632.1966.tb45498.x
+Perfect Ratio: 31
+Partial Ratio: 57
+Publisher: annals new york academy of sciences: discussion
+WoS: discussion of castleman b
+
+INCORRECT TITLE: doi - 10.1111/j.1749-6632.1982.tb21400.x
+Perfect Ratio: 47
+Partial Ratio: 84
+Publisher: part vi: general discussion
+WoS: prevention and reversal of pulmonary micro-vascular injury - general discussion
+
+INCORRECT TITLE: doi - 10.1046/j.1523-1739.1994.08030810.x
+Perfect Ratio: 60
+Partial Ratio: 95
+Publisher: an age-structured demographic model for the endangered stephens‚äô kangaroo rat un modelo demogr√°fico estructurado por edades para la poblaci√≥n de ratas canguros de stephen
+WoS: an age-structured demographic-model for the endangered stephens kangaroo rat
+
+TITLE CORRECTNESS
+{'exact_correct_counter': 1284, 'mostly_correct_counter': 1027, 'missing_counter': 0, 'incorrect_counter': 127, 'total': 2438}
+Exact Correct: 52.67%
+Mostly Correct: 42.12%
+Missing Authors: 0.00%
+Incorrect: 5.21%
+
+
+Process finished with exit code 0

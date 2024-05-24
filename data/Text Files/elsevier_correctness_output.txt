@@ -1,0 +1,335 @@
+/usr/bin/python3 /Users/christianzubcic/Documents/Monash University/2023/Semester 2/FYP/FYP/data/correctness_analyser.py
+PUBLISH YEAR
+Correct: 100.00%
+Incorrect: 0.00%
+Missing: 0.00%
+
+PUBLISH DATES
+{'correct_date_counter': 547, 'incorrect_date_counter': 3, 'correct_month_counter': 1775, 'partial_month_counter': 69, 'missing_counter': 209, 'incorrect_counter': 66, 'total': 2119}
+correct_date_counter: 25.81%
+incorrect_date_counter: 0.14%
+correct_month_counter: 83.77%
+partial_month_counter: 3.26%
+missing_counter: 9.86%
+incorrect_counter: 3.11%
+
+JOURNAL NAME
+{'correct_counter': 1853, 'likely_correct': 266, 'missing_counter': 0, 'incorrect_counter': 0, 'total': 2119}
+correct_counter: 87.45%
+likely_correct: 12.55%
+missing_counter: 0.00%
+incorrect_counter: 0.00%
+
+JOURNAL EDITION
+{'all_correct_counter': 390, 'correct_volume': 390, 'correct_issue': 62, 'correct_part': 2, 'missing_volume': 0, 'missing_issue': 0, 'missing_part': 0, 'incorrect_volume': 1, 'incorrect_issue': 0, 'incorrect_part': 0, 'incorrect_counter': 1, 'total_volume': 391, 'total_issue': 62, 'total_part': 2, 'total': 391}
+all_correct_counter: 99.74%
+correct_volume: 99.74%
+correct_issue: 100.00%
+correct_part: 100.00%
+missing_volume: 0.00%
+missing_issue: 0.00%
+missing_part: 0.00%
+incorrect_volume: 0.26%
+incorrect_issue: 0.00%
+incorrect_part: 0.00%
+incorrect_counter: 0.26%
+
+INCORRECT TYPES
+  Counter  WoS Type                    Publisher Type
+---------  --------------------------  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+       42  article                     original research paper
+       35  article                     analysis
+       34  article                     research paper
+       30  note                        short communication
+       15  article                     short communication
+       11  article                     historical perspective
+       10  article                     original
+        9  correction                  corrigendum
+        9  article                     original paper
+        7  article                     archival report
+        6  editorial material          commentary
+        5  article                     short report
+        5  article                     regular paper
+        5  article                     electroanalytical chemistry and sensor
+        4  editorial material          discussion
+        4  article                     methods
+        4  note                        short communications
+        3  meeting abstract            abstracts of papers presented at the eighth annual scientific meeting of the psychophysiology society, institute of psychiatry, london, december 1980
+        3  article                     brief research report
+        3  correction                  erratum
+        3  article                     modelling economic policy issues
+        3  article                     nota de campo
+        3  review                      historical perspective
+        3  article                     civil engineering
+        3  article                     mechanical engineering
+        3  article                     electrical engineering
+        3  article; proceedings paper  review
+        3  meeting abstract            abstracts of papers presented at the thirteenth annual scientific meeting of the psychophysiology society, charing cross & westminster medical school, london, december 1985
+        2  article                     commentary
+        2  article                     brief report
+        2  meeting abstract            abstracts of papers presented at the eleventh annual scientific meeting of the psychophysiology society, charing cross and westminster medical schools, london, december 1983
+        2  article                     executive digest
+        2  article; proceedings paper  analysis
+        2  article                     news and views
+        2  article                     methodological and ideological options
+        2  article                     analyses of topical policy issues
+        2  article                     perspective
+        2  letter                      carta al director
+        2  article                     opinion paper
+        2  article                     research
+        2  article                     essay
+        2  article                     policy analysis
+        2  article                     engineering physics and mathematics
+        2  article                     spectrophotometry
+        2  article                     chemometric
+        1  article                     research note
+        1  review                      case report
+        1  article                     special issue: interoception and behaviour
+        1  review                      full length article
+        1  article                     organizational performance
+        1  editorial material          editor's perspective
+        1  editorial material          executive focus
+        1  article                     communication
+        1  editorial material          guest editors‚äô perspective
+        1  editorial material          feature
+        1  article                     feature
+        1  article                     analisys
+        1  review                      analysis
+        1  review                      surveys
+        1  article                     surveys
+        1  review                      methodological and ideological options
+        1  article                     modeling economic policy issues
+        1  editorial material          editor's note
+        1  article                     paper
+        1  note                        comment
+        1  editorial material          comment
+        1  article; proceedings paper  empirical issues in market and organization
+        1  editorial material          introduction
+        1  correction                  fe de errores
+        1  editorial material          debate
+        1  article                     note from the field
+        1  article                     art√≠culo de opini√≥n
+        1  article                     into practice
+        1  article                     the leading edge
+        1  editorial material          viewpoint
+        1  article; proceedings paper  original research paper
+        1  article                     translated paper: sptj best paper award 2015
+        1  article                     translated paper
+        1  article                     review paper
+        1  article                     original research
+        1  article                     primary research
+        1  article                     plant production and management under drought conditions
+        1  article; proceedings paper  organic matter and nutrient cycling
+        1  article                     electoanalytical chemistry and sensor
+        1  article                     chromatography
+        1  article                     fluorimetry
+        1  article                     chemiluminescence
+        1  review                      tutorial
+        1  article                     other topic
+        1  article                     atomic absorption spectrometry
+        1  article                     flow injection
+        1  article                     flow analysis
+        1  article                     electronalytical chemistry and sensor
+        1  article; proceedings paper  biosensor
+        1  note                        short-sequence paper
+        1  note                        short sequence-paper
+        1  article                     rapid report
+        1  article                     short crystallization paper
+        1  article                     review
+        1  article; proceedings paper  special issue: mental resources: intensive and selective aspects
+        1  article                     news and perspectives
+
+ARTICLE TYPE
+{'correct_counter': 196, 'missing_counter': 0, 'incorrect_counter': 358, 'total': 554}
+Correct: 35.38%
+Incorrect: 64.62%
+Missing: 0.00%
+
+INCORRECT AUTHORS - doi: 10.1016/j.beproc.2019.104026
+['Mark C. Mainwaring', 'Ian R. Hartley']
+['Santos, Cristina', 'Sanabria, Federico']
+
+MISSING AUTHORS - doi: 10.1016/j.biopsycho.2022.108430
+No. Authors: 9     ['Yuan Gao', 'Wuji Lin', 'Mingzhe Zhang', 'Lurong Zheng', 'Jiaxi Liu', 'Minjie Zheng', 'Yuyao En', 'Yujie Chen', 'Lei Mo']
+No. Authors: 8     ['Gao, Yuan', ' Lin, Wuji', ' Zhang, Mingzhe', ' Zheng, Lurong', ' Liu, Jiaxi', ' Zheng, Minjie', ' Chen, Yujie', ' Mo, Lei']
+
+MISSING AUTHORS - doi: 10.1016/S0264-9993(03)00005-1
+No. Authors: 2     ['Mark Weder', 'CEPR']
+No. Authors: 1     ['Weder, M']
+
+MISSING AUTHORS - doi: 10.1016/j.ehb.2023.101233
+No. Authors: 8     ['Laura J. Smyth', 'Sharon M. Cruise', 'Jianjun Tang', 'Ian Young', 'Bernadette McGuinness', 'Frank Kee', 'Amy Jayne McKnight', 'on behalf of the Northern Ireland COhort for the Longitudinal study of Ageing collaborative group']
+No. Authors: 7     ['Smyth, Laura J.', ' Cruise, Sharon M.', ' Tang, Jianjun', ' Young, Ian', ' McGuinness, Bernadette', ' Kee, Frank', ' McKnight, Amy Jayne']
+
+MISSING AUTHORS - doi: 10.1016/j.ecoser.2017.10.011
+No. Authors: 21     ['Francis Turkelboom', 'Michael Leone', 'Sander Jacobs', 'Eszter Kelemen', 'Marina Garc√≠a-Llorente', 'Francesc Bar√≥', 'Mette Termansen', 'David N. Barton', 'Pam Berry', 'Erik Stange', 'Marijke Thoonen', '√Ågnes Kal√≥czkai', 'Angheluta Vadineanu', 'Antonio J. Castro', 'B√°lint Cz√∫cz', 'Christine R√∂ckmann', 'Daniel Wurbs', 'David Odee', 'Elena Preda', 'Erik G√≥mez-Baggethun', 'Ver√≥nica Rusch']
+No. Authors: 37     ['Turkelboom, Francis', ' Leone, Michael', ' Jacobs, Sander', ' Kelemen, Eszter', ' Garcia-Llorente, Marina', ' Baro, Francesc', ' Termansen, Mette', ' Barton, David N.', ' Berry, Pam', ' Stange, Erik', ' Thoonen, Marijke', ' Kaloczkai, Agnes', ' Vadineanu, Angheluta', ' Castro, Antonio J.', ' Czucz, Balint', ' Rockmann, Christine', ' Wurbs, Daniel', ' Odee, David', ' Preda, Elena', ' Gomez-Baggethun, Erik', ' Rusch, Graciela M.', ' Martinez Pastur, Guillermo', ' Palomo, Ignacio', ' Dick, Jan', ' Casaer, Jim', ' van Dijk, Jiska', ' Priess, Joerg A.', ' Langemeyer, Johannes', ' Mustajoki, Jyri', ' Kopperoinen, Leena', ' Baptist, Martin J.', ' Luis Peri, Pablo', ' Mukhopadhyay, Raktima', ' Aszalos, Reka', ' Roy, S. B.', ' Luque, Sandra', ' Rusch, Veronica']
+
+MISSING AUTHORS - doi: 10.1016/S2212-0416(16)30011-0
+No. Authors: 2     ['Leon C Braat (Editor-in-Chief)', 'Sandra Broerse (Publisher)']
+No. Authors: 1     ['Braat, Leon C.']
+
+MISSING AUTHORS - doi: 10.1016/j.erss.2020.101724
+No. Authors: 21     ['Ioan Fazey', 'Niko Sch√§pke', 'Guido Caniglia', 'Anthony Hodgson', 'Ian Kendrick', 'Christopher Lyon', 'Glenn Page', 'James Patterson', 'Chris Riedy', 'Tim Strasser', 'Stephan Verveen', 'David Adams', 'Bruce Goldstein', 'Matthias Klaes', 'Graham Leicester', 'Alison Linyard', 'Adrienne McCurdy', 'Paul Ryan', 'Bill Sharpe', 'Giorgia Silvestri', 'Hannah R. Young']
+No. Authors: 183     ['Fazey, Ioan', ' Schapke, Niko', ' Caniglia, Guido', ' Hodgson, Anthony', ' Kendrick, Ian', ' Lyon, Christopher', ' Page, Glenn', ' Patterson, James', ' Riedy, Chris', ' Strasser, Tim', ' Verveen, Stephan', ' Adams, David', ' Goldstein, Bruce', ' Klaes, Matthias', ' Leicester, Graham', ' Linyard, Alison', ' McCurdy, Adrienne', ' Ryan, Paul', ' Sharpe, Bill', ' Silvestri, Giorgia', ' Abdurrahim, Ali Yansyah', ' Abson, David', ' Adetunji, Olufemi Samson', ' Aldunce, Paulina', ' Alvarez-Pereira, Carlos', ' Amparo, Jennifer Marie', ' Amundsen, Helene', ' Anderson, Lakin', ' Andersson, Lotta', ' Asquith, Michael', ' Augenstein, Karoline', ' Barrie, Jack', ' Bent, David', ' Bentz, Julia', ' Bergsten, Arvid', ' Berzonsky, Carol', ' Bina, Olivia', ' Blackstock, Kirsty', ' Boehnert, Joanna', ' Bradbury, Hilary', ' Brand, Christine', ' Bohme, Jessica', ' Bojer, Marianne Mille', ' Carmen, Esther', ' Charli-Joseph, Lakshmi', ' Choudhury, Sarah', ' Chunhachoti-ananta, Supot', ' Cockburn, Jessica', ' Colvin, John', ' Connon, Irena L. C.', ' Cornforth, Rosalind', ' Cox, Robin S.', ' Cradock-Henry, Nicholas', ' Cramer, Laura', ' Cremaschi, Almendra', ' Dannevig, Halvor', ' Day, Catherine T.', ' Hutchison, Cathel de Lima', ' de Vrieze, Anke', ' Desai, Vikas', ' Dolley, Jonathan', ' Duckett, Dominic', ' Durrant, Rachael Amy', ' Egermann, Markus', ' Elsner (Adams), Emily', ' Fremantle, Chris', ' Fullwood-Thomas, Jessica', ' Galafassi, Diego', ' Gobby, Jen', ' Golland, Ami', ' Gonzalez-Padron, Shiara Kirana', ' Gram-Hanssen, Irmelin', ' Grandin, Jakob', ' Grenni, Sara', ' Gunnell, Jade Lauren', ' Gusmao, Felipe', ' Hamann, Maike', ' Harding, Brian', ' Harper, Gavin', ' Hesselgren, Mia', ' Hestad, Dina', ' Heykoop, Cheryl Anne', ' Holmen, Johan', ' Holstead, Kirsty', ' Hoolohan, Claire', ' Horcea-Milcu, Andra-Ioana', ' Horlings, Lummina Geertruida', ' Howden, Stuart Mark', ' Howell, Rachel Angharad', ' Huque, Sarah Insia', ' Canedo, Mirna Liz Inturias', ' Iro, Chidinma Yvonne', ' Ives, Christopher D.', ' John, Beatrice', ' Joshi, Rajiv', ' Juarez-Bourke, Sadhbh', ' Juma, Dauglas Wafula', ' Karlsen, Bea Cecilie', ' Kliem, Lea', ' Klaey, Andreas', ' Kuenkel, Petra', ' Kunze, Iris', ' Lam, David Patrick Michael', ' Lang, Daniel J.', ' Larkin, Alice', ' Light, Ann', ' Luederitz, Christopher', ' Luthe, Tobias', ' Maguire, Cathy', ' Mahecha-Groot, Ana-Maria', ' Malcolm, Jackie', ' Marshall, Fiona', ' Maru, Yiheyis', ' McLachlan, Carly', ' Mmbando, Peter', ' Mohapatra, Subhakanta', ' Moore, Michele-Lee', ' Moriggi, Angela', ' Morley-Fletcher, Mark', ' Moser, Susanne', ' Mueller, Konstanze Marion', ' Mukute, Mutizwa', ' Muhlemeier, Susan', ' Naess, Lars Otto', ' Nieto-Romero, Marta', ' Novo, Paula', " O'Brien, Karen", " O'Connell, Deborah Anne", " O'Donnell, Kathleen", ' Olsson, Per', ' Pearson, Kelli Rose', ' Pereira, Laura', ' Petridis, Panos', ' Peukert, Daniela', ' Phear, Nicky', ' Pisters, Siri Renee', ' Polsky, Matt', ' Pound, Diana', ' Preiser, Rika', ' Rahman, Md. Sajidur', ' Reed, Mark S.', ' Revell, Philip', ' Rodriguez, Iokine', ' Rogers, Briony Cathryn', ' Rohr, Jascha', ' Rosenberg, Milda Nordbo', ' Ross, Helen', ' Russell, Shona', ' Ryan, Melanie', ' Saha, Probal', ' Schleicher, Katharina', ' Schneider, Flurina', ' Scoville-Simonds, Morgan', ' Searle, Beverley', ' Sebhatu, Samuel Petros', ' Sesana, Elena', ' Silverman, Howard', ' Singh, Chandni', ' Sterling, Eleanor', ' Stewart, Sarah-Jane', ' Tabara, J. David', ' Taylor, Douglas', ' Thornton, Philip', ' Tribaldos, Theresa Margarete', ' Tschakert, Petra', ' Uribe-Calvo, Natalia', ' Waddell, Steve', ' Waddock, Sandra', ' van der Merwe, Liza', ' van Mierlo, Barbara', ' van Zwanenberg, Patrick', ' Velarde, Sandra Judith', ' Washbourne, Carla-Leanne', ' Waylen, Kerry', ' Weiser, Annika', ' Wight, Ian', ' Williams, Stephen', ' Woods, Mel', ' Wolstenholme, Ruth', ' Wright, Ness', ' Wunder, Stefanie', ' Wyllie, Alastair', ' Young, Hannah R.']
+
+MISSING AUTHORS - doi: 10.1016/j.gaceta.2011.10.021
+No. Authors: 8     ['Isabel Esteva de Antonio', 'Esther G√≥mez-Gil', 'M.a Cruz Almaraz', 'Juana Mart√≠nez-Tudela', 'Trinidad Bergero', 'Gabriel Olveira', 'Federico Soriguer', 'Grupo GIDSEEN']
+No. Authors: 7     ['Esteva de Antonio, Isabel', ' Gomez-Gil, Esther', ' Cruz Almaraz, Ma', ' Martinez-Tudela, Juana', ' Bergero, Trinidad', ' Olveira, Gabriel', ' Soriguer, Federico']
+
+MISSING AUTHORS - doi: 10.1016/j.gaceta.2013.01.013
+No. Authors: 3     ['Jordi Torrubiano-Dom√≠nguez', 'Carmen Vives-Cases', 'the Violence Against Women and Public Health Research Group at the University of Alicante']
+No. Authors: 2     ['Torrubiano-Dominguez, Jordi', ' Vives-Cases, Carmen']
+
+MISSING AUTHORS - doi: 10.1016/j.gaceta.2016.05.015
+No. Authors: 7     ['Joan A. Cayl√†', '√Ångela Dom√≠nguez', 'Elena Rodr√≠guez Val√≠n', 'Fernando de Ory', 'Ana V√°zquez', 'Claudia Fortuny', 'Grupo de trabajo sobre Zika del Programa de Prevenci√≥n, Vigilancia y Control de Enfermedades Transmisibles (PREVICET) del CIBER de Epidemiolog√≠a y Salud P√∫blica (CIBERESP)']
+No. Authors: 6     ['Cayla, Joan A.', ' Dominguez, Angela', ' Rodriguez Valin, Elena', ' de Ory, Fernando', ' Vazquez, Ana', ' Fortuny, Claudia']
+
+MISSING AUTHORS - doi: 10.1016/j.agee.2019.106575
+No. Authors: 21     ['Henk J. van Lingen', 'Mutian Niu', 'Ermias Kebreab', 'Sebasti√£o C. Valadares Filho', 'John A. Rooke', 'Carol-Anne Duthie', 'Angela Schwarm', 'Michael Kreuzer', 'Phil I. Hynd', 'Mariana Caetano', 'Maguy Eug√®ne', 'C√©cile Martin', 'Mark McGee', 'Padraig O‚ÄôKiely', 'Martin H√ºnerberg', 'Tim A. McAllister', 'Telma T. Berchielli', 'Juliana D. Messana', 'Nico Peiren', 'Alex V. Chaves', 'Alexander N. Hristov']
+No. Authors: 34     ['van Lingen, Henk J.', ' Niu, Mutian', ' Kebreab, Ermias', ' Valadares Filho, Sebastiao C.', ' Rooke, John A.', ' Duthie, Carol-Anne', ' Schwarm, Angela', ' Kreuzer, Michael', ' Hynd, Phil, I', ' Caetano, Mariana', ' Eugene, Maguy', ' Martin, Cecile', ' McGee, Mark', " O'Kiely, Padraig", ' Hunerberg, Martin', ' McAllister, Tim A.', ' Berchielli, Telma T.', ' Messana, Juliana D.', ' Peiren, Nico', ' Chaves, Alex, V', ' Charmley, Ed', ' Cole, N. Andy', ' Hales, Kristin E.', ' Lee, Sang-Suk', ' Berndt, Alexandre', ' Reynolds, Christopher K.', ' Crompton, Les A.', ' Bayat, Ali-Reza', ' Yanez-Ruiz, David R.', ' Yu, Zhongtang', ' Bannink, Andre', ' Dijkstra, Jan', ' Casper, David P.', ' Hristov, Alexander N.']
+
+MISSING AUTHORS - doi: 10.1017/S1751731119000776
+No. Authors: 6     ['Q. Shi', 'Y. Zhu', 'J. Wang', 'H. Yang', 'J. Wang', 'W. Zhu']
+No. Authors: 5     ['Shi, Q.', ' Zhu, Y.', ' Wang, J.', ' Yang, H.', ' Zhu, W.']
+
+MISSING AUTHORS - doi: 10.1016/j.bbadis.2019.165619
+No. Authors: 21     ['Hyoung Kyu Kim', 'Jouhyun Jeon', 'In-Sung Song', 'Hae Jin Heo', 'Seung Hun Jeong', 'Le Thanh Long', 'Vu Thi Thu', 'Tae Hee Ko', 'Min Kim', 'Nari Kim', 'Sung Ryul Lee', 'Jae-Seong Yang', 'Mi Seon Kang', 'Jung-Mo Ahn', 'Je-Yoel Cho', 'Kyung Soo Ko', 'Byoung Doo Rhee', 'Bernd Nilius', 'Nam-Chul Ha', 'Ippei Shimizu', 'Jin Han']
+No. Authors: 25     ['Kim, Hyoung Kyu', ' Jeon, Jouhyun', ' Song, In-Sung', ' Heo, Hae Jin', ' Jeong, Seung Hun', ' Le Thanh Long', ' Vu Thi Thu', ' Ko, Tae Hee', ' Kim, Min', ' Kim, Nari', ' Lee, Sung Ryul', ' Yang, Jae-Seong', ' Kang, Mi Seon', ' Ahn, Jung-Mo', ' Cho, Je-Yoel', ' Ko, Kyung Soo', ' Rhee, Byoung Doo', ' Nilius, Bernd', ' Ha, Nam-Chul', ' Shimizu, Ippei', ' Minamino, Tohru', ' Cho, Kyoung Im', ' Park, Young Shik', ' Kim, Sanguk', ' Han, Jin']
+
+MISSING AUTHORS - doi: 10.1016/j.bbadis.2019.165619
+No. Authors: 21     ['Hyoung Kyu Kim', 'Jouhyun Jeon', 'In-Sung Song', 'Hae Jin Heo', 'Seung Hun Jeong', 'Le Thanh Long', 'Vu Thi Thu', 'Tae Hee Ko', 'Min Kim', 'Nari Kim', 'Sung Ryul Lee', 'Jae-Seong Yang', 'Mi Seon Kang', 'Jung-Mo Ahn', 'Je-Yoel Cho', 'Kyung Soo Ko', 'Byoung Doo Rhee', 'Bernd Nilius', 'Nam-Chul Ha', 'Ippei Shimizu', 'Jin Han']
+No. Authors: 25     ['Kim, Hyoung Kyu', ' Jeon, Jouhyun', ' Song, In-Sung', ' Heo, Hae Jin', ' Jeong, Seung Hun', ' Le Thanh Long', ' Vu Thi Thu', ' Ko, Tae Hee', ' Kim, Min', ' Kim, Nari', ' Lee, Sung Ryul', ' Yang, Jae-Seong', ' Kang, Mi Seon', ' Ahn, Jung-Mo', ' Cho, Je-Yoel', ' Ko, Kyung Soo', ' Rhee, Byoung Doo', ' Nilius, Bernd', ' Ha, Nam-Chul', ' Shimizu, Ippei', ' Minamino, Tohru', ' Cho, Kyoung Im', ' Park, Young Shik', ' Kim, Sanguk', ' Han, Jin']
+
+MISSING AUTHORS - doi: 10.1016/j.biopsycho.2016.02.002
+No. Authors: 7     ['Codie R. Rouleau', 'Lianne M. Tomfohr-Madsen', 'Tavis S. Campbell', 'Nicole Letourneau', 'Maeve O‚ÄôBeirne', 'Gerald F. Giesbrecht', 'APrON Study Team']
+No. Authors: 6     ['Rouleau, Codie R.', ' Tomfohr-Madsen, Lianne M.', ' Campbell, Tavis S.', ' Letourneau, Nicole', " O'Beirne, Maeve", ' Giesbrecht, Gerald F.']
+
+MISSING AUTHORS - doi: 10.1016/0301-0511(86)90126-2
+No. Authors: 2     ['Gudrun Sartory', 'G. Sartory']
+No. Authors: 1     ['SARTORY, G']
+
+AUTHORS CORRECTNESS
+{'correct_counter': 2096, 'missing_authors_counter': 15, 'missing_data_counter': 0, 'incorrect_counter': 1, 'total_papers': 2112}
+Correct: 99.24%
+Missing Authors: 0.71%
+Incorrect: 0.05%
+Missing Data: 0.00%
+
+INCORRECT TITLE: doi - 10.1016/0304-422X(89)90039-9
+Perfect Ratio: 61
+Partial Ratio: 91
+Publisher: ‚äòfacts‚äô in the empirical study of literature
+WoS: facts in the empirical-study of literature, the united-states and germany a comparison
+
+INCORRECT TITLE: doi - 10.1016/0304-3479(87)90034-2
+Perfect Ratio: 30
+Partial Ratio: 65
+Publisher: elena guro's diary
+WoS: guro,elena diary + with excerpts from its text in the original russian
+
+INCORRECT TITLE: doi - 10.1016/S0304-3479(03)00043-7
+Perfect Ratio: 61
+Partial Ratio: 94
+Publisher: ‚äúpesni nu≈æny nam: nikto ne vidit konca vojne‚äù: a structural analysis of isaak babel's ‚äòthe song‚äô
+WoS: a structural analysis of isaak babel's the 'song'
+
+INCORRECT TITLE: doi - 10.1016/S0304-3479(89)80010-9
+Perfect Ratio: 56
+Partial Ratio: 60
+Publisher: de la tautologie (ii): gogol' ou l'attrait du vide
+WoS: tautology .2. gogol or the attraction of emptiness
+
+INCORRECT TITLE: doi - 10.1016/S0001-6918(61)80169-8
+Perfect Ratio: 58
+Partial Ratio: 61
+Publisher: learning difficulties of deprived children
+WoS: effects of affective deprivation in children
+
+INCORRECT TITLE: doi - 10.1016/0001-6918(54)90005-0
+Perfect Ratio: 45
+Partial Ratio: 53
+Publisher: vorformen des denkens
+WoS: the perform of thinking
+
+INCORRECT TITLE: doi - 10.1016/j.beproc.2019.104026
+Perfect Ratio: 42
+Partial Ratio: 46
+Publisher: sex-specific patterns of minimal compensation of care during and after short term mate removal in biparental blue tits
+WoS: past outcomes and time flexibly exert joint control over midsession reversal performance in the rat
+
+INCORRECT TITLE: doi - 10.1016/0301-0511(89)90107-5
+Perfect Ratio: 79
+Partial Ratio: 95
+Publisher: psychobiology of health: introduction
+WoS: special issue - psychobiology of health - introduction
+
+INCORRECT TITLE: doi - 10.1016/S0301-0511(98)00016-7
+Perfect Ratio: 17
+Partial Ratio: 27
+Publisher: book review
+WoS: panic disorder: a critical analysis
+
+INCORRECT TITLE: doi - 10.1016/j.gaceta.2011.11.005
+Perfect Ratio: 51
+Partial Ratio: 53
+Publisher: la atenci√≥n a la urgencia en las comunidades aut√≥nomas. mejoras en las urgencias prehospitalarias y la coordinaci√≥n asistencial. informe sespas 2012
+WoS: emergency care in the autonomous regions of spain. improvement in pre-hospital emergency care and welfare coordination. sespas report 2012
+
+INCORRECT TITLE: doi - 10.1016/j.gaceta.2011.07.018
+Perfect Ratio: 56
+Partial Ratio: 61
+Publisher: la medicina familiar y comunitaria y la universidad. informe sespas 2012
+WoS: family and community medicine and the university. sespas report 2012
+
+INCORRECT TITLE: doi - 10.1016/S0003-2670(00)88402-0
+Perfect Ratio: 50
+Partial Ratio: 62
+Publisher: addendum
+WoS: addition
+
+INCORRECT TITLE: doi - 10.1016/S0003-2670(01)82151-6
+Perfect Ratio: 57
+Partial Ratio: 58
+Publisher: etude de l'extraction de l'acide chlorhydrique et du trichlorure d'antimoine en solution chlorhydrique par le tributylphosphate en solution diluee dans le sulfure de carbone
+WoS: study of extraction of hydrochloric acid and antinomy trichloride hydrochloric acid solution using tributylphosphate in diluted solution in carbon sulfide
+
+INCORRECT TITLE: doi - 10.1016/S0003-2670(00)86944-5
+Perfect Ratio: 73
+Partial Ratio: 91
+Publisher: sur la thermogravim√©trie des pr√©cipit√©s analytiques
+WoS: *sur la thermogravimetrie des precipites analytiques .61. dosage du palladium
+
+INCORRECT TITLE: doi - 10.1016/S0003-2670(01)82419-3
+Perfect Ratio: 61
+Partial Ratio: 62
+Publisher: extraction par les sels d'ammonium quaternaire a haut poids moleculaire, de l'acide hydroxyethylethylenediaminetriacetique et de ses complexes avec les lanthanides et les actinides trivalents
+WoS: quaternary ammonium salts of high molecular weight in extraction of hydroxyethylethylenediaminetriacetic acid and its complexes with trivalent actinides and lanthanides .1. extraction of complex-forming agent
+
+INCORRECT TITLE: doi - 10.1016/S0003-2670(01)95272-9
+Perfect Ratio: 50
+Partial Ratio: 52
+Publisher: differenzierung der bindungsformen von kupferspuren in pflanzlichen lebensmitteln mittels ionenaustausch an cellulose-materialien und gel-filtration
+WoS: differentiation of the chemical forms of trace amounts of copper in peas and soy meal by means of ion-exchange on cellulose materials and molecular exclusion chromatography
+
+INCORRECT TITLE: doi - 10.1016/S0003-2670(00)83443-1
+Perfect Ratio: 79
+Partial Ratio: 82
+Publisher: extraktion von alkali- und erdalkalimetallionen mit (sym-dibenzo-14-krone-4-oxy)- und (sym-dibenzo-16-krone-5-oxy)-carbons√§uren
+WoS: extraction of alkali and alkaline-earth metal-ions with (sym-dibenzo-14-crown-4-oxy)- and (sym-dibenzo-16-crown-5-oxy)-carboxylic acids
+
+INCORRECT TITLE: doi - 10.1016/j.biopsycho.2004.04.002
+Perfect Ratio: 37
+Partial Ratio: 43
+Publisher: abstracts from the 10th annual meeting of isarp
+WoS: breathing patterns and their modulatory effects on autonomic regulation
+
+TITLE CORRECTNESS
+{'exact_correct_counter': 1175, 'mostly_correct_counter': 365, 'missing_counter': 0, 'incorrect_counter': 18, 'total': 1558}
+Exact Correct: 75.42%
+Mostly Correct: 23.43%
+Missing Authors: 0.00%
+Incorrect: 1.16%
+
+
+Process finished with exit code 0

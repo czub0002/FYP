@@ -1,0 +1,1100 @@
+/usr/bin/python3 /Users/christianzubcic/Documents/Monash University/2023/Semester 2/FYP/FYP/data/research_topics.py
+AVERAGE CITATIONS PER YEAR
+  Publish Year    Ave. Citations    No. of Papers
+--------------  ----------------  ---------------
+          2000           45                     1
+          2001           31                     1
+          2002           43                     8
+          2003           37.7                  10
+          2004           51.2941               17
+          2005           42.1                  10
+          2006           30.5333              315
+          2007           27.4051              869
+          2008           29.1833              442
+          2009           32.0738             1071
+          2010           33.572              1271
+          2011           34.1437              355
+          2012           34.2095              377
+          2013           33.3694             1034
+          2014           37.4722              845
+          2015           36.6069              781
+          2016           40.8527              543
+          2017           33.3987              908
+          2018           38.9153              826
+          2019           44.4255             1490
+          2020           44.0222             1799
+          2021           46.288              1795
+          2022           48.7826             1780
+          2023           52.3804             2082
+          2024           27                     1
+
+AVERAGE CITATIONS PER NO. OF AUTHORS
+  No. of Authors    Ave. Citations    No. of Papers
+----------------  ----------------  ---------------
+               1           40.0377             2600
+               2           39.1197             3751
+               3           40.1212             3738
+               4           40.4745             2921
+               5           40.0815             1913
+               6           42.4432             1293
+               7           40.3418              831
+               8           42.9982              541
+               9           43.1641              323
+              10           42.4315              241
+              11           47.0663              166
+              12           49.234                94
+              13           47.75                 64
+              14           38.6842               38
+              15           47.6765               34
+              16           43.08                 25
+              17           39.3                  10
+              18           49.4444                9
+              19           46.7273               11
+              20           37.4286                7
+              21           48.5                   2
+              22           82.5                   4
+              23           50.6667                3
+              24          145                     3
+              25           35                     2
+              26           31.5                   2
+              28           34                     1
+              30          124                     1
+              31           69                     1
+              32           24                     1
+              60           44                     1
+
+AVERAGE CITATIONS PER NO. OF KEYWORDS
+  No. of Keywords    Ave. Citations    No. of Papers
+-----------------  ----------------  ---------------
+                1           26.1195             1732
+                2           29.65               1543
+                3           31.8239             1374
+                4           34.542              1190
+                5           36.6821             1126
+                6           39.5245              978
+                7           41.1502              872
+                8           44.0833              720
+                9           47.6466              648
+               10           64.283              4951
+
+AVERAGE CITATIONS PER JOURNAL
+Journal                                                                                              Ave. Citations    No. of Papers
+-------------------------------------------------------------------------------------------------  ----------------  ---------------
+CATALYSIS REVIEWS-SCIENCE AND ENGINEERING                                                                 226.333                  3
+TEXTILE PROGRESS                                                                                          188                      1
+INTERNATIONAL REVIEWS OF IMMUNOLOGY                                                                       151.667                  9
+INTERNATIONAL MATERIALS REVIEWS                                                                           150                      6
+LIQUID CRYSTALS REVIEWS                                                                                   142                      2
+BRAIN-COMPUTER INTERFACES                                                                                 135                      3
+TRANSCRIPTION-AUSTIN                                                                                      119.5                    4
+INTERNATIONAL REVIEWS IN PHYSICAL CHEMISTRY                                                               115                      7
+ARCHAEOLOGICAL JOURNAL                                                                                     97                      1
+JOURNAL OF SMALL BUSINESS MANAGEMENT                                                                       96.1667                42
+APPLIED SPECTROSCOPY REVIEWS                                                                               95.4167                12
+SUSTAINABLE ENVIRONMENT                                                                                    91.25                   4
+GEOGRAFISKA ANNALER SERIES B-HUMAN GEOGRAPHY                                                               89.6                    5
+ADVANCED MANUFACTURING-POLYMER & COMPOSITES SCIENCE                                                        88.6667                 3
+TISSUE BARRIERS                                                                                            87                      6
+INTERNATIONAL GEOLOGY REVIEW                                                                               83.7667                90
+WORLDS POULTRY SCIENCE JOURNAL                                                                             83.0333                60
+JOURNAL OF GLOBAL INFORMATION TECHNOLOGY MANAGEMENT                                                        81                      1
+JOURNAL OF EDUCATION FOR STUDENTS PLACED AT RISK                                                           80                      4
+PRODUCTION AND MANUFACTURING RESEARCH-AN OPEN ACCESS JOURNAL                                               79.8                   10
+SPATIAL COGNITION AND COMPUTATION                                                                          79.2727                11
+NORMA                                                                                                      79.25                   4
+SETTLER COLONIAL STUDIES                                                                                   78.7143                 7
+INTERNATIONAL JOURNAL OF NAUTICAL ARCHAEOLOGY                                                              78.2857                 7
+VIRULENCE                                                                                                  78.2407                54
+MYCOLOGY-AN INTERNATIONAL JOURNAL ON FUNGAL BIOLOGY                                                        76.2857                 7
+TAPUYA: LATIN AMERICAN SCIENCE, TECHNOLOGY AND SOCIETY                                                     75.3333                 3
+JUSTICE EVALUATION JOURNAL                                                                                 74                      1
+JOURNAL OF ECOTOURISM                                                                                      73.2                    5
+BILINGUAL RESEARCH JOURNAL                                                                                 73                      5
+AMBIX                                                                                                      72.7143                 7
+JOURNAL OF DECISION SYSTEMS                                                                                72.4                   10
+SUSTAINABILITY-SCIENCE PRACTICE AND POLICY                                                                 72                      8
+DIPLOMACY & STATECRAFT                                                                                     71.8333                 6
+SYSTEMATICS AND BIODIVERSITY                                                                               71.75                  24
+ANNALS OF SCIENCE                                                                                          71.6607                56
+INTERNATIONAL JOURNAL OF QUALITATIVE STUDIES ON HEALTH AND WELL-BEING                                      71.25                  12
+HUMAN-COMPUTER INTERACTION                                                                                 70                      5
+INTERNATIONAL JOURNAL OF HUMAN-COMPUTER INTERACTION                                                        69.8305                59
+POLITICAL RESEARCH EXCHANGE                                                                                69.75                   4
+SCHOOL PSYCHOLOGY REVIEW                                                                                   69.2222                36
+CELL ADHESION & MIGRATION                                                                                  69.1667                12
+IMMUNOLOGICAL MEDICINE                                                                                     69                      2
+JOURNAL OF BUSINESS ANALYTICS                                                                              68.3333                 3
+ECONOMIC GEOGRAPHY                                                                                         68                      8
+INTERNATIONAL JOURNAL OF STRATEGIC COMMUNICATION                                                           68                      4
+INTERNATIONAL JOURNAL OF SUSTAINABLE ENERGY                                                                67.6154                13
+SOCIOLOGICAL QUARTERLY                                                                                     67.3913                92
+COGENT BUSINESS & MANAGEMENT                                                                               67.0407               172
+EUROPEAN JOURNAL OF INFORMATION SYSTEMS                                                                    66.65                  20
+HYDROLOGICAL SCIENCES JOURNAL                                                                              66.625                 32
+THEORETICAL ISSUES IN ERGONOMICS SCIENCE                                                                   66.625                  8
+NEOTROPICAL BIODIVERSITY                                                                                   66.5714                 7
+JOURNAL OF CULINARY SCIENCE & TECHNOLOGY                                                                   65.9167                12
+ADVANCES IN BUILDING ENERGY RESEARCH                                                                       65.8333                12
+SPORT MANAGEMENT REVIEW                                                                                    65.5085                59
+CREATIVE INDUSTRIES JOURNAL                                                                                65.4286                 7
+AUSTRALIAN FORESTRY                                                                                        65.3125                16
+TRANSACTIONS OF THE ROYAL SOCIETY OF SOUTH AUSTRALIA                                                       65.1818                11
+SUPPLY CHAIN FORUM                                                                                         64.8571                 7
+ASIA PACIFIC LAW REVIEW                                                                                    64.8333                 6
+VICTIMS & OFFENDERS                                                                                        64.8049                41
+KNOWLEDGE MANAGEMENT RESEARCH & PRACTICE                                                                   64.6716                67
+POLAR GEOGRAPHY                                                                                            64.5                    2
+SPEECH LANGUAGE AND HEARING                                                                                64.25                   4
+CRITICAL STUDIES ON TERRORISM                                                                              64.1667                 6
+NAWPA PACHA                                                                                                64                      2
+ACCOUNTING FORUM                                                                                           63.8571                21
+JOURNAL OF EVIDENCE-BASED SOCIAL WORK                                                                      63.8                   10
+SOUND STUDIES                                                                                              63.5                    2
+CHANNELS                                                                                                   62.7143                14
+GEOGRAPHICAL REVIEW                                                                                        62.3333                 9
+ASIAN JOURNAL OF MIDDLE EASTERN AND ISLAMIC STUDIES                                                        62.25                   8
+CURRICULUM INQUIRY                                                                                         62                     24
+REVIEW OF POLITICAL ECONOMY                                                                                61.9286                14
+INTERNATIONAL JOURNAL OF AGRICULTURAL SUSTAINABILITY                                                       61.75                  20
+JOURNAL OF GLOBAL FASHION MARKETING                                                                        61.5                    4
+ISOTOPES IN ENVIRONMENTAL AND HEALTH STUDIES                                                               61.5                   10
+COGENT PSYCHOLOGY                                                                                          61.4906                53
+NEW ZEALAND JOURNAL OF GEOLOGY AND GEOPHYSICS                                                              61.35                  20
+INTERNATIONAL JOURNAL OF PSYCHOANALYSIS                                                                    61.2353                17
+STRABISMUS                                                                                                 60.6667                 6
+JOURNAL OF CURRENT ISSUES AND RESEARCH IN ADVERTISING                                                      60.5                    4
+STUDIES IN CONFLICT & TERRORISM                                                                            60.3038                79
+LOISIR & SOCIETE-SOCIETY AND LEISURE                                                                       60.1                   10
+CHRISTIAN HIGHER EDUCATION                                                                                 60                      1
+BEHAVIOUR & INFORMATION TECHNOLOGY                                                                         59.4629               175
+WORLD JOURNAL OF BIOLOGICAL PSYCHIATRY                                                                     59.3636                44
+BIOLOGICAL AGRICULTURE & HORTICULTURE                                                                      59                     10
+DEVIANT BEHAVIOR                                                                                           58.6481                54
+VIRTUAL AND PHYSICAL PROTOTYPING                                                                           57.6154                13
+BOTANY LETTERS                                                                                             57.5                   12
+JOURNAL OF CRIME & JUSTICE                                                                                 57                      4
+NORA-NORDIC JOURNAL OF FEMINIST AND GENDER RESEARCH                                                        56.8571                 7
+TOXIN REVIEWS                                                                                              56.8519                27
+ANNALS OF MEDICINE                                                                                         56.8034               117
+INTERNATIONAL JOURNAL OF URBAN SUSTAINABLE DEVELOPMENT                                                     56.75                   4
+LATIN AMERICAN AND CARIBBEAN ETHNIC STUDIES                                                                56.4                    5
+ARCHITECTURAL ENGINEERING AND DESIGN MANAGEMENT                                                            56.3077                13
+INTERNATIONAL JOURNAL OF POLYMERIC MATERIALS AND POLYMERIC BIOMATERIALS                                    56.1111                18
+COGENT SOCIAL SCIENCES                                                                                     56.0233               129
+PSYECOLOGY-BILINGUAL JOURNAL OF ENVIRONMENTAL PSYCHOLOGY-REVISTA BILINGUE DE PSICOLOGIA AMBIENTAL          56                      2
+JOURNAL OF GLOBAL SPORT MANAGEMENT                                                                         55.6667                 9
+POLICY DESIGN AND PRACTICE                                                                                 55.6667                 9
+BIOFOULING                                                                                                 55.5806                31
+ANXIETY STRESS AND COPING                                                                                  55.5357                28
+INTERNATIONAL JOURNAL OF SUSTAINABLE TRANSPORTATION                                                        55.2222                 9
+COGENT ECONOMICS & FINANCE                                                                                 55.1159               138
+APPLIED MOBILITIES                                                                                         55                      2
+TAPUYA-LATIN AMERICAN SCIENCE TECHNOLOGY AND SOCIETY                                                       55                      3
+NANOCOMPOSITES                                                                                             55                      1
+CLIMATE AND DEVELOPMENT                                                                                    54.9643                28
+ENGINEERING MANAGEMENT JOURNAL                                                                             54.6429                14
+CANADIAN WATER RESOURCES JOURNAL                                                                           54.4286                14
+INLAND WATERS                                                                                              54.25                   8
+MOLECULAR AND CELLULAR BIOLOGY                                                                             54.2306               633
+IMMUNOLOGICAL INVESTIGATIONS                                                                               54.0741                27
+HISTORIAN                                                                                                  54                      3
+MINERAL PROCESSING AND EXTRACTIVE METALLURGY REVIEW                                                        53.8571                21
+INTERNATIONAL JOURNAL OF PHYTOREMEDIATION                                                                  53.75                  20
+LEISURE SCIENCES                                                                                           53.7237                76
+JOURNAL OF ADHESION                                                                                        53.7059                17
+NANOTOXICOLOGY                                                                                             53.6471                17
+ENVIRONMENTAL HAZARDS-HUMAN AND POLICY DIMENSIONS                                                          53.5                    4
+PSYCHOLOGY & HEALTH                                                                                        53.3727               110
+SOUTH AFRICAN JOURNAL ON HUMAN RIGHTS                                                                      53.25                   4
+TRANSPORT REVIEWS                                                                                          53.0556                72
+CRITICAL STUDIES ON SECURITY                                                                               53                      4
+NEW REVIEW OF HYPERMEDIA AND MULTIMEDIA                                                                    52.6667                 3
+JOURNAL OF APPLIED AQUACULTURE                                                                             52.5455                11
+TRANSNATIONAL SCREENS                                                                                      52.5                    4
+SOCIOLOGICAL SPECTRUM                                                                                      52.4906                53
+VISUAL STUDIES                                                                                             52.4667                15
+CELL CYCLE                                                                                                 52.3675               117
+COGENT EDUCATION                                                                                           52.2281               114
+COMMUNICATION RESEARCH AND PRACTICE                                                                        52.1111                 9
+OCEAN DEVELOPMENT AND INTERNATIONAL LAW                                                                    52.0526                38
+MARINE BIOLOGY RESEARCH                                                                                    51.9545                22
+AJAR-AFRICAN JOURNAL OF AIDS RESEARCH                                                                      51.95                  20
+MARINE AND FRESHWATER BEHAVIOUR AND PHYSIOLOGY                                                             51.8667                15
+INTERNATIONAL JOURNAL OF TRANSGENDER HEALTH                                                                51.6667                 3
+SYSTEMS BIOLOGY IN REPRODUCTIVE MEDICINE                                                                   51.5357                28
+CARBON MANAGEMENT                                                                                          51.1786                28
+INTERNATIONAL JOURNAL OF PLAY                                                                              51.1667                 6
+ARCHIVES OF PHYSIOLOGY AND BIOCHEMISTRY                                                                    51.0208                48
+STUDIES IN THE HISTORY OF GARDENS & DESIGNED LANDSCAPES                                                    51                      1
+AUTOIMMUNITY                                                                                               50.8519                54
+ASIAN JOURNAL OF WOMENS STUDIES                                                                            50.5714                 7
+JOURNAL OF DRUG ASSESSMENT                                                                                 50.5                    2
+JOURNAL OF ENERGY & NATURAL RESOURCES LAW                                                                  50.5                    4
+CLINICAL PSYCHOLOGIST                                                                                      50.4444                18
+EAST ASIAN SCIENCE TECHNOLOGY AND SOCIETY-AN INTERNATIONAL JOURNAL                                         50.4444                45
+IDENTITIES-GLOBAL STUDIES IN CULTURE AND POWER                                                             50.2338                77
+COGENT FOOD & AGRICULTURE                                                                                  50.1765                17
+AUGMENTATIVE AND ALTERNATIVE COMMUNICATION                                                                 50.1081                37
+CLIMATE POLICY                                                                                             50.0769                39
+ENGLISH IN EDUCATION                                                                                       49.9                   10
+EXPERT REVIEW OF PHARMACOECONOMICS & OUTCOMES RESEARCH                                                     49.8095                21
+JOURNAL OF OCCUPATIONAL SCIENCE                                                                            49.8                    5
+ANALYTICAL CHEMISTRY LETTERS                                                                               49.6667                 6
+INTERNATIONAL JOURNAL OF SYSTEMS SCIENCE-OPERATIONS & LOGISTICS                                            49.4                    5
+TRANSPORTMETRICA A-TRANSPORT SCIENCE                                                                       49.3537                82
+NORDIC SOCIAL WORK RESEARCH                                                                                49.3333                 6
+AUSTRALIAN JOURNAL OF CIVIL ENGINEERING                                                                    49.3333                 6
+ARCTIC ANTARCTIC AND ALPINE RESEARCH                                                                       49.1692                65
+INTERNATIONAL JOURNAL OF FRUIT SCIENCE                                                                     49.0625                16
+INTERNATIONAL JOURNAL OF SUSTAINABLE ENGINEERING                                                           48.8333                12
+MOLECULAR SIMULATION                                                                                       48.8235                34
+SOULS                                                                                                      48.7778                 9
+JOURNAL OF REAL ESTATE RESEARCH                                                                            48.75                   8
+SUSTAINABLE AND RESILIENT INFRASTRUCTURE                                                                   48.6667                 6
+AQUACULTURE ECONOMICS & MANAGEMENT                                                                         48.6364                11
+POLITICAL COMMUNICATION                                                                                    48.569                 58
+AMERICAN JOURNAL OF DRUG AND ALCOHOL ABUSE                                                                 48.4783                46
+BIG EARTH DATA                                                                                             48.4706                17
+DRUGS-EDUCATION PREVENTION AND POLICY                                                                      48.4595                37
+JOURNAL OF LEISURE RESEARCH                                                                                48.3333                 3
+COACHING-AN INTERNATIONAL JOURNAL OF THEORY RESEARCH AND PRACTICE                                          48.3333                 6
+ARCHIVES OF AGRONOMY AND SOIL SCIENCE                                                                      48.1429                63
+INTERNATIONAL JOURNAL OF GEOGRAPHICAL INFORMATION SCIENCE                                                  48.0385                52
+HISTORY OF PHOTOGRAPHY                                                                                     47.8929                28
+TRANSPORTMETRICA B-TRANSPORT DYNAMICS                                                                      47.6667                48
+CHILD CARE IN PRACTICE                                                                                     47.6667                 3
+AUSTRALIAN PSYCHOLOGIST                                                                                    47.4068                59
+RELIGION & EDUCATION                                                                                       47.25                   4
+DISABILITY AND REHABILITATION-ASSISTIVE TECHNOLOGY                                                         47                     33
+BIOREMEDIATION JOURNAL                                                                                     47                     13
+VETERINARY QUARTERLY                                                                                       46.8966                29
+BIOFUELS-UK                                                                                                46.875                 24
+SUBSTANCE USE & MISUSE                                                                                     46.642                176
+POLITICAL SCIENCE                                                                                          46.5455                22
+MABS                                                                                                       46.4655                58
+ARCHIVES OF PHYTOPATHOLOGY AND PLANT PROTECTION                                                            46.4615                26
+JOURNAL OF CLINICAL AND EXPERIMENTAL NEUROPSYCHOLOGY                                                       46.3784                37
+JOURNAL OF HEALTH COMMUNICATION                                                                            46.3043                23
+SOCIETY & NATURAL RESOURCES                                                                                46.2676               142
+CANADIAN JOURNAL OF PLANT PATHOLOGY                                                                        45.9167                36
+JOURNAL OF APPLIED SPORT PSYCHOLOGY                                                                        45.9091                11
+ICHNOS-AN INTERNATIONAL JOURNAL FOR PLANT AND ANIMAL TRACES                                                45.7778                 9
+CODESIGN-INTERNATIONAL JOURNAL OF COCREATION IN DESIGN AND THE ARTS                                        45.6842                19
+AUSTRALIAN JOURNAL OF EARTH SCIENCES                                                                       45.6232                69
+DEFENCE AND PEACE ECONOMICS                                                                                45.5806                31
+BIOACOUSTICS-THE INTERNATIONAL JOURNAL OF ANIMAL SOUND AND ITS RECORDING                                   45.4167                12
+EUROPEAN JOURNAL OF PSYCHOTRAUMATOLOGY                                                                     45.4                   15
+BIOLOGICAL RHYTHM RESEARCH                                                                                 45.3023                43
+INFORMATICS FOR HEALTH & SOCIAL CARE                                                                       45.25                  16
+WORK AND STRESS                                                                                            45.127                 63
+ISSUES IN MENTAL HEALTH NURSING                                                                            45.125                 32
+TRANSACTIONS OF THE INDIAN CERAMIC SOCIETY                                                                 45.1111                18
+TOXICOLOGY MECHANISMS AND METHODS                                                                          45                     59
+JOURNAL OF INDUSTRIAL AND PRODUCTION ENGINEERING                                                           45                      9
+INTERNATIONAL JOURNAL OF AEROSPACE PSYCHOLOGY                                                              45                      2
+ISLETS                                                                                                     45                      6
+ARID LAND RESEARCH AND MANAGEMENT                                                                          44.9091                22
+SOUTHERN AFRICAN LINGUISTICS AND APPLIED LANGUAGE STUDIES                                                  44.8056                36
+HEALTH CARE FOR WOMEN INTERNATIONAL                                                                        44.8                   15
+BIOENGINEERED                                                                                              44.7984               129
+JOURNAL OF CONTROL AND DECISION                                                                            44.7692                13
+DISABILITY AND REHABILITATION                                                                              44.75                 216
+TOPICS IN STROKE REHABILITATION                                                                            44.6739                46
+SEXUAL AND REPRODUCTIVE HEALTH MATTERS                                                                     44.4783                23
+GLOBAL HEALTH ACTION                                                                                       44.25                  16
+INTERNATIONAL JOURNAL OF ENVIRONMENTAL ANALYTICAL CHEMISTRY                                                44.1678               149
+AUSTRALASIAN JOURNAL OF WATER RESOURCES                                                                    44                      4
+CHRONOBIOLOGY INTERNATIONAL                                                                                43.875                 24
+INTERNATIONAL JOURNAL OF MODELLING AND SIMULATION                                                          43.8                   15
+INTERNATIONAL JOURNAL OF FOOD PROPERTIES                                                                   43.7013                77
+SOUTH AFRICAN JOURNAL OF PLANT AND SOIL                                                                    43.6667                 9
+INTERNATIONAL JOURNAL OF RAIL TRANSPORTATION                                                               43.6667                 3
+INTERNATIONAL JOURNAL OF RIVER BASIN MANAGEMENT                                                            43.6429                14
+JOURNAL OF CONSTRUCTIVIST PSYCHOLOGY                                                                       43.6                   10
+JOURNAL OF MAPS                                                                                            43.5882                17
+SOUTH EAST ASIA RESEARCH                                                                                   43.5556                18
+INTERNATIONAL JOURNAL OF PEST MANAGEMENT                                                                   43.4167                24
+BIOCATALYSIS AND BIOTRANSFORMATION                                                                         43.375                 40
+LIBYAN JOURNAL OF MEDICINE                                                                                 43.375                  8
+BIOTECHNOLOGY AND GENETIC ENGINEERING REVIEWS                                                              43.25                  16
+ERGONOMICS                                                                                                 43.1774                62
+COGENT ENGINEERING                                                                                         43.1511               139
+MECHANICS BASED DESIGN OF STRUCTURES AND MACHINES                                                          43.1091                55
+BIOMARKERS                                                                                                 43.0857                70
+SCANDINAVIAN JOURNAL OF OCCUPATIONAL THERAPY                                                               42.9545                66
+ITALIAN JOURNAL OF ANIMAL SCIENCE                                                                          42.9444                18
+INTERNATIONAL JOURNAL OF DIGITAL EARTH                                                                     42.8684                38
+INTERNATIONAL JOURNAL OF SUSTAINABLE DEVELOPMENT AND WORLD ECOLOGY                                         42.85                  20
+JOURNAL OF MENTAL HEALTH                                                                                   42.8387                93
+BRAIN INJURY                                                                                               42.7481               258
+CARTOGRAPHY AND GEOGRAPHIC INFORMATION SCIENCE                                                             42.6842                19
+NUCLEUS                                                                                                    42.6667                 6
+URBAN WATER JOURNAL                                                                                        42.6364                33
+MECHANICS OF ADVANCED MATERIALS AND STRUCTURES                                                             42.5772               123
+NETWORK-COMPUTATION IN NEURAL SYSTEMS                                                                      42.5455                11
+MOLECULAR PHYSICS                                                                                          42.4483               145
+CANCER BIOLOGY & THERAPY                                                                                   42.3475               141
+MATERIALS RESEARCH LETTERS                                                                                 42                     16
+JOURNAL OF HERBS SPICES AND MEDICINAL PLANTS                                                               42                      1
+HUMAN DIMENSIONS OF WILDLIFE                                                                               41.9167                12
+AUSTRALIAN JOURNAL OF PSYCHOLOGY                                                                           41.85                  40
+CLINICAL AND EXPERIMENTAL OPTOMETRY                                                                        41.7857                28
+INTERNATIONAL JOURNAL OF ENVIRONMENTAL HEALTH RESEARCH                                                     41.7742                62
+COGENT ARTS & HUMANITIES                                                                                   41.7                   60
+TRANSPORTATION LETTERS-THE INTERNATIONAL JOURNAL OF TRANSPORTATION RESEARCH                                41.6977                86
+INTERNATIONAL JOURNAL OF DEVELOPMENTAL DISABILITIES                                                        41.6667                12
+MOLLUSCAN RESEARCH                                                                                         41.6                    5
+JOURNAL OF MUSICOLOGICAL RESEARCH                                                                          41.6                   15
+COASTAL ENGINEERING JOURNAL                                                                                41.5455                11
+CANADIAN JOURNAL OF REMOTE SENSING                                                                         41.5227                44
+JOURNAL OF APPLIED WATER ENGINEERING AND RESEARCH                                                          41.4286                 7
+INTERNATIONAL JOURNAL OF PAVEMENT ENGINEERING                                                              41.4194                31
+INTERNATIONAL JOURNAL OF ARCHITECTURAL HERITAGE                                                            41.2041                98
+INFOR                                                                                                      41.125                  8
+JOURNAL OF INTELLIGENT TRANSPORTATION SYSTEMS                                                              40.8571                 7
+CANADIAN JOURNAL OF PAIN-REVUE CANADIENNE DE LA DOULEUR                                                    40.8333                 6
+CLINICAL LINGUISTICS & PHONETICS                                                                           40.8293                82
+INTERNATIONAL JOURNAL OF RADIATION BIOLOGY                                                                 40.8286                70
+TRIBOLOGY-MATERIALS SURFACES & INTERFACES                                                                  40.8                    5
+COMMUNITY COLLEGE JOURNAL OF RESEARCH AND PRACTICE                                                         40.8                   30
+AVIAN PATHOLOGY                                                                                            40.7429                70
+CHEMISTRY AND ECOLOGY                                                                                      40.5385                13
+AUSTRALIAN ARCHAEOLOGY                                                                                     40.5                   20
+INORGANIC AND NANO-METAL CHEMISTRY                                                                         40.3778                45
+JOURNAL OF DIETARY SUPPLEMENTS                                                                             40.2143                14
+JOURNAL OF TRANSPORTATION SAFETY & SECURITY                                                                40.1613                31
+BIRD STUDY                                                                                                 40.1296                54
+APPLIED MATHEMATICS IN SCIENCE AND ENGINEERING                                                             40                      5
+HYPERTENSION IN PREGNANCY                                                                                  40                     15
+INVERTEBRATE REPRODUCTION & DEVELOPMENT                                                                    39.8333                24
+COMMUNICATIONS IN SOIL SCIENCE AND PLANT ANALYSIS                                                          39.6136                44
+TOXICOLOGICAL AND ENVIRONMENTAL CHEMISTRY                                                                  39.5909                22
+AUSTRALASIAN JOURNAL OF ENVIRONMENTAL MANAGEMENT                                                           39.4                   10
+BIOCONTROL SCIENCE AND TECHNOLOGY                                                                          39.2687                67
+INTERNET HISTORIES                                                                                         39.1667                 6
+HUMAN VACCINES & IMMUNOTHERAPEUTICS                                                                        39.1561               173
+INTERNATIONAL JOURNAL OF FOOD SCIENCES AND NUTRITION                                                       39.0761                92
+CRITICAL AFRICAN STUDIES                                                                                   39                      3
+JOURNAL OF BIOLOGICALLY ACTIVE PRODUCTS FROM NATURE                                                        39                      4
+INFORMATION SOCIETY                                                                                        39                      8
+INTERNATIONAL JOURNAL OF SMART AND NANO MATERIALS                                                          39                      3
+IISE TRANSACTIONS ON HEALTHCARE SYSTEMS ENGINEERING                                                        39                      1
+ECONOMETRIC REVIEWS                                                                                        38.8824                17
+ANNALS OF HUMAN BIOLOGY                                                                                    38.8228                79
+ACCOUNTABILITY IN RESEARCH-ETHICS INTEGRITY AND POLICY                                                     38.7857                14
+ADDICTION RESEARCH & THEORY                                                                                38.4138                29
+INTERNATIONAL JOURNAL OF HYPERTHERMIA                                                                      38.3846                39
+JOURNAL OF CROP IMPROVEMENT                                                                                38.25                  12
+EDUCATIONAL PHILOSOPHY AND THEORY                                                                          38.2321                56
+INHALATION TOXICOLOGY                                                                                      38.1067                75
+JOURNAL OF LOSS & TRAUMA                                                                                   38.0909                11
+APPLIED ARTIFICIAL INTELLIGENCE                                                                            38.0862                58
+CLIMACTERIC                                                                                                38.0385                26
+ARTIFICIAL CELLS NANOMEDICINE AND BIOTECHNOLOGY                                                            38.0256                39
+INTERNATIONAL JOURNAL OF VETERINARY SCIENCE AND MEDICINE                                                   38                      8
+INTERNATIONAL WOOD PRODUCTS JOURNAL                                                                        38                      2
+CLINICAL NEUROPSYCHOLOGIST                                                                                 37.8506                87
+INTERNATIONAL JOURNAL OF SPEECH-LANGUAGE PATHOLOGY                                                         37.7222                36
+JOURNAL OF APPLIED SECURITY RESEARCH                                                                       37.6667                 6
+NORDIC JOURNAL OF PSYCHIATRY                                                                               37.5603               141
+AUTOPHAGY                                                                                                  37.497                165
+EUROPEAN CLINICAL RESPIRATORY JOURNAL                                                                      37.25                   4
+EUROPEAN JOURNAL OF ENGINEERING EDUCATION                                                                  37.2353                17
+IISE TRANSACTIONS                                                                                          37.087                 23
+NEW ZEALAND JOURNAL OF MARINE AND FRESHWATER RESEARCH                                                      37.0769                26
+NUCLEOSIDES NUCLEOTIDES & NUCLEIC ACIDS                                                                    37.0588                17
+JOURNAL OF MATHEMATICS AND THE ARTS                                                                        37                      4
+NEW ZEALAND ECONOMIC PAPERS                                                                                37                      3
+INTERNATIONAL JOURNAL OF OCCUPATIONAL SAFETY AND ERGONOMICS                                                37                     17
+INTERNATIONAL JOURNAL OF CIRCUMPOLAR HEALTH                                                                36.9615                26
+PSYCHOANALYTIC QUARTERLY                                                                                   36.9259                27
+CHEMICAL ENGINEERING COMMUNICATIONS                                                                        36.7407                27
+JOURNAL OF ADHESION SCIENCE AND TECHNOLOGY                                                                 36.5                   28
+OCCUPATIONAL THERAPY IN HEALTH CARE                                                                        36.4167                12
+POPULAR MUSIC AND SOCIETY                                                                                  36.2105                19
+NEW BIOETHICS-A MULTIDISCIPLINARY JOURNAL OF BIOTECHNOLOGY AND THE BODY                                    36.2                    5
+JOURNAL OF PSYCHOSOMATIC OBSTETRICS & GYNECOLOGY                                                           36.0943                53
+INTERNATIONAL JOURNAL OF PRODUCTION RESEARCH                                                               36.0355               141
+EDUCATIONAL GERONTOLOGY                                                                                    35.9855                69
+INTERNATIONAL JOURNAL OF CRASHWORTHINESS                                                                   35.8621                29
+PHYSICAL THERAPY REVIEWS                                                                                   35.8182                11
+HUMAN AND ECOLOGICAL RISK ASSESSMENT                                                                       35.6628                86
+CLINICAL AND EXPERIMENTAL HYPERTENSION                                                                     35.5185                27
+WOOD MATERIAL SCIENCE & ENGINEERING                                                                        35.5                   28
+JOURNAL OF POETRY THERAPY                                                                                  35.3333                 3
+JOURNAL OF MATHEMATICAL SOCIOLOGY                                                                          35.3333                 3
+HISTORY AND PHILOSOPHY OF LOGIC                                                                            35.2381                21
+SAHARA J-JOURNAL OF SOCIAL ASPECTS OF HIV-AIDS                                                             35.2353                17
+IMMUNOPHARMACOLOGY AND IMMUNOTOXICOLOGY                                                                    35.0357                56
+ART JOURNAL                                                                                                35                      1
+INTERNATIONAL JOURNAL OF MINING RECLAMATION AND ENVIRONMENT                                                34.8571                 7
+MATERIALS TECHNOLOGY                                                                                       34.7069                58
+NEW ZEALAND JOURNAL OF BOTANY                                                                              34.6923                13
+JOURNAL OF STRUCTURAL INTEGRITY AND MAINTENANCE                                                            34.6667                 3
+JOURNAL OF BUSINESS & ECONOMIC STATISTICS                                                                  34.6667                30
+PHYSICAL & OCCUPATIONAL THERAPY IN PEDIATRICS                                                              34.2812                32
+ACTA AGRICULTURAE SCANDINAVICA SECTION B-SOIL AND PLANT SCIENCE                                            34.24                 100
+INTERNATIONAL JOURNAL OF INJURY CONTROL AND SAFETY PROMOTION                                               34.2                   10
+CANCER INVESTIGATION                                                                                       34.1                   20
+GEOGRAPHY                                                                                                  34                      1
+CHILDHOOD IN THE PAST                                                                                      34                      1
+JOURNAL OF LEGAL MEDICINE                                                                                  34                      1
+JOURNAL OF SUBSTANCE USE                                                                                   34                     91
+MARINE GEORESOURCES & GEOTECHNOLOGY                                                                        33.9123                57
+INTERNATIONAL JOURNAL OF NEUROSCIENCE                                                                      33.8261                46
+INTERNATIONAL JOURNAL OF REMOTE SENSING                                                                    33.7676               142
+MATERIALS AND MANUFACTURING PROCESSES                                                                      33.5393                89
+APPLIED EARTH SCIENCE-TRANSACTIONS OF THE INSTITUTIONS OF MINING AND METALLURGY                            33.5                    2
+COASTAL MANAGEMENT                                                                                         33.4737                38
+SMART SCIENCE                                                                                              33.4286                 7
+JOURNAL OF INFORMATION AND TELECOMMUNICATION                                                               33.4                   10
+CIVIL ENGINEERING AND ENVIRONMENTAL SYSTEMS                                                                33.4                    5
+MYCOBIOLOGY                                                                                                33.3636                11
+INTERNATIONAL JOURNAL OF GREEN ENERGY                                                                      33.3333                21
+HOME HEALTH CARE SERVICES QUARTERLY                                                                        33.2                    5
+NEW ZEALAND JOURNAL OF ZOOLOGY                                                                             33.1875                16
+INTERNATIONAL JOURNAL OF AUDIOLOGY                                                                         33.1505                93
+ATMOSPHERE-OCEAN                                                                                           33.0556                36
+MYCOLOGIA                                                                                                  33.0469                64
+CANADIAN JOURNAL OF RESPIRATORY CRITICAL CARE AND SLEEP MEDICINE                                           33                      9
+LEUKOS                                                                                                     33                     10
+COMBUSTION THEORY AND MODELLING                                                                            33                     16
+COMMENTS ON INORGANIC CHEMISTRY                                                                            33                      3
+AUSTRALIAN JOURNAL OF MECHANICAL ENGINEERING                                                               32.9545                22
+SYSTEMS SCIENCE & CONTROL ENGINEERING                                                                      32.9333                15
+ARCHITECTURAL SCIENCE REVIEW                                                                               32.8824                17
+AUSTRALIAN JOURNAL OF STRUCTURAL ENGINEERING                                                               32.8                    5
+COMPREHENSIVE CHILD AND ADOLESCENT NURSING-BUILDING EVIDENCE FOR PRACTICE                                  32.75                   4
+ACTA AGRICULTURAE SCANDINAVICA SECTION A-ANIMAL SCIENCE                                                    32.7273                55
+JOURNAL OF CONTEMPORARY EAST ASIA STUDIES                                                                  32.6667                 3
+MEDICAL EDUCATION ONLINE                                                                                   32.4167                48
+SYMBOLAE OSLOENSES                                                                                         32.4                    5
+MARINE GEODESY                                                                                             32.2143                14
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY                                                                32.1739               391
+COCHLEAR IMPLANTS INTERNATIONAL                                                                            32.1                   20
+NEUROLOGICAL RESEARCH                                                                                      32.0923                65
+JOURNAL OF PALESTINE STUDIES                                                                               31.9706                34
+COMBUSTION SCIENCE AND TECHNOLOGY                                                                          31.8056                36
+CARTOGRAPHIC JOURNAL                                                                                       31.7826                23
+INTERNATIONAL JOURNAL OF COMPUTER INTEGRATED MANUFACTURING                                                 31.6667                72
+HUMAN FERTILITY                                                                                            31.5                   20
+ALEXANDRIA JOURNAL OF MEDICINE                                                                             31.5                   10
+ARCHIVES OF ANIMAL NUTRITION                                                                               31.4762                21
+NEW ZEALAND JOURNAL OF AGRICULTURAL RESEARCH                                                               31.4348                23
+LIQUID CRYSTALS                                                                                            31.1757               239
+BIOTECHNOLOGY & BIOTECHNOLOGICAL EQUIPMENT                                                                 31.1616                99
+TRANSPORTATION PLANNING AND TECHNOLOGY                                                                     31.0741                27
+LEUKEMIA & LYMPHOMA                                                                                        31.0122                82
+JOURNAL OF LOCATION BASED SERVICES                                                                         31                      2
+XENOBIOTICA                                                                                                30.7987               149
+INTERNATIONAL JOURNAL OF POLYMER ANALYSIS AND CHARACTERIZATION                                             30.5833                12
+COMMUNICATIONS IN STATISTICS-SIMULATION AND COMPUTATION                                                    30.5625                32
+NUMERICAL FUNCTIONAL ANALYSIS AND OPTIMIZATION                                                             30.4286                 7
+ENGINEERING ECONOMIST                                                                                      30.3333                 6
+INTERNATIONAL JOURNAL OF ACAROLOGY                                                                         30.2174                46
+SCANDINAVIAN ACTUARIAL JOURNAL                                                                             30.125                 32
+RELIGIOUS EDUCATION                                                                                        30.0435                23
+ASSISTIVE TECHNOLOGY                                                                                       30                     10
+MEDICAL TEACHER                                                                                            29.7373               118
+INTERNATIONAL JOURNAL OF COAL PREPARATION AND UTILIZATION                                                  29.7097                31
+INTERNATIONAL JOURNAL OF SYSTEMS SCIENCE                                                                   29.5185                81
+SHIP TECHNOLOGY RESEARCH                                                                                   29.5                    4
+CLINICAL AND INVESTIGATIVE ORTHODONTICS                                                                    29.5                    4
+BRITISH POULTRY SCIENCE                                                                                    29.4872               117
+SYNTHETIC COMMUNICATIONS                                                                                   29.3529                17
+APPLICABLE ANALYSIS                                                                                        29.191                 89
+BIOTECHNIC & HISTOCHEMISTRY                                                                                29.1212                66
+INTERNATIONAL JOURNAL OF OPTOMECHATRONICS                                                                  29                      2
+SOUTH AFRICAN JOURNAL OF CLINICAL NUTRITION                                                                28.8571                 7
+ULTRASTRUCTURAL PATHOLOGY                                                                                  28.7692                65
+AMERASIA JOURNAL                                                                                           28.75                   4
+RESEARCH IN MATHEMATICS                                                                                    28.6667                 3
+MACHINING SCIENCE AND TECHNOLOGY                                                                           28.6316                19
+LOGOPEDICS PHONIATRICS VOCOLOGY                                                                            28.4286                14
+TECHNOMETRICS                                                                                              28.2593                54
+VEHICLE SYSTEM DYNAMICS                                                                                    28.0405                74
+INTERNATIONAL JOURNAL OF FOREST ENGINEERING                                                                28                      5
+INTERNATIONAL JOURNAL OF PARALLEL EMERGENT AND DISTRIBUTED SYSTEMS                                         28                      9
+IISE TRANSACTIONS ON OCCUPATIONAL ERGONOMICS & HUMAN FACTORS                                               28                      1
+NEW ZEALAND VETERINARY JOURNAL                                                                             28                     23
+BLOOD PRESSURE                                                                                             27.8919                37
+MATHEMATICAL AND COMPUTER MODELLING OF DYNAMICAL SYSTEMS                                                   27.5238                21
+INTERNATIONAL JOURNAL OF PSYCHIATRY IN CLINICAL PRACTICE                                                   27.4444                18
+CANADIAN METALLURGICAL QUARTERLY                                                                           27.025                 40
+NEW ZEALAND ENTOMOLOGIST                                                                                   27                      1
+COMMUNICATION RESEARCH REPORTS                                                                             27                      7
+IETE JOURNAL OF RESEARCH                                                                                   26.9291               127
+AUTOMATIKA                                                                                                 26.8824                17
+INTERNATIONAL JOURNAL OF GENERAL SYSTEMS                                                                   26.8                   10
+ACTA CARDIOLOGICA                                                                                          26.77                 100
+INTERNATIONAL JOURNAL OF CONTROL                                                                           26.7357               227
+ARAB JOURNAL OF UROLOGY                                                                                    26.7188                32
+NEW ZEALAND JOURNAL OF CROP AND HORTICULTURAL SCIENCE                                                      26.6667                18
+TRANSACTIONS OF THE INSTITUTE OF METAL FINISHING                                                           26.5246                61
+INTERNATIONAL JOURNAL OF COMPUTATIONAL FLUID DYNAMICS                                                      26.4615                26
+JOURNAL OF ASIAN ARCHITECTURE AND BUILDING ENGINEERING                                                     26.3446               148
+ENGLISH STUDIES IN AFRICA                                                                                  26.1538                13
+PSYCHOANALYSIS SELF AND CONTEXT                                                                            26.1111                 9
+MATHEMATICAL POPULATION STUDIES                                                                            26.0952                21
+IETE TECHNICAL REVIEW                                                                                      26.0196                51
+WORLD FEDERATION OF OCCUPATIONAL THERAPISTS BULLETIN                                                       26                      4
+TRAFFIC INJURY PREVENTION                                                                                  25.9556               180
+JOURNAL OF MATHEMATICS AND MUSIC                                                                           25.8571                14
+AUSTRALIAN JOURNAL OF FORENSIC SCIENCES                                                                    25.7742                31
+COMMUNICATIONS IN PARTIAL DIFFERENTIAL EQUATIONS                                                           25.75                  12
+JOURNAL FOR PEACE AND NUCLEAR DISARMAMENT                                                                  25.6667                 9
+MATERIALS AT HIGH TEMPERATURES                                                                             25.4828                29
+NONDESTRUCTIVE TESTING AND EVALUATION                                                                      25.4444                 9
+NUCLEAR SCIENCE AND ENGINEERING                                                                            25.0943                53
+Issues in Mental Health Nursing                                                                            25                      1
+CONTEMPORARY THEATRE REVIEW                                                                                25                     17
+IMAGING SCIENCE JOURNAL                                                                                    24.6944                36
+INDIAN CHEMICAL ENGINEER                                                                                   24.6667                 3
+MOLECULAR CRYSTALS AND LIQUID CRYSTALS                                                                     24.2091               110
+Econometric Reviews                                                                                        24                      1
+INTERNATIONAL JOURNAL OF COMPUTER MATHEMATICS                                                              23.9176                85
+ORBIT-THE INTERNATIONAL JOURNAL ON ORBITAL DISORDERS-OCULOPLASTIC AND LACRIMAL SURGERY                     23.76                  25
+INTEGRATED FERROELECTRICS                                                                                  23.5672                67
+JOURNAL OF GEOGRAPHY                                                                                       23.5385                13
+JOURNAL OF ARCHITECTURAL EDUCATION                                                                         23.2683                41
+INSTRUMENTATION SCIENCE & TECHNOLOGY                                                                       23.25                  28
+JOURNAL OF INTERPROFESSIONAL CARE                                                                          23.2308                26
+NUCLEAR TECHNOLOGY                                                                                         23.0385                78
+RMS-RESEARCH IN MATHEMATICS & STATISTICS                                                                   23                      1
+ASIA PACIFIC JOURNAL OF COUNSELLING AND PSYCHOTHERAPY                                                      23                      1
+BRITISH JOURNAL OF NEUROSURGERY                                                                            22.7755               147
+ACTA CHIRURGICA BELGICA                                                                                    22.1389                36
+INFECTIOUS DISEASES                                                                                        22.0606                33
+INTERNATIONAL JOURNAL OF CAST METALS RESEARCH                                                              21.9286                28
+MATERIALS SCIENCE AND TECHNOLOGY                                                                           21.6241               141
+IRONMAKING & STEELMAKING                                                                                   21.2286                35
+STATISTICAL THEORY AND RELATED FIELDS                                                                      20.6667                 6
+ZOOLOGY IN THE MIDDLE EAST                                                                                 20.6                   15
+CLINICAL TOXICOLOGY                                                                                        20.3226                31
+MITOCHONDRIAL DNA PART A                                                                                   20.2553                47
+TRIBOLOGY TRANSACTIONS                                                                                     19.8739               111
+NATURAL PRODUCT RESEARCH                                                                                   19.7317               123
+PERFORMANCE RESEARCH                                                                                       19.6667                27
+MULTICULTURAL PERSPECTIVES                                                                                 19.5                    2
+JOURNAL OF AESTHETICS & CULTURE                                                                            19                      4
+INTERNATIONAL JOURNAL OF VENTILATION                                                                       19                      1
+COMMUNICATIONS IN ALGEBRA                                                                                  18.7321                56
+TECHNOLOGY-ARCHITECTURE + DESIGN                                                                           18.5                    2
+LINEAR & MULTILINEAR ALGEBRA                                                                               18.3084               107
+NEURO-OPHTHALMOLOGY                                                                                        18.16                  50
+AQUATIC INSECTS                                                                                            18.0833                24
+MINIMALLY INVASIVE THERAPY & ALLIED TECHNOLOGIES                                                           17.5775                71
+JOURNAL OF PAIN & PALLIATIVE CARE PHARMACOTHERAPY                                                          17.5556                 9
+INTERNATIONAL JOURNAL OF ELECTRONICS                                                                       17.3114               167
+PSYCHOLOGICAL PERSPECTIVES-A QUARTERLY JOURNAL OF JUNGIAN THOUGHT                                          15.6                    5
+NANOSCALE AND MICROSCALE THERMOPHYSICAL ENGINEERING                                                        15.3333                 3
+ACTA OTO-LARYNGOLOGICA CASE REPORTS                                                                        14.6667                 3
+RESEARCH-TECHNOLOGY MANAGEMENT                                                                             14.4691                81
+INTEGRAL TRANSFORMS AND SPECIAL FUNCTIONS                                                                  14.087                 46
+BRITISH JOURNAL FOR THE HISTORY OF MATHEMATICS                                                             14                      1
+COMMUNICATION TEACHER                                                                                      12.875                 16
+LIQUID CRYSTALS TODAY                                                                                      12                      1
+ETHICS & GLOBAL POLITICS                                                                                   12                      2
+MOLECULAR & CELLULAR ONCOLOGY                                                                              11.9474                19
+MITOCHONDRIAL DNA PART B-RESOURCES                                                                         11.4                  285
+CASE REPORTS IN PLASTIC SURGERY AND HAND SURGERY                                                           11                      1
+JOURNAL OF VISUAL COMMUNICATION IN MEDICINE                                                                10.5                    4
+INFORMATION SYSTEMS MANAGEMENT                                                                              5.83333               24
+
+AVERAGE CITATIONS PER DOCUMENT TYPE
+Document Type                       Ave. Citations    No. of Papers
+--------------------------------  ----------------  ---------------
+Review                                   85.2208                924
+Review; Early Access                     82.6769                 65
+Item About an Individual                 67                       1
+Article; Retracted Publication           50.7143                  7
+Article; Early Access                    49.6508                905
+Article; Data Paper                      40.3333                  3
+Article                                  38.0981              15920
+Reprint                                  34.5                     2
+Article; Proceedings Paper               29.0916                491
+Editorial Material                       13.4333                210
+Editorial Material; Early Access         13.125                   8
+Note                                     13.0588                 34
+Letter                                   10.3429                 35
+Letter; Early Access                      4.5                     2
+Correction                                3.81818                11
+Book Review                               1.66667                 3
+Correction; Early Access                  1                       3
+Retraction                                1                       1
+Retraction; Early Access                  0.666667                3
+News Item                                 0.5                     2
+Theater Review                            0                       1
+
+AVERAGE CITATIONS PER PUBLISHER
+Publisher                                                  Ave. Citations    No. of Papers
+-------------------------------------------------------  ----------------  ---------------
+MATRICE TECHNOLOGY LIMITED                                      134                      1
+TAYLOR & FRANCIS AUSTRALIA                                       69.6818                22
+CAMBRIDGE UNIV PRESS                                             64                     26
+NATL ASSOC SCHOOL PSYCHOLOGISTS                                  61.1818                11
+TAYLOR & FRANCIS AUSTRALASIA                                     60.25                   4
+V H WINSTON & SON INC                                            58.6                   10
+JAI PRESS INC                                                    57.6154                13
+ELSEVIER SCI LTD                                                 55.7879                33
+AMER SOC MICROBIOLOGY                                            54.2596               624
+GORDON BREACH PUBLISHING, TAYLOR & FRANCIS GROUP                 54                      5
+BLACKWELL PUBLISHERS                                             51.8                    5
+AMER REAL ESTATE SOC                                             51                      1
+TAYLOR & FRANCIS AS                                              50.9118              1043
+WILEY                                                            50.1224                49
+BUTTERWORTH-HEINEMANN LTD                                        49.3                   10
+EWHA WOMANS UNIV PRESS                                           47                      1
+UNIV TORONTO PRESS INC                                           46                      2
+INDIAN CERAMIC SOC                                               45.5714                14
+DUKE UNIV PRESS                                                  45.56                  25
+ASSOC ADVANCEMENT APPLIED SPORT PSYCHOLOGY                       45.5                    2
+TAYLOR & FRANCIS INC                                             45.1347              4810
+WILEY-BLACKWELL PUBLISHING, INC                                  44.5                    8
+LAWRENCE ERLBAUM ASSOC INC                                       42.5                    2
+PRESSES UNIV QUEBEC                                              42.5                    2
+BLACKWELL SCIENCE ASIA                                           41.7143                 7
+NATL INQUIRY SERVICES CENTRE PTY LTD                             41.5263                19
+PSYCHOANALYTIC QUARTERLY,INC                                     41                      3
+INST ARCTIC ALPINE RES                                           40.7576                33
+ACTA CARDIOLOGICA                                                40                      2
+TAYLOR & FRANCIS LTD                                             39.8439              9550
+FRESHWATER BIOLOGICAL ASSOC                                      39                      3
+AUSTRALIAN PSYCHOLOGICAL SOC                                     38.8125                16
+WILEY-BLACKWELL                                                  38.7736                53
+UNIV CALIF PRESS                                                 37.3684                19
+VICTORIA UNIV PRESS                                              37                      1
+INTERNATIONAL ASSOCIATION CIRCUMPOLAR HEALTH PUBLISHERS          36.2                    5
+JAMES & JAMES SCIENCE PUBLISHERS LTD/EARTHSCAN                   36                      2
+VICTORIA UNIV WELLINGTON                                         35.8889                 9
+INST FORESTERS AUSTRALIA                                         35.5                    2
+AUSTRALIAN PSYCHOL SOC                                           35.3333                 6
+ROYAL SOC MEDICINE PRESS LTD                                     35.3333                 3
+KOREAN SOC MYCOLOGY                                              34.3333                 3
+BLACKWELL PUBLISHING ASIA                                        34                      2
+ROYAL SOC SOUTH AUSTRALIA INC                                    33.5                    2
+CANADIAN METEOROLOGICAL OCEANOGRAPHIC SOC                        32.6154                13
+J ROSS PUBL                                                      32.3333                 3
+UNIV CALIFORNIA PRESS                                            32.3                   20
+BLACKWELL SCIENCE                                                32.1053                19
+BLACKWELL PUBLISHING INC                                         32                      1
+INT SCIENCE SERVICES/BALABAN PUBLISHERS                          31.3571                14
+RSNZ PUBLISHING                                                  31.1667                12
+CMOS-SCMO                                                        30.8667                15
+CAIRO UNIV                                                       30.8                    5
+LANDES BIOSCIENCE                                                30.7541               122
+HEMISPHERE PUBL CORP                                             30.0508                59
+BRITISH TRUST ORNITHOLOGY                                        28.7368                19
+BLACKWELL SCIENCE LTD                                            28.1613                31
+I P PUBLISHING LTD                                               28                      1
+INST PSYCHO-ANALYSIS                                             28                      2
+TAYLOR & FRANCIS                                                 27.8103                58
+AUSTRALIAN ARCHAEOLOGICAL ASSOC INC                              27.6667                 6
+ROYAL NETHERLANDS VETERINARY ASSOC                               27.6667                 6
+PALGRAVE MACMILLAN LTD                                           27.3837                86
+AMER STATISTICAL ASSOC                                           27.234                 47
+CASTINGS TECHNOLOGY INT                                          27                      1
+SCANDINAVIAN UNIVERSITY PRESS                                    26.5357                28
+M I T PRESS                                                      26.5                    6
+NISC PTY LTD                                                     26.5                    2
+INFORMA HEALTHCARE                                               26.4524               294
+MARCEL DEKKER INC                                                26.25                  36
+SAGE PUBLICATIONS LTD                                            26                      2
+ILLUMINAT ENG SOC NORTH AMER                                     26                      2
+CANADIAN METEOR & OCEANOGR SOC                                   25.5                    2
+SIR PUBLISHING                                                   25.3947                38
+IOP PUBLISHING LTD                                               25.125                  8
+NEW YORK BOTANICAL GARDEN                                        25.125                 16
+FOREFRONT PUBL GROUP                                             24.9167                12
+BLACKWELL PUBLISHING                                             24.8                   10
+CRC PRESS LLC                                                    24.4                    5
+SOC BOTANIQUE FRANCE                                             24                      1
+TAYLOR & FRANCIS LTD LONDON                                      23.8243                74
+WILLIAMS & WILKINS                                               23.7273                11
+SA MEDICAL ASSOC HEALTH & MEDICAL PUBL GROUP                     23.6667                 3
+ARAB ASSOC UROLOGY                                               23.5714                14
+INST MATERIALS                                                   22.7746                71
+CARFAX PUBLISHING                                                22.2838                74
+EXPERT REVIEWS                                                   22                      1
+NATL COUNCIL GEOGRAPHIC EDUCATION                                21.8333                12
+THOMAS LAND PUBLISHERS, INC                                      21.7143                 7
+AEOLUS PRESS                                                     21.1176                17
+R E S N A PRESS                                                  21                      2
+MUNKSGAARD INT PUBL LTD                                          21                      3
+CARFAX PUBL CO                                                   20.4035                57
+AMER NUCLEAR SOC                                                 20.2424                33
+PALGRAVE PUBLISHERS LTD                                          20.2308                26
+GORDON BREACH SCI PUBL LTD                                       20.1                   30
+AMHERST SCIENTIFIC PUBL                                          20                      1
+KLUWER ACADEMIC PUBL                                             20                      9
+SWETS ZEITLINGER PUBLISHERS                                      19.8358                67
+ACTA MEDICAL BELGICA                                             19.55                  20
+CANADIAN AERONAUTICS SPACE INST                                  19                      8
+CANADIAN WATER RESOURCES ASSOC-CWRA                              19                      1
+INT ASSOC CIRCUMPOLAR HEALTH PUBL                                19                      1
+SCIENCE REVIEWS 2000 LTD                                         19                      2
+SAPIENS PUBLISHING                                               19                      1
+MANEY PUBLISHING                                                 18.9072                97
+NEW ZEALAND VETERINARY ASSOC INC                                 18.9                   10
+KOREMA                                                           18.8571                 7
+ALLEN PRESS INC                                                  18.8333                 6
+AMER STATIST ASSN                                                18.75                   4
+PERGAMON-ELSEVIER SCIENCE LTD                                    18.5                    4
+NATURE PUBLISHING GROUP                                          18.4286                 7
+BRUNNER/MAZEL INC                                                18.1667                 6
+WORLD VETERINARY POULTRY ASSN                                    18                      3
+B C DECKER INC                                                   18                      1
+WORLD SCIENTIFIC PUBL CO PTE LTD                                 17.6667                 3
+DIAGNOSIS PRESS LTD                                              17.3571                14
+AMER NUCLEAR SOCIETY                                             17.34                  50
+INST METAL FINISHING                                             17.1111                18
+HARWOOD ACAD PUBL GMBH                                           17                     22
+I O M COMMUNICATIONS LTD INST MATERIALS                          16.9167                12
+SWETS ZEITLINGER BV                                              16.5714                14
+STOCKTON PRESS                                                   16.3953                43
+B I O S SCIENTIFIC PUBLISHERS LTD                                16                      3
+FUTURE SCI LTD                                                   15.6667                 3
+INDUSTRIAL RESEARCH INST, INC                                    15.6429                28
+CARTOGRAPHY & GEOGRAPHIC INFOR SOC                               15.5                    2
+WOODHEAD PUBL LIMITED                                            15                      4
+SOC TRIBOLOGISTS & LUBRICATION ENGINEERS                         14.8511                47
+ARCHITECTURAL INST JAPAN                                         14.566                 53
+ABLEX PUBL CORP                                                  14.5                    2
+EIANZ-ENVIRONMENT INST AUSTRALIA & NEW ZEALAND                   14                      1
+CRC PRESS INC                                                    13.7778                18
+ISIS MEDICAL MEDIA LTD                                           13.6364                11
+PROFESSIONAL ENGINEERING PUBLISHING LTD                          13.5                    2
+CASTINGS DEVELOPMENT CENTRE                                      13                      5
+INDIRA PUBLISHING HOUSE                                          12.5                    6
+CABI PUBLISHING                                                  12                      1
+LIPPINCOTT WILLIAMS & WILKINS                                    11                      3
+MARTIN DUNITZ LTD                                                10.5                    2
+AEOLUS PRESS MEDICAL PUBL                                         9.33333                3
+PARTHENON PUBLISHING GROUP                                        8                      2
+INDUSTRIAL RESEARCH INST INC                                      7.55263               38
+ROYAL PHOTOGRAPHIC SOC                                            7.5                    2
+INST ELECTRONICS TELECOMMUNICATION ENGINEERS                      6.17857               28
+INST ELECTR TELECOMMUN ENGRS                                      6.125                  8
+BRITISH CARTOGRAPHIC SOC                                          6                      1
+AUERBACH PUBLICATIONS                                             4.47826               23
+INDUSTRIAL RESEARCH INSTITUTE, INC                                1                      2
+BELLWETHER PUBL LTD                                               0                      1
+EARTHSCAN                                                         0                      1
+
+AVERAGE CITATIONS PER PUBLISHER CITY
+Publisher City             Ave. Citations  Publishers
+-----------------------  ----------------  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+POULTON                         134        ['MATRICE TECHNOLOGY LIMITED']
+MELBOURNE                        66.2222   ['EIANZ-ENVIRONMENT INST AUSTRALIA & NEW ZEALAND', 'TAYLOR & FRANCIS AUSTRALIA', 'TAYLOR & FRANCIS AUSTRALASIA']
+BETHESDA                         61.1818   ['NATL ASSOC SCHOOL PSYCHOLOGISTS']
+PALM BEACH                       58.6      ['V H WINSTON & SON INC']
+GREENWICH                        57.6154   ['JAI PRESS INC']
+CAMBRIDGE                        56.9688   ['CAMBRIDGE UNIV PRESS', 'M I T PRESS']
+WASHINGTON                       51.5785   ['AMER SOC MICROBIOLOGY', 'INDUSTRIAL RESEARCH INST INC']
+CLEMSON                          51        ['AMER REAL ESTATE SOC']
+OSLO                             50.2745   ['TAYLOR & FRANCIS AS', 'SCANDINAVIAN UNIVERSITY PRESS']
+SEOUL                            47        ['EWHA WOMANS UNIV PRESS']
+TORONTO                          46        ['UNIV TORONTO PRESS INC']
+HOBOKEN                          45.6706   ['WILEY', 'WILEY-BLACKWELL']
+KOLKATA                          45.5714   ['INDIAN CERAMIC SOC']
+DURHAM                           45.56     ['DUKE UNIV PRESS']
+PHILADELPHIA                     45.1227   ['TAYLOR & FRANCIS INC', 'LIPPINCOTT WILLIAMS & WILKINS', 'GORDON BREACH PUBLISHING, TAYLOR & FRANCIS GROUP']
+OAKLAND                          43.8333   ['UNIV CALIFORNIA PRESS']
+MAHWAH                           42.5      ['LAWRENCE ERLBAUM ASSOC INC']
+ST FOY                           42.5      ['PRESSES UNIV QUEBEC']
+MALDEN                           41.1613   ['WILEY-BLACKWELL', 'BLACKWELL PUBLISHERS', 'WILEY-BLACKWELL PUBLISHING, INC', 'BLACKWELL PUBLISHING INC']
+LAFAYETTE                        41        ['ASSOC ADVANCEMENT APPLIED SPORT PSYCHOLOGY']
+LOS ALTOS                        41        ['PSYCHOANALYTIC QUARTERLY,INC']
+BOULDER                          40.7576   ['INST ARCTIC ALPINE RES']
+ABINGDON                         40.7385   ['TAYLOR & FRANCIS LTD', 'CARFAX PUBL CO']
+GRAHAMSTOWN                      40.0952   ['NATL INQUIRY SERVICES CENTRE PTY LTD', 'NISC PTY LTD']
+AMBLESIDE                        39        ['FRESHWATER BIOLOGICAL ASSOC']
+OXFORD                           36.5392   ['ELSEVIER SCI LTD', 'BLACKWELL PUBLISHING', 'BLACKWELL SCIENCE LTD', 'B I O S SCIENTIFIC PUBLISHERS LTD', 'PERGAMON-ELSEVIER SCIENCE LTD', 'BUTTERWORTH-HEINEMANN LTD', 'ISIS MEDICAL MEDIA LTD']
+CARLTON                          36.06     ['AUSTRALIAN PSYCHOLOGICAL SOC', 'AUSTRALIAN PSYCHOL SOC', 'BLACKWELL SCIENCE', 'BLACKWELL PUBLISHING ASIA', 'BLACKWELL SCIENCE ASIA']
+YARRALUMLA                       35.5      ['INST FORESTERS AUSTRALIA']
+GEORGETOWN                       34.9167   ['LANDES BIOSCIENCE']
+ANAM-DEONG, SEONGBUK-GU          34.3333   ['KOREAN SOC MYCOLOGY']
+KANATA                           33.6667   ['CANADIAN AERONAUTICS SPACE INST']
+ADELAIDE                         33.5      ['ROYAL SOC SOUTH AUSTRALIA INC']
+OULU                             33.3333   ['INTERNATIONAL ASSOCIATION CIRCUMPOLAR HEALTH PUBLISHERS', 'INT ASSOC CIRCUMPOLAR HEALTH PUBL']
+FORT LAUDERDALE                  32.3333   ['J ROSS PUBL']
+REHOVOT                          31.3571   ['INT SCIENCE SERVICES/BALABAN PUBLISHERS']
+GIZA                             30.8      ['CAIRO UNIV']
+BERKELEY                         30.7407   ['UNIV CALIF PRESS', 'UNIV CALIFORNIA PRESS']
+AUSTIN                           29.7347   ['LANDES BIOSCIENCE']
+THETFORD NORFOLK                 28.7368   ['BRITISH TRUST ORNITHOLOGY']
+BRISTOL                          28.2137   ['TAYLOR & FRANCIS', 'HEMISPHERE PUBL CORP', 'BRUNNER/MAZEL INC', 'IOP PUBLISHING LTD']
+OTTAWA                           28.1471   ['CMOS-SCMO', 'CANADIAN METEOROLOGICAL OCEANOGRAPHIC SOC', 'CANADIAN AERONAUTICS SPACE INST', 'CANADIAN WATER RESOURCES ASSOC-CWRA']
+BRISBANE                         27.6667   ['AUSTRALIAN ARCHAEOLOGICAL ASSOC INC']
+UTRECHT                          27.6667   ['ROYAL NETHERLANDS VETERINARY ASSOC']
+WELLINGTON                       26.9714   ['RSNZ PUBLISHING', 'SIR PUBLISHING', 'NEW ZEALAND VETERINARY ASSOC INC', 'VICTORIA UNIV WELLINGTON', 'VICTORIA UNIV PRESS']
+ALEXANDRIA                       26.5686   ['AMER STATISTICAL ASSOC', 'AMER STATIST ASSN']
+ONTARIO                          25.5      ['CANADIAN METEOR & OCEANOGR SOC']
+BRONX                            25.125    ['NEW YORK BOTANICAL GARDEN']
+NEW YORK                         24.5402   ['INFORMA HEALTHCARE', 'MARCEL DEKKER INC', 'ILLUMINAT ENG SOC NORTH AMER']
+LONDON                           24.147    ['I P PUBLISHING LTD', 'SAGE PUBLICATIONS LTD', 'INFORMA HEALTHCARE', 'TAYLOR & FRANCIS LTD', 'FUTURE SCI LTD', 'JAMES & JAMES SCIENCE PUBLISHERS LTD/EARTHSCAN', 'TAYLOR & FRANCIS LTD LONDON', 'ROYAL SOC MEDICINE PRESS LTD', 'EARTHSCAN', 'INST MATERIALS', 'I O M COMMUNICATIONS LTD INST MATERIALS', 'EXPERT REVIEWS', 'INST PSYCHO-ANALYSIS', 'ASSOC ADVANCEMENT APPLIED SPORT PSYCHOLOGY', 'MARTIN DUNITZ LTD', 'FOREFRONT PUBL GROUP']
+LILLE-CEDEX                      24        ['SOC BOTANIQUE FRANCE']
+BALTIMORE                        23.7273   ['WILLIAMS & WILKINS']
+CLAREMONT                        23.6667   ['SA MEDICAL ASSOC HEALTH & MEDICAL PUBL GROUP']
+MANSOURA                         23.5714   ['ARAB ASSOC UROLOGY']
+BASINGSTOKE                      22.7288   ['CARFAX PUBLISHING', 'NATURE PUBLISHING GROUP', 'PALGRAVE PUBLISHERS LTD', 'PALGRAVE MACMILLAN LTD', 'STOCKTON PRESS']
+WILTON                           22.4      ['FOREFRONT PUBL GROUP']
+INDIANA                          21.8333   ['NATL COUNCIL GEOGRAPHIC EDUCATION']
+ST LOUIS                         21.7143   ['THOMAS LAND PUBLISHERS, INC']
+BRUSSELS                         21.4091   ['ACTA CARDIOLOGICA', 'ACTA MEDICAL BELGICA']
+COPENHAGEN                       21        ['MUNKSGAARD INT PUBL LTD']
+AMHERST                          20        ['AMHERST SCIENTIFIC PUBL']
+DORDRECHT                        20        ['KLUWER ACADEMIC PUBL']
+BUREN                            19.35     ['AEOLUS PRESS', 'AEOLUS PRESS MEDICAL PUBL']
+LISSE                            19.2716   ['SWETS ZEITLINGER PUBLISHERS', 'SWETS ZEITLINGER BV']
+ST ALBANS                        19        ['SCIENCE REVIEWS 2000 LTD']
+DUMFRIESSHIRE                    19        ['SAPIENS PUBLISHING']
+LEEDS                            18.9072   ['MANEY PUBLISHING']
+ZAGREB                           18.8571   ['KOREMA']
+LAWRENCE                         18.8333   ['ALLEN PRESS INC']
+READING                          18.7885   ['GORDON BREACH SCI PUBL LTD', 'HARWOOD ACAD PUBL GMBH']
+LA GRANGE PK                     18.494    ['AMER NUCLEAR SOCIETY', 'AMER NUCLEAR SOC']
+NEWBURY                          18        ['WORLD VETERINARY POULTRY ASSN']
+HAMILTON                         18        ['B C DECKER INC']
+SINGAPORE                        17.6667   ['WORLD SCIENTIFIC PUBL CO PTE LTD']
+SOFIA                            17.3571   ['DIAGNOSIS PRESS LTD']
+BIRMINGHAM                       17.1111   ['INST METAL FINISHING']
+GAITHERSBURG                     15.5      ['CARTOGRAPHY & GEOGRAPHIC INFOR SOC']
+SHEFFIELD                        15.3333   ['CASTINGS TECHNOLOGY INT', 'CASTINGS DEVELOPMENT CENTRE']
+ARLINGTON                        15.0625   ['R E S N A PRESS', 'INDUSTRIAL RESEARCH INST, INC', 'INDUSTRIAL RESEARCH INSTITUTE, INC']
+LETCHWORTH                       15        ['WOODHEAD PUBL LIMITED']
+PARK RIDGE                       14.8511   ['SOC TRIBOLOGISTS & LUBRICATION ENGINEERS']
+TOKYO                            14.566    ['ARCHITECTURAL INST JAPAN']
+NORWOOD                          14.5      ['ABLEX PUBL CORP']
+BURY ST EDMUNDS                  13.5      ['PROFESSIONAL ENGINEERING PUBLISHING LTD']
+LANCASTER                        13        ['PARTHENON PUBLISHING GROUP']
+WEST BLOOMFIELD                  12.5      ['INDIRA PUBLISHING HOUSE']
+WALLINGFORD                      12        ['CABI PUBLISHING']
+BOCA RATON                       11.7692   ['CRC PRESS INC', 'CRC PRESS LLC', 'AUERBACH PUBLICATIONS']
+BATH                              7.5      ['ROYAL PHOTOGRAPHIC SOC']
+NEW DELHI                         6.16667  ['INST ELECTRONICS TELECOMMUNICATION ENGINEERS', 'INST ELECTR TELECOMMUN ENGRS']
+ELPHINSTONE RD,                   6        ['BRITISH CARTOGRAPHIC SOC']
+CARNFORTH LANCASHIRE              3        ['PARTHENON PUBLISHING GROUP']
+BOSTON                            2        ['AUERBACH PUBLICATIONS']
+COLUMBIA                          0        ['BELLWETHER PUBL LTD']
+
+AVERAGE CITATIONS FOR FUNDED/UNFUNDED PAPERS
+Funding      Ave. Citations    No. of Papers
+---------  ----------------  ---------------
+Unfunded            37.7983            11199
+Funded              44.532              7432
+
+AVERAGE METRICS PER RESEARCH AREA
+Research Area                                    Ave. Citations    Ave. Usage 180    Ave. Usage 2013    No. of Papers
+---------------------------------------------  ----------------  ----------------  -----------------  ---------------
+Instruments & Instrumentation                           95.4167        10.4167             79.6667                 12
+Spectroscopy                                            95.4167        10.4167             79.6667                 12
+Archaeology                                             80.625          0.375               2.375                   8
+Infectious Diseases                                     78.2407         1.03704            15.963                  54
+Microbiology                                            78.2407         1.03704            15.963                  54
+Operations Research & Management Science                72.4            0.7                 6.4                    10
+Nursing                                                 71.25           3.58333            11.4167                 12
+History & Philosophy of Science                         71.2029         0.289855            4.02899                69
+Rheumatology                                            69              0                   3.5                     2
+International Relations                                 66.3571         0                   1.78571                14
+Geology                                                 66.1934         1.1768             12.3867                181
+History                                                 65.8889         0                   3.11111                 9
+Information Science & Library Science                   64.9118         3.13235            43.5                    68
+Business & Economics                                    63.8876         2.43195            34.1361                169
+Sociology                                               61.8411         0.443709           12.1391                151
+Communication                                           60.5            1                   5.25                    4
+Criminology & Penology                                  59.9245         1.08491            11.5755                106
+Immunology                                              58.8911         0.688119            9.19307               202
+Social Work                                             58.375          1.375               4.75                   16
+Biomedical Social Sciences                              58.3333         2.2381              7.42857                21
+Forestry                                                56.4286         1.04762            12.619                  21
+Polymer Science                                         56.1111         1.72222            40.7222                 18
+Social Sciences - Other Topics                          55.6667         1.80409            13.6404                342
+Public Administration                                   55.6667         2.11111             9.44444                 9
+International Relations                                 55.2692         0.6                 7.76154               130
+Social Sciences - Other Topics                          54.5789         1.63158             3.78947                19
+General & Internal Medicine                             54.1333         1.13333             8.20741               135
+Government & Law                                        54.1005         1.20106            13.2169                189
+Government & Law                                        54.0465         0.860465            7.27907                43
+Women's Studies                                         53.7143         2.21429            11.9286                 14
+Biochemistry & Molecular Biology                        53.3485         0.390117            8.08062               769
+Film, Radio & Television                                52.5            0.25                2                       4
+Science & Technology - Other Topics                     52.1647         2                  36.1412                 85
+Cell Biology                                            51.8598         0.241774            6.30758               699
+Water Resources                                         51.7115         2.04808            16.0481                104
+Ethnic Studies                                          51.5            0.714286            5.57143                14
+Biophysics                                              51.0208         0.770833           10.3958                 48
+Endocrinology & Metabolism                              51.0208         0.770833           10.3958                 48
+Marine & Freshwater Biology                             50.7143         1.71429            26.7143                 28
+Geography                                               50.7            3.98333            33                      60
+Sociology                                               50.6151         1.2446             17.9784                278
+Information Science & Library Science                   50.5631         2.38835            31.5243                103
+Asian Studies                                           50.4444         0.533333            2.84444                45
+Endocrinology & Metabolism                              50.3824         0.558824            6.85294                34
+Research & Experimental Medicine                        50.2656         1.51562            12.9531                 64
+Cultural Studies                                        50.2338         0.298701            7.42857                77
+Ethnic Studies                                          50.2338         0.298701            7.42857                77
+Psychology                                              49.8953         1.1069             13.6459                449
+Fisheries                                               48.6364         2.45455            29.5455                 11
+Marine & Freshwater Biology                             48.481          1.03797            33.962                  79
+Substance Abuse                                         48.4783         0.434783            8.63043                46
+Geology                                                 48.4706         2                   5.64706                17
+Linguistics                                             48.2439         1.29268             5.80488                41
+Computer Science                                        48.0287         2.54578            20.0054                557
+Physical Geography                                      48.0224         1.73881            27.0821                134
+Development Studies                                     47.7            1.14118            20.5412                170
+Family Studies                                          47.6667         0.666667            2.33333                 3
+Social Work                                             47.6667         0.666667            2.33333                 3
+Construction & Building Technology                      47.0896         3.29851            19.2836                 67
+Public Administration                                   47.0884         1.96133            24.9779                181
+Art                                                     46.75           0.666667            6.91667                48
+Physiology                                              46.5385         0.707692           11.0846                130
+Life Sciences & Biomedicine - Other Topics              46.4951         0.475728            7.56311               103
+Psychology                                              46.1447         1.13759            11.922                 705
+Environmental Sciences & Ecology                        46.1161         2.19547            28.813                 353
+Plant Sciences                                          45.9545         0.920455            9.64773                88
+Sport Sciences                                          45.9091         0.818182           32.4545                 11
+Paleontology                                            45.7778         0.333333            4.77778                 9
+Transportation                                          45.6236         3.62921            32.486                 356
+History & Philosophy of Science                         45.6061         0.363636            2.4697                 66
+Business & Economics                                    45.4427         2.29857            17.4949                978
+Psychiatry                                              45.3344         0.940984            9.48525               305
+Medical Informatics                                     45.25           1.0625             10.5                    16
+Environmental Sciences & Ecology                        45.0885         1.39638            21.328                 497
+Agriculture                                             44.9091         3.27273            39                      22
+Women's Studies                                         44.8            0.4                 7.8                    15
+Cell Biology                                            44.6667         1.17667            13.1067                300
+Biodiversity & Conservation                             44.6357         1.06977            21.5659                129
+Arts & Humanities - Other Topics                        44.1848         1.15217             4.44565                92
+Physical Geography                                      43.95           6.175              26.375                  40
+Area Studies                                            43.9222         0.355556            3.34444                90
+Rehabilitation                                          43.5729         0.974874           10.3417                398
+Asian Studies                                           43.5556         0.555556            4.77778                18
+Biotechnology & Applied Microbiology                    43.375          2.775              31.95                   40
+Genetics & Heredity                                     43.25           4.75                6.6875                 16
+Nursing                                                 43.2432         0.675676            7.16216                37
+Reproductive Biology                                    43.1875         0.541667            5.72917                48
+Energy & Fuels                                          43.0147         3.95588            17.1029                 68
+Social Issues                                           43              0.2                 7.48571                35
+Veterinary Sciences                                     42.9444         0.777778            9.83333                18
+Food Science & Technology                               42.8232         2.28729            21.2431                181
+Life Sciences & Biomedicine - Other Topics              42.7664         0.540146            8.87591               137
+Mechanics                                               42.6905         3.67262            20.9524                168
+Substance Abuse                                         42.6727         0.531532            7.71471               333
+Neurosciences & Neurology                               42.6232         0.521739            7.43478               138
+Communication                                           42.4809         2.00763            18.5878                131
+Engineering                                             42.4251         2.74064            20.2032                748
+Archaeology                                             42.2609         0.0869565           2.30435                23
+Remote Sensing                                          42.087          4.15942            18.7246                 69
+Agriculture                                             42.0576         1.4416             22.0496                625
+Geography                                               42.0449         0.808989           12.8539                 89
+Food Science & Technology                               42              0                   0                       1
+Integrative & Complementary Medicine                    42              0                   0                       1
+Rehabilitation                                          41.9825         0.606127           10.4442                457
+Fisheries                                               41.6757         0.324324           10.5405                 37
+Psychiatry                                              41.3892         0.635468           11.9901                203
+Science & Technology - Other Topics                     41.2545         1.6                15.7182                110
+Nuclear Science & Technology                            40.8286         0.428571            4.64286                70
+Education & Educational Research                        40.6169         1.88212            10.222                 509
+Zoology                                                 40.1379         0.689655           10.069                  29
+Toxicology                                              39.9896         0.635417           10.4062                192
+Radiology, Nuclear Medicine & Medical Imaging           39.9541         0.798165            6.55963               109
+Linguistics                                             39.8814         0.711864           11.1017                118
+Reproductive Biology                                    39.8333         0.458333           10.625                  24
+Veterinary Sciences                                     39.6923         0.576923            9.74615               130
+Chemistry                                               39.6136         1.45455            21.6818                 44
+Anthropology                                            39.581          0.247619            5.67619               105
+Public, Environmental & Occupational Health             39.5506         0.831461           11.3652                178
+Plant Sciences                                          39.3214         1.30357            18.3036                 56
+Biotechnology & Applied Microbiology                    39.2826         1.28551            12.1652                690
+Entomology                                              39.2687         0.820896           14.8209                 67
+Public, Environmental & Occupational Health             39.182          1.00728            13.4369                412
+Immunology                                              39.1561         0.803468            7.50289               173
+Nutrition & Dietetics                                   39.0761         0.771739           16.5543                 92
+Area Studies                                            39              0                   0                       3
+Medical Ethics                                          38.7857         2.07143            17.1429                 14
+Physics                                                 38.7695         1.68085            16.9326                282
+Audiology & Speech-Language Pathology                   38.7143         0.62406            10.8383                266
+Music                                                   38.5882         0.235294            4.05882                34
+Mechanics                                               37.7654         2.39506            12.0247                 81
+Mycology                                                37.3099         0.690141            9.8169                 71
+Cardiovascular System & Cardiology                      37.119          0.857143            5.78571                42
+Health Care Sciences & Services                         36.9535         0.5                 8.30233                86
+Zoology                                                 36.6186         0.670103           14.4227                 97
+Mining & Mineral Processing                             36.4569         4.36207            30.5                   116
+Nutrition & Dietetics                                   36.4286         0.904762            5.38095                21
+Obstetrics & Gynecology                                 36.377          0.442623            5.90164                61
+Oncology                                                36.2791         0.435216            6.80731               301
+Medical Ethics                                          36.2            0.4                 2                       5
+Toxicology                                              36.1465         0.570064           13.9459                314
+Obstetrics & Gynecology                                 36.0943         0.943396            9.88679                53
+Ophthalmology                                           36.0678         0.40678             3.22034                59
+Geriatrics & Gerontology                                35.9855         0.942029           11.5072                 69
+Remote Sensing                                          35.6022         1.97312            24.7151                186
+Materials Science                                       35.5361         3.15536            26.593                 457
+Chemistry                                               35.4875         1.18893            14.7687                921
+Philosophy                                              35.2381         0                   1.66667                21
+Neurosciences & Neurology                               34.545          0.368333            6.33667               600
+Respiratory System                                      34.3077         0.0769231           3.69231                13
+Pediatrics                                              34.2812         0.65625            11.125                  32
+Oceanography                                            34.1203         1.40602            16.797                 133
+History                                                 34              0                   0                       1
+Imaging Science & Photographic Technology               33.7676         2.21831            28.3169                142
+Mathematics                                             33.619          0.65873             8.87302               126
+Mycology                                                33.3636         1                  21.7273                 11
+Operations Research & Management Science                33.0876         2.12038            21.9932                731
+Meteorology & Atmospheric Sciences                      33.0556         0.388889           10.1667                 36
+Engineering                                             32.8023         1.99504            16.0907               1411
+Religion                                                32.5926         0.037037            1.22222                27
+Otorhinolaryngology                                     32.5327         0.392523            7.43925               107
+Classics                                                32.4            0                   0.6                     5
+Materials Science                                       32.3574         1.8681             18.0414                652
+Optics                                                  32.3333         0.75                8                      12
+Energy & Fuels                                          32.3243         1.93243            18.2432                 74
+Geochemistry & Geophysics                               32.2143         0.714286           10.5                    14
+Construction & Building Technology                      32.1532         3                  18.7298                248
+Mathematical Methods In Social Sciences                 32.1442         1.13462             9.75                  104
+Pharmacology & Pharmacy                                 31.8956         0.428571            7.8956                182
+Thermodynamics                                          31.8289         1.93421            18.6316                 76
+Architecture                                            31.0684         2.65798            16.6743                307
+Hematology                                              31.0122         0.170732            2.82927                82
+Telecommunications                                      31              3                   3.5                     2
+Polymer Science                                         30.5833         1                  14.4167                 12
+Entomology                                              30.4526         0.768421            7.77895                95
+Otorhinolaryngology                                     29.8261         0.565217            3.52174                23
+Health Care Sciences & Services                         29.7373         0.525424            7.80508               118
+Crystallography                                         29.6239         0.891738           11.604                 351
+Computer Science                                        29.5185         1.30864            17.2469                 81
+Dentistry, Oral Surgery & Medicine                      29.5            0.5                 1.75                    4
+Metallurgy & Metallurgical Engineering                  28.7823         2.24194            21.3226                124
+Microscopy                                              28.7692         0.0153846           2.35385                65
+Pathology                                               28.7692         0.0153846           2.35385                65
+Automation & Control Systems                            28.3088         1.43343            14.7365                353
+Pharmacology & Pharmacy                                 27.6696         1.12054            11.1473                224
+Transportation                                          27.6387         1.05759            15.6283                191
+Cardiovascular System & Cardiology                      27.073          0.270073            4.0438                137
+Telecommunications                                      27.0266         0.803191            7.2234                188
+Urology & Nephrology                                    26.7188         0.25                1.1875                 32
+Electrochemistry                                        26.5246         1.5082             17.1639                 61
+Literature                                              26.1538         0.923077            4.30769                13
+Demography                                              26.0952         0.666667            9.71429                21
+Music                                                   25.8571         0.142857            3.07143                14
+Legal Medicine                                          25.7742         0.645161           12.129                  31
+Imaging Science & Photographic Technology               24.6944         0.472222            8.41667                36
+Nuclear Science & Technology                            23.8702         0.40458             4.0687                131
+Mathematics                                             23.8043         0.59058             5.93478               552
+Metallurgy & Metallurgical Engineering                  23.4026         0.952381           13.7879                231
+Instruments & Instrumentation                           23.25           1.82143            15.2143                 28
+Surgery                                                 22.7755         0.170068            2.28571               147
+Infectious Diseases                                     22.0606         0.30303             3.9697                 33
+Theater                                                 21.7273         0.25                1.97727                44
+Surgery                                                 19.037          0.222222            2.96296               108
+Cultural Studies                                        19              0.25                1.75                    4
+Ophthalmology                                           18.16           0.1                 1.42                   50
+Anesthesiology                                          17.5556         0.111111            0.555556                9
+Genetics & Heredity                                     12.6536         0.668675            6.17169               332
+Crystallography                                         12              1                   5                       1
+Radiology, Nuclear Medicine & Medical Imaging           10.5            0.25                1.5                     4
+
+
+Process finished with exit code 0

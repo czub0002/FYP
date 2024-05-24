@@ -1,5 +1,4 @@
 import sys
-
 import matplotlib.pyplot as plt
 from pandas import *
 from research_topics import ResearchTopics

@@ -1,11 +1,13 @@
 import json
 import math
+import random
 from html import unescape
 from time import strftime, localtime
 import time
 from pathlib import Path
 from urllib.parse import unquote
 
+import cloudscraper
 import tabulate
 from bs4 import BeautifulSoup
 import requests
@@ -305,7 +307,7 @@ def main():
     start_index = 0
     file_path = 'elsevier_database.csv'
     path = Path(file_path)
-    df = pd.read_excel('Elsevier.xlsx')
+    df = pd.read_excel('elsevier_condensed_data.xlsx')
 
     if not path.is_file():
         with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
@@ -317,6 +319,7 @@ def main():
 
         if not elsevier_df.empty:
             last_doi = elsevier_df.iloc[-1]["wos_doi"]
+            # 10.1016/0387-7604(93)90003-Q
             matching_rows = df[df["DOI"] == last_doi]
             start_index = matching_rows.index[-1] + 1
 
@@ -325,24 +328,32 @@ def main():
                       'Chrome/109.0.0.0 Safari/537.36',
     }
     counter = 0
+    randomBreak = random.randint(250, 500)
+    print("randomBreak: " + str(randomBreak))
 
     # keep record of status errors
+    cloud_scraper = cloudscraper.create_scraper(delay=random.randint(0, 5))
     status_errors = []
     previous_identifier = (None, None, None)       # (ISSN, eISSN, ISBN)
 
     for index, row in df.iloc[start_index:].iterrows():
         counter += 1
 
-        # if counter == 20:
-        #     break
+        if counter % randomBreak == 0:
+            counter = 0
+            randomBreak = random.randint(250, 500)
+            print("randomBreak: " + str(randomBreak))
+            randSleep = random.randint(30, 90)
+            print("randSleep: " + str(randSleep))
+            time.sleep(randSleep)
 
         print(f"{counter} -----------------------------")
 
-        # TODO - Check DOI always exists when DOI Link does in WoS database before executing script
         doi_link_value = row["DOI Link"]
         wos_doi = row["DOI"]
 
         has_url = False
+        has_doi = False
 
         try:
             if math.isnan(doi_link_value):
@@ -350,13 +361,45 @@ def main():
         except TypeError:
             has_url = True
 
+        try:
+            if math.isnan(wos_doi):
+                print("Paper has no DOI!")
+        except TypeError:
+            has_doi = True
+
+        if has_doi and not has_url:
+            doi_link_value = "http://dx.doi.org/" + str(wos_doi)
+            has_url = True
+        else:
+            has_url = False
+
         if has_url:
-            response = requests.get(doi_link_value)
+            try:
+                response = requests.get(doi_link_value, headers=headers)
+                print(response.url)
+            except requests.exceptions.ConnectionError as e:
+                print(e)
+                continue
+
+            # response = cloud_scraper.get(doi_link_value)
+
+            if response.status_code != 200:
+                print("Initial 403 error")
+                continue
 
             soup = BeautifulSoup(response.text, 'html.parser')
-            redirect_url = soup.find(name="input", attrs={"name": "redirectURL"})["value"]
-            final_url = unescape(unquote(redirect_url))
-            response = requests.get(final_url, headers=headers)
+            try:
+                redirect_url = soup.find(name="input", attrs={"name": "redirectURL"})["value"]
+                final_url = unescape(unquote(redirect_url))
+                # response = requests.get(final_url, headers=headers)
+                response = cloud_scraper.get(final_url)
+                print(response.url)
+            except TypeError:
+                print("Redirect error.")
+                continue
+            except requests.exceptions.ConnectionError as e:
+                print(e)
+                continue
 
             # status_code 200 means get was successful
             if response.status_code == 200 and 'sciencedirect.com' in response.url:
@@ -366,6 +409,7 @@ def main():
                 current_error = {"status_code": response.status_code, "index": index, "data": row}
                 current_identifier = (row["ISSN"], row["eISSN"], row["ISBN"])
 
+                """
                 if status_errors:
                     # Conditions of termination: Previous error same as current and must belong to different journals
                     # and indexes must be consecutive
@@ -380,9 +424,11 @@ def main():
                         termination_statement = f'FAIL: The script terminated due to ' \
                                                 f'{current_error["status_code"]} status errors!'
                         break
-
+                """
                 status_errors.append(current_error)
                 previous_identifier = current_identifier
+            else:
+                print("url: " + response.url)
 
     end_time = time.time()
     total_time = end_time - start_time

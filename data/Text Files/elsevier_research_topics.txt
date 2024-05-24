@@ -1,0 +1,1507 @@
+AVERAGE CITATIONS PER YEAR - line
+  Publish Year    Ave. Citations    No. of Papers
+--------------  ----------------  ---------------
+          1938           1                      1
+          1946           0                      2
+          1947           1.5                    2
+          1950          69                      2
+          1952           4.16667                6
+          1953          21                      3
+          1954           0                      1
+          1955         122.333                  3
+          1956           4                      2
+          1957           7                      1
+          1958           3.66667                3
+          1959          11                      4
+          1960          47                      1
+          1961           5.5                    4
+          1962           3.33333                6
+          1963          11                      1
+          1964           5.66667                3
+          1965           3.57143                7
+          1966           6.71429                7
+          1967          23.8889                 9
+          1968          13                      8
+          1969          24.8235                17
+          1970          14.3333                18
+          1971          22.6875                16
+          1972          33.9167                12
+          1973          32.8667                15
+          1974          31.36                  25
+          1975          57.5517                29
+          1976          57.8824                17
+          1977          25.1724                29
+          1978          31.4255                47
+          1979          25.0909                33
+          1980          67.7447                47
+          1981          34.0769                39
+          1982          18.5417                48
+          1983          26.9375                64
+          1984          22.72                  50
+          1985          28.875                 64
+          1986          45                     61
+          1987          21.4754                61
+          1988          24.5692                65
+          1989          28.2254                71
+          1990          26.2923                65
+          1991          18.5938                64
+          1992          39.7927                82
+          1993          37.1081                74
+          1994          24.2778                72
+          1995          32.5934                91
+          1996          31.3636                88
+          1997          63.9789               142
+          1998          34.8214               112
+          1999          55.1181               144
+          2000          63.3129               147
+          2001          80.4033               181
+          2002          38.5492               122
+          2003          58.9607               178
+          2004          50.0909               176
+          2005          42                    134
+          2006          41.4398               166
+          2007          48.7563               160
+          2008          40.5685               197
+          2009          39.788                217
+          2010          47.1818               209
+          2011          34.0702               228
+          2012          35.5022               225
+          2013          34.144                257
+          2014          31.163                270
+          2015          26.5053               285
+          2016          26.5657               327
+          2017          26.9049               326
+          2018          21.5641               351
+          2019          17.4661               354
+          2020          15.4215               382
+          2021           9.95983              473
+          2022           6.22148              447
+          2023           1.0102               392
+          2024           0.25                   8
+
+AVERAGE CITATIONS PER NO. OF AUTHORS - line
+  No. of Authors    Ave. Citations    No. of Papers
+----------------  ----------------  ---------------
+               1           20.7021              913
+               2           30.2938             1559
+               3           28.5126             1463
+               4           35.4628             1197
+               5           34.4249              859
+               6           36.8103              643
+               7           32.3154              409
+               8           27.6696              339
+               9           30.1832              202
+              10           25.5811              148
+              11           24.1892               74
+              12           25.9219               64
+              13           15.8333               36
+              14           17.5714               28
+              15           18.7143               14
+              16           14                    14
+              17           44.75                 12
+              18           14.5625               16
+              19           13.875                 8
+              20           46                    10
+              21           84.6                   5
+              22            9                     2
+              23          223.333                 3
+              24           21.5                   2
+              25            1                     7
+              26           22.5                   4
+              27           16                     2
+              28            0.5                   2
+              29          571                     1
+              30           78                     2
+              34           34.5                   2
+              37          107.5                   2
+              38           19.5                   2
+              40           37                     1
+              47           12                     1
+              50           20                     1
+              99            0                     1
+             183           95                     1
+
+AVERAGE CITATIONS PER NO. OF KEYWORDS - line
+  No. of Keywords    Ave. Citations    No. of Papers
+-----------------  ----------------  ---------------
+                1           19.2306              399
+                2           21.6123              405
+                3           23.8095              378
+                4           25.8981              373
+                5           31.3136              338
+                6           29.4305              295
+                7           34.6422              327
+                8           34.3228              316
+                9           32.9302              258
+               10           47.0311             2576
+
+AVERAGE CITATIONS PER JOURNAL - Table
+Journal                                                                                              Ave. Citations    No. of Papers
+-------------------------------------------------------------------------------------------------  ----------------  ---------------
+JOURNAL OF BIOLOGICAL CHEMISTRY                                                                          106.505                 329
+ANALYTIC METHODS IN ACCIDENT RESEARCH                                                                     80                       2
+ADVANCES IN COLLOID AND INTERFACE SCIENCE                                                                 78.3929                 28
+BIOCHIMICA ET BIOPHYSICA ACTA-REVIEWS ON CANCER                                                           76.9333                 15
+COGNITION                                                                                                 73.4151                 53
+JOURNAL OF HAZARDOUS MATERIALS                                                                            66.1143                 70
+JOURNAL OF LIPID RESEARCH                                                                                 54.3                    20
+FIELD CROPS RESEARCH                                                                                      52.4127                 63
+JOURNAL OF STRATEGIC INFORMATION SYSTEMS                                                                  50.3333                  6
+INFORMATION & MANAGEMENT                                                                                  49.2593                 27
+INTERNATIONAL JOURNAL OF PRODUCTION ECONOMICS                                                             48.4487                 78
+ENERGY ECONOMICS                                                                                          47.918                  61
+AGRICULTURAL AND FOREST METEOROLOGY                                                                       46.806                  67
+JOURNAL OF HEALTH ECONOMICS                                                                               46.72                   25
+BRAIN RESEARCH                                                                                            46.4795                586
+JOURNAL OF POWER SOURCES                                                                                  46.3375                 80
+ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING                                                        45.0588                 34
+ECOSYSTEM SERVICES                                                                                        43.2                    15
+JOURNAL OF HYDROLOGY                                                                                      43.0957                209
+FOOD AND BIOPRODUCTS PROCESSING                                                                           42.8636                 22
+JOURNAL OF IMMUNOLOGICAL METHODS                                                                          41.6167                120
+JOURNAL OF ANALYTICAL AND APPLIED PYROLYSIS                                                               40.8276                 58
+COMPUTER SCIENCE REVIEW                                                                                   39.2                     5
+COLLOIDS AND SURFACES B-BIOINTERFACES                                                                     38.9587                121
+AGRICULTURE ECOSYSTEMS & ENVIRONMENT                                                                      38.7381                 84
+BIOCHIMICA ET BIOPHYSICA ACTA-MOLECULAR CELL RESEARCH                                                     38.6379                 58
+FOREST ECOLOGY AND MANAGEMENT                                                                             37.2308                156
+COMPUTER PHYSICS COMMUNICATIONS                                                                           37.0094                106
+JOURNAL OF INFORMETRICS                                                                                   36.8571                 14
+FOOD RESEARCH INTERNATIONAL                                                                               34.8417                120
+JOURNAL OF AFFECTIVE DISORDERS                                                                            34.7514                173
+ECOLOGICAL ECONOMICS                                                                                      34.4085                 71
+BIOPHYSICAL REPORTS                                                                                       33                       1
+AGRICULTURAL WATER MANAGEMENT                                                                             32.9342                 76
+CURRENT OPINION IN ELECTROCHEMISTRY                                                                       32.9231                 13
+INTERNATIONAL BUSINESS REVIEW                                                                             32.4667                 15
+EUROPEAN ECONOMIC REVIEW                                                                                  32.449                  49
+BIOPHYSICAL CHEMISTRY                                                                                     32.3273                 55
+JOURNAL OF SEA RESEARCH                                                                                   31.7143                 21
+FISHERIES RESEARCH                                                                                        31.3231                 65
+BIOCHIMICA ET BIOPHYSICA ACTA-MOLECULAR BASIS OF DISEASE                                                  31.2727                 33
+JOURNAL OF THE MECHANICAL BEHAVIOR OF BIOMEDICAL MATERIALS                                                31.2321                 56
+ANALYTICA CHIMICA ACTA                                                                                    31.1632                380
+ANIMAL FEED SCIENCE AND TECHNOLOGY                                                                        30.9571                 70
+JOURNAL OF APPLIED GEOPHYSICS                                                                             30.2                    40
+COMPUTATIONAL MATERIALS SCIENCE                                                                           29.2906                117
+ANIMAL                                                                                                    29.2667                 45
+COMMUNICATIONS IN NONLINEAR SCIENCE AND NUMERICAL SIMULATION                                              28.9385                 65
+CRITICAL CARE AND RESUSCITATION                                                                           28.5                     8
+JOURNAL OF HYDRO-ENVIRONMENT RESEARCH                                                                     28.3333                  6
+JOURNAL OF ADVANCED RESEARCH                                                                              28.0769                 13
+JOURNAL OF PROTEOMICS                                                                                     28.0227                 44
+BODY IMAGE                                                                                                27.9333                 15
+CURRENT APPLIED PHYSICS                                                                                   27.7759                 58
+JOURNAL DE MATHEMATIQUES PURES ET APPLIQUEES                                                              26.087                  23
+COLLOIDS AND SURFACES A-PHYSICOCHEMICAL AND ENGINEERING ASPECTS                                           25.9333                 90
+ADVANCED POWDER TECHNOLOGY                                                                                25.7143                 56
+JOURNAL OF SUPERCRITICAL FLUIDS                                                                           25.6981                 53
+EATING BEHAVIORS                                                                                          25.6154                 13
+JOURNAL OF ALLERGY AND CLINICAL IMMUNOLOGY-IN PRACTICE                                                    25.2                    45
+FITOTERAPIA                                                                                               24.94                   50
+COMPUTER NETWORKS                                                                                         24.7581                 62
+BIOCHIMICA ET BIOPHYSICA ACTA-PROTEINS AND PROTEOMICS                                                     23.7692                 39
+ENERGY RESEARCH & SOCIAL SCIENCE                                                                          23.4138                 29
+ADVANCES IN ACCOUNTING                                                                                    23.1667                  6
+JHEP REPORTS                                                                                              22.6667                  6
+FLUID PHASE EQUILIBRIA                                                                                    22.4167                120
+EUROPEAN UROLOGY                                                                                          22.3523                176
+FOREST POLICY AND ECONOMICS                                                                               22.04                   25
+FINITE ELEMENTS IN ANALYSIS AND DESIGN                                                                    21.3333                 24
+HUMAN RESOURCE MANAGEMENT REVIEW                                                                          21                       7
+DATA & KNOWLEDGE ENGINEERING                                                                              20.8                    10
+HARDWAREX                                                                                                 20.6                     5
+ELECTRONIC COMMERCE RESEARCH AND APPLICATIONS                                                             20.3636                 11
+JOURNAL OF HYDROLOGY-REGIONAL STUDIES                                                                     20.1333                 15
+ACTA PSYCHOLOGICA                                                                                         19.9836                 61
+ALGAL RESEARCH-BIOMASS BIOFUELS AND BIOPRODUCTS                                                           19.6875                 32
+CONTACT LENS & ANTERIOR EYE                                                                               19.5385                 13
+JOURNAL OF SAUDI CHEMICAL SOCIETY                                                                         19.5333                 15
+AIN SHAMS ENGINEERING JOURNAL                                                                             19.5238                 21
+INFORMATION ECONOMICS AND POLICY                                                                          19.1667                  6
+BLOOD ADVANCES                                                                                            18.7105                 38
+CURRENT OPINION IN PSYCHOLOGY                                                                             18.5                    16
+BIOLOGICAL PSYCHOLOGY                                                                                     18.2453                106
+FORENSIC CHEMISTRY                                                                                        18.1667                  6
+JOURNAL OF HEPATOLOGY                                                                                     18.1014                434
+COMPUTATIONAL STATISTICS & DATA ANALYSIS                                                                  17.5397                 63
+INTERNATIONAL JOURNAL OF DRUG POLICY                                                                      17.5312                 32
+ENVIRONMENTAL INNOVATION AND SOCIETAL TRANSITIONS                                                         17.5                     8
+CURRENT OPINION IN INSECT SCIENCE                                                                         17.4                    10
+CURRENT OPINION IN BEHAVIORAL SCIENCES                                                                    17.3333                 24
+BIOLOGICAL PSYCHIATRY-COGNITIVE NEUROSCIENCE AND NEUROIMAGING                                             17.3333                  9
+CURRENT OPINION IN GREEN AND SUSTAINABLE CHEMISTRY                                                        17.25                    8
+INTERNATIONAL JOURNAL OF PHARMACEUTICS                                                                    17.2                    20
+JOURNAL OF THE NEUROLOGICAL SCIENCES                                                                      17.0125                160
+COMPUTERS IN INDUSTRY                                                                                     16.5758                 33
+COGNITIVE SYSTEMS RESEARCH                                                                                16.4                    10
+JOURNAL OF INFORMATION SECURITY AND APPLICATIONS                                                          16.3333                 12
+INTERNATIONAL JOURNAL OF FORECASTING                                                                      16.3                    10
+COMPUTER AIDED GEOMETRIC DESIGN                                                                           16                      17
+JOURNAL OF STATISTICAL PLANNING AND INFERENCE                                                             15.8333                 72
+JOURNAL OF INDUSTRIAL INFORMATION INTEGRATION                                                             15.75                    4
+BLOCKCHAIN-RESEARCH AND APPLICATIONS                                                                      15                       1
+JOURNAL OF STROKE & CEREBROVASCULAR DISEASES                                                              14.9375                 64
+JOURNAL OF RARE EARTHS                                                                                    14.2545                 55
+BEHAVIOURAL PROCESSES                                                                                     14.2292                 48
+COMPUTATIONAL GEOMETRY-THEORY AND APPLICATIONS                                                            14.2                    15
+HUMAN MOVEMENT SCIENCE                                                                                    14                      29
+JOURNAL OF APPLIED POULTRY RESEARCH                                                                       13.7273                 22
+JOURNAL OF PURE AND APPLIED ALGEBRA                                                                       13.6711                 76
+ECONOMIC MODELLING                                                                                        13.4                    55
+BIOMEDICAL JOURNAL                                                                                        13.2857                  7
+EMERGING MARKETS REVIEW                                                                                   12.7143                  7
+FOOD BIOSCIENCE                                                                                           12.6667                 30
+EUROPEAN UROLOGY ONCOLOGY                                                                                 12.5714                  7
+CARBON CAPTURE SCIENCE & TECHNOLOGY                                                                       12.5                     2
+POETICS                                                                                                   12.4                    15
+COMPUTATIONAL AND STRUCTURAL BIOTECHNOLOGY JOURNAL                                                        12.36                   25
+EXTREME MECHANICS LETTERS                                                                                 12.3077                 13
+CARBOHYDRATE POLYMER TECHNOLOGIES AND APPLICATIONS                                                        12.25                    4
+INTERNET OF THINGS                                                                                        12.25                    8
+JOURNAL OF INTEGRATIVE MEDICINE-JIM                                                                       12.1667                  6
+BRAIN & DEVELOPMENT                                                                                       11.9857                 70
+JOURNAL OF INFECTION AND CHEMOTHERAPY                                                                     11.9643                 28
+ALEXANDRIA ENGINEERING JOURNAL                                                                            11.8864                 44
+JOURNAL OF KING SAUD UNIVERSITY SCIENCE                                                                   11.7391                 23
+INTERNATIONAL JOURNAL OF ACCOUNTING INFORMATION SYSTEMS                                                   11.3333                  3
+CLIMATE RISK MANAGEMENT                                                                                   11.1667                  6
+JOURNAL OF KING SAUD UNIVERSITY-COMPUTER AND INFORMATION SCIENCES                                         10.95                   20
+JOURNAL OF SYSTEMS ARCHITECTURE                                                                           10.7826                 23
+JOURNAL OF THE AMERICAN PHARMACISTS ASSOCIATION                                                           10.7742                 31
+INSURANCE MATHEMATICS & ECONOMICS                                                                         10.6176                 34
+INTERNET INTERVENTIONS-THE APPLICATION OF INFORMATION TECHNOLOGY IN MENTAL AND BEHAVIOURAL HEALTH         10.4                     5
+COMPUTER COMMUNICATIONS                                                                                   10.2432                 74
+EUROPEAN UROLOGY FOCUS                                                                                     9.71429                14
+FOOD PACKAGING AND SHELF LIFE                                                                              9.69231                13
+BUSINESS HORIZONS                                                                                          9.61765                34
+CURRENT RESEARCH IN FOOD SCIENCE                                                                           9.5                     6
+FLATCHEM                                                                                                   9.4                     5
+GLOBAL FINANCE JOURNAL                                                                                     9.28571                 7
+ECONOMICS & HUMAN BIOLOGY                                                                                  9.09091                11
+FUTURE FOODS                                                                                               9                       2
+ECONOMIC ANALYSIS AND POLICY                                                                               8.69231                13
+AMERICAN JOURNAL OF PHARMACEUTICAL EDUCATION                                                               8.60526                76
+BIOCYBERNETICS AND BIOMEDICAL ENGINEERING                                                                  8.22222                 9
+INTERNATIONAL JOURNAL OF PSYCHOPHYSIOLOGY                                                                  7.69565               115
+FOOD STRUCTURE-NETHERLANDS                                                                                 7.5                     2
+COMPUTATIONAL AND THEORETICAL CHEMISTRY                                                                    7.44186                43
+FOOD CHEMISTRY-X                                                                                           7.22222                 9
+BULLETIN DES SCIENCES MATHEMATIQUES                                                                        7.2                    10
+EUROPEAN JOURNAL OF RADIOLOGY OPEN                                                                         7.2                     5
+GACETA SANITARIA                                                                                           6.9                    30
+ECONOMIC SYSTEMS                                                                                           6.83333                 6
+JOURNAL OF RADIATION RESEARCH AND APPLIED SCIENCES                                                         6.55556                 9
+FOOT AND ANKLE SURGERY                                                                                     6.41667                12
+COMPUTER STANDARDS & INTERFACES                                                                            6.36364                22
+ECONOMICS OF TRANSPORTATION                                                                                6                       2
+JOURNAL OF HIGH ENERGY ASTROPHYSICS                                                                        6                       2
+JOURNAL OF APPLIED RESEARCH ON MEDICINAL AND AROMATIC PLANTS                                               5.25                    4
+HEALTHCARE-THE JOURNAL OF DELIVERY SCIENCE AND INNOVATION                                                  5.16667                 6
+EUROPEAN NEUROPSYCHOPHARMACOLOGY                                                                           4.9                    90
+CRITICAL PERSPECTIVES ON ACCOUNTING                                                                        4.8                     5
+CASE STUDIES ON TRANSPORT POLICY                                                                           4.75                   12
+CURRENT OPINION IN BIOMEDICAL ENGINEERING                                                                  4.6                     5
+COLLEGIAN                                                                                                  4.5                    10
+BOLETIN DE LA SOCIEDAD ESPANOLA DE CERAMICA Y VIDRIO                                                       4.35294                17
+JACC-CLINICAL ELECTROPHYSIOLOGY                                                                            4.3125                 16
+CLIMATE SERVICES                                                                                           4                       2
+BIOMATERIALS ADVANCES                                                                                      3.75                    8
+JOURNAL OF THE INDIAN CHEMICAL SOCIETY                                                                     3.75                  176
+GROUNDWATER FOR SUSTAINABLE DEVELOPMENT                                                                    3.55                   20
+EGYPTIAN JOURNAL OF AQUATIC RESEARCH                                                                       3.5                     4
+COMPUTERS AND EDUCATION OPEN                                                                               3                       2
+COMPUTERS IN HUMAN BEHAVIOR REPORTS                                                                        3                       3
+CURRENT RESEARCH IN TOXICOLOGY                                                                             3                       1
+INTERNATIONAL JOURNAL OF PHARMACEUTICS-X                                                                   3                       2
+AFRICAN JOURNAL OF EMERGENCY MEDICINE                                                                      2.71429                 7
+BRAIN, BEHAVIOR, & IMMUNITY - HEALTH                                                                       2.6                     5
+JACC: CARDIOONCOLOGY                                                                                       2.6                     5
+EUROPEAN JOURNAL OF TRAUMA & DISSOCIATION                                                                  2.33333                 3
+AMERICAN JOURNAL OF OBSTETRICS & GYNECOLOGY MFM                                                            2.2                    10
+ANAESTHESIA AND INTENSIVE CARE MEDICINE                                                                    2                      25
+JOURNAL OF STOMATOLOGY ORAL AND MAXILLOFACIAL SURGERY                                                      1.90909                11
+CHEMICAL ENGINEERING JOURNAL ADVANCES                                                                      1.66667                 3
+BRAIN AND SPINE                                                                                            1.5                     2
+ASIAN JOURNAL OF SOCIAL SCIENCE                                                                            1.44444                 9
+BONE REPORTS                                                                                               1                       4
+CARBON TRENDS                                                                                              1                       3
+CARDIOVASCULAR DIGITAL HEALTH JOURNAL                                                                      1                       1
+CEREBRAL CIRCULATION - COGNITION AND BEHAVIOR                                                              1                       1
+EUROPEAN JOURNAL OF MEDICINAL CHEMISTRY REPORTS                                                            1                       1
+RUSSIAN LITERATURE                                                                                         0.5                    22
+BORSA ISTANBUL REVIEW                                                                                      0.5                     4
+CURRENT RESEARCH IN PHYSIOLOGY                                                                             0.5                     2
+FOOD WEBS                                                                                                  0.333333                3
+EUROPEAN UROLOGY OPEN SCIENCE                                                                              0.2                     5
+CASE REPORTS IN WOMENS HEALTH                                                                              0                       1
+INFORMATION MANAGEMENT                                                                                     0                       2
+CHEMICAL PHYSICS IMPACT                                                                                    0                       3
+CURRENT RESEARCH IN PARASITOLOGY & VECTOR-BORNE DISEASES                                                   0                       1
+EUROPEAN JOURNAL OF OBSTETRICS & GYNECOLOGY AND REPRODUCTIVE BIOLOGY-X                                     0                       1
+
+AVERAGE REFERENCES PER JOURNAL - Table
+Journal                                                                                              Ave. References    No. of Papers
+-------------------------------------------------------------------------------------------------  -----------------  ---------------
+BIOCHIMICA ET BIOPHYSICA ACTA-REVIEWS ON CANCER                                                            168.467                 15
+ADVANCES IN COLLOID AND INTERFACE SCIENCE                                                                  103.821                 28
+HUMAN RESOURCE MANAGEMENT REVIEW                                                                            92.7143                 7
+FLATCHEM                                                                                                    92.2                    5
+FUTURE FOODS                                                                                                85.5                    2
+CARBON CAPTURE SCIENCE & TECHNOLOGY                                                                         84.5                    2
+ENVIRONMENTAL INNOVATION AND SOCIETAL TRANSITIONS                                                           84.5                    8
+JOURNAL OF STRATEGIC INFORMATION SYSTEMS                                                                    84                      6
+COMPUTATIONAL AND STRUCTURAL BIOTECHNOLOGY JOURNAL                                                          81.6                   25
+CURRENT RESEARCH IN TOXICOLOGY                                                                              81                      1
+BORSA ISTANBUL REVIEW                                                                                       80.5                    4
+CRITICAL PERSPECTIVES ON ACCOUNTING                                                                         79.4                    5
+INTERNATIONAL BUSINESS REVIEW                                                                               77.8                   15
+BIOLOGICAL PSYCHIATRY-COGNITIVE NEUROSCIENCE AND NEUROIMAGING                                               75.8889                 9
+JOURNAL OF APPLIED RESEARCH ON MEDICINAL AND AROMATIC PLANTS                                                74.5                    4
+ENERGY RESEARCH & SOCIAL SCIENCE                                                                            72.1724                29
+CARBON TRENDS                                                                                               71.6667                 3
+CURRENT RESEARCH IN PHYSIOLOGY                                                                              69                      2
+ECOSYSTEM SERVICES                                                                                          68.1333                15
+CLIMATE RISK MANAGEMENT                                                                                     67.6667                 6
+INTERNET INTERVENTIONS-THE APPLICATION OF INFORMATION TECHNOLOGY IN MENTAL AND BEHAVIOURAL HEALTH           66.6                    5
+CHEMICAL PHYSICS IMPACT                                                                                     66.3333                 3
+BIOCHIMICA ET BIOPHYSICA ACTA-MOLECULAR CELL RESEARCH                                                       66.2586                58
+JOURNAL OF HIGH ENERGY ASTROPHYSICS                                                                         66                      2
+INTERNATIONAL JOURNAL OF ACCOUNTING INFORMATION SYSTEMS                                                     65.3333                 3
+JOURNAL OF PROTEOMICS                                                                                       65.0227                44
+FOOD CHEMISTRY-X                                                                                            64.2222                 9
+JOURNAL OF ADVANCED RESEARCH                                                                                64.0769                13
+ANALYTIC METHODS IN ACCIDENT RESEARCH                                                                       63.5                    2
+ALGAL RESEARCH-BIOMASS BIOFUELS AND BIOPRODUCTS                                                             63.4062                32
+CURRENT OPINION IN INSECT SCIENCE                                                                           63.1                   10
+CURRENT OPINION IN BIOMEDICAL ENGINEERING                                                                   61.6                    5
+CURRENT RESEARCH IN PARASITOLOGY & VECTOR-BORNE DISEASES                                                    61                      1
+CHEMICAL ENGINEERING JOURNAL ADVANCES                                                                       60.6667                 3
+COMPUTERS AND EDUCATION OPEN                                                                                60                      2
+CURRENT OPINION IN BEHAVIORAL SCIENCES                                                                      59.5417                24
+BIOMATERIALS ADVANCES                                                                                       59.375                  8
+CURRENT OPINION IN ELECTROCHEMISTRY                                                                         57.8462                13
+INFORMATION & MANAGEMENT                                                                                    56.8148                27
+ECONOMIC ANALYSIS AND POLICY                                                                                56.4615                13
+JOURNAL OF INDUSTRIAL INFORMATION INTEGRATION                                                               55.75                   4
+ECOLOGICAL ECONOMICS                                                                                        54.9296                71
+JOURNAL OF INFORMETRICS                                                                                     54.7143                14
+FOREST ECOLOGY AND MANAGEMENT                                                                               54.0705               156
+FOOD BIOSCIENCE                                                                                             53.2333                30
+CARBOHYDRATE POLYMER TECHNOLOGIES AND APPLICATIONS                                                          52                      4
+CARDIOVASCULAR DIGITAL HEALTH JOURNAL                                                                       52                      1
+COGNITION                                                                                                   51.6415                53
+JOURNAL OF SEA RESEARCH                                                                                     51.4286                21
+BIOPHYSICAL REPORTS                                                                                         51                      1
+JOURNAL OF HAZARDOUS MATERIALS                                                                              50.7571                70
+JOURNAL OF RADIATION RESEARCH AND APPLIED SCIENCES                                                          50.4444                 9
+EMERGING MARKETS REVIEW                                                                                     50.1429                 7
+CURRENT OPINION IN PSYCHOLOGY                                                                               50.125                 16
+BIOCHIMICA ET BIOPHYSICA ACTA-PROTEINS AND PROTEOMICS                                                       50.0256                39
+FOOD RESEARCH INTERNATIONAL                                                                                 49.75                 120
+AGRICULTURE ECOSYSTEMS & ENVIRONMENT                                                                        49.0595                84
+JOURNAL OF HYDROLOGY                                                                                        48.5167               209
+AGRICULTURAL AND FOREST METEOROLOGY                                                                         48.4478                67
+COMPUTER SCIENCE REVIEW                                                                                     48.4                    5
+FOOD PACKAGING AND SHELF LIFE                                                                               48.3846                13
+ECONOMIC SYSTEMS                                                                                            48.3333                 6
+FOREST POLICY AND ECONOMICS                                                                                 48.28                  25
+COMPUTATIONAL AND THEORETICAL CHEMISTRY                                                                     48.2093                43
+ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING                                                          48.2059                34
+ADVANCES IN ACCOUNTING                                                                                      48                      6
+JHEP REPORTS                                                                                                47.8333                 6
+INTERNATIONAL JOURNAL OF DRUG POLICY                                                                        47.5312                32
+INTERNATIONAL JOURNAL OF PHARMACEUTICS-X                                                                    47.5                    2
+COGNITIVE SYSTEMS RESEARCH                                                                                  47.1                   10
+AGRICULTURAL WATER MANAGEMENT                                                                               46.0263                76
+JOURNAL OF THE MECHANICAL BEHAVIOR OF BIOMEDICAL MATERIALS                                                  45.8036                56
+ENERGY ECONOMICS                                                                                            45.6066                61
+CURRENT RESEARCH IN FOOD SCIENCE                                                                            45.1667                 6
+BODY IMAGE                                                                                                  44.8                   15
+BIOCHIMICA ET BIOPHYSICA ACTA-MOLECULAR BASIS OF DISEASE                                                    44.2424                33
+EUROPEAN JOURNAL OF TRAUMA & DISSOCIATION                                                                   44                      3
+JOURNAL OF BIOLOGICAL CHEMISTRY                                                                             43.9757               329
+JOURNAL OF AFFECTIVE DISORDERS                                                                              43.9017               173
+ELECTRONIC COMMERCE RESEARCH AND APPLICATIONS                                                               43.7273                11
+JOURNAL OF KING SAUD UNIVERSITY SCIENCE                                                                     43.4783                23
+FIELD CROPS RESEARCH                                                                                        43.2381                63
+POETICS                                                                                                     42.4                   15
+ECONOMICS & HUMAN BIOLOGY                                                                                   42.3636                11
+COLLOIDS AND SURFACES B-BIOINTERFACES                                                                       42.281                121
+HUMAN MOVEMENT SCIENCE                                                                                      42.2069                29
+AIN SHAMS ENGINEERING JOURNAL                                                                               42.1905                21
+FISHERIES RESEARCH                                                                                          41.9692                65
+JOURNAL OF ALLERGY AND CLINICAL IMMUNOLOGY-IN PRACTICE                                                      41.8889                45
+JOURNAL OF HEALTH ECONOMICS                                                                                 41.88                  25
+BRAIN, BEHAVIOR, & IMMUNITY - HEALTH                                                                        41.8                    5
+CONTACT LENS & ANTERIOR EYE                                                                                 41.3846                13
+ECONOMIC MODELLING                                                                                          40.6909                55
+ANIMAL                                                                                                      40.2                   45
+COMPUTER NETWORKS                                                                                           40.0323                62
+BLOCKCHAIN-RESEARCH AND APPLICATIONS                                                                        40                      1
+JOURNAL OF INTEGRATIVE MEDICINE-JIM                                                                         40                      6
+INTERNET OF THINGS                                                                                          39.625                  8
+JOURNAL OF KING SAUD UNIVERSITY-COMPUTER AND INFORMATION SCIENCES                                           39.45                  20
+JOURNAL OF SAUDI CHEMICAL SOCIETY                                                                           39.4                   15
+ACTA PSYCHOLOGICA                                                                                           39.1475                61
+BONE REPORTS                                                                                                38                      4
+COMPUTATIONAL MATERIALS SCIENCE                                                                             38                    117
+JOURNAL OF INFORMATION SECURITY AND APPLICATIONS                                                            37.9167                12
+DATA & KNOWLEDGE ENGINEERING                                                                                37.7                   10
+CASE STUDIES ON TRANSPORT POLICY                                                                            37.6667                12
+EXTREME MECHANICS LETTERS                                                                                   37.5385                13
+JOURNAL OF HYDROLOGY-REGIONAL STUDIES                                                                       37.5333                15
+COLLOIDS AND SURFACES A-PHYSICOCHEMICAL AND ENGINEERING ASPECTS                                             37.4778                90
+BIOPHYSICAL CHEMISTRY                                                                                       37.0364                55
+ANIMAL FEED SCIENCE AND TECHNOLOGY                                                                          36.9857                70
+ADVANCED POWDER TECHNOLOGY                                                                                  36.9107                56
+COMPUTERS IN HUMAN BEHAVIOR REPORTS                                                                         36.6667                 3
+INTERNATIONAL JOURNAL OF PRODUCTION ECONOMICS                                                               36.4487                78
+BIOMEDICAL JOURNAL                                                                                          36.4286                 7
+JOURNAL OF ANALYTICAL AND APPLIED PYROLYSIS                                                                 36.4138                58
+EUROPEAN JOURNAL OF RADIOLOGY OPEN                                                                          36.4                    5
+BRAIN RESEARCH                                                                                              36.1536               586
+EATING BEHAVIORS                                                                                            36                     13
+BIOLOGICAL PSYCHOLOGY                                                                                       35.9717               106
+FOOD WEBS                                                                                                   35.6667                 3
+CURRENT OPINION IN GREEN AND SUSTAINABLE CHEMISTRY                                                          35.5                    8
+ALEXANDRIA ENGINEERING JOURNAL                                                                              35.4318                44
+JOURNAL OF SYSTEMS ARCHITECTURE                                                                             35.2174                23
+FOOD AND BIOPRODUCTS PROCESSING                                                                             35.0455                22
+FLUID PHASE EQUILIBRIA                                                                                      35.0333               120
+JOURNAL OF SUPERCRITICAL FLUIDS                                                                             34.8302                53
+GROUNDWATER FOR SUSTAINABLE DEVELOPMENT                                                                     34.75                  20
+JOURNAL OF LIPID RESEARCH                                                                                   34.5                   20
+JOURNAL OF HYDRO-ENVIRONMENT RESEARCH                                                                       34.3333                 6
+ECONOMICS OF TRANSPORTATION                                                                                 34                      2
+COMMUNICATIONS IN NONLINEAR SCIENCE AND NUMERICAL SIMULATION                                                33.8923                65
+BEHAVIOURAL PROCESSES                                                                                       33.6042                48
+COLLEGIAN                                                                                                   32.8                   10
+EUROPEAN ECONOMIC REVIEW                                                                                    32.6735                49
+JOURNAL OF APPLIED GEOPHYSICS                                                                               32.175                 40
+JOURNAL OF POWER SOURCES                                                                                    31.0625                80
+CURRENT APPLIED PHYSICS                                                                                     30.9655                58
+FORENSIC CHEMISTRY                                                                                          30.5                    6
+BLOOD ADVANCES                                                                                              30.2632                38
+FINITE ELEMENTS IN ANALYSIS AND DESIGN                                                                      29.75                  24
+BIOCYBERNETICS AND BIOMEDICAL ENGINEERING                                                                   29.6667                 9
+COMPUTER COMMUNICATIONS                                                                                     29.5405                74
+FOOD STRUCTURE-NETHERLANDS                                                                                  29.5                    2
+ANALYTICA CHIMICA ACTA                                                                                      29.2                  380
+JOURNAL OF APPLIED POULTRY RESEARCH                                                                         28.5455                22
+JOURNAL DE MATHEMATIQUES PURES ET APPLIQUEES                                                                28.2174                23
+JOURNAL OF STOMATOLOGY ORAL AND MAXILLOFACIAL SURGERY                                                       28.0909                11
+EUROPEAN JOURNAL OF MEDICINAL CHEMISTRY REPORTS                                                             28                      1
+FOOT AND ANKLE SURGERY                                                                                      27.9167                12
+COMPUTATIONAL STATISTICS & DATA ANALYSIS                                                                    27.7619                63
+GLOBAL FINANCE JOURNAL                                                                                      27.7143                 7
+EUROPEAN UROLOGY FOCUS                                                                                      27.5714                14
+JOURNAL OF STROKE & CEREBROVASCULAR DISEASES                                                                26.8281                64
+INTERNATIONAL JOURNAL OF PHARMACEUTICS                                                                      26.7                   20
+COMPUTER PHYSICS COMMUNICATIONS                                                                             26.5566               106
+JOURNAL OF RARE EARTHS                                                                                      26.5455                55
+EUROPEAN UROLOGY ONCOLOGY                                                                                   26.2857                 7
+COMPUTER AIDED GEOMETRIC DESIGN                                                                             25.9412                17
+AFRICAN JOURNAL OF EMERGENCY MEDICINE                                                                       25.2857                 7
+FITOTERAPIA                                                                                                 25.22                  50
+COMPUTERS IN INDUSTRY                                                                                       24.697                 33
+INTERNATIONAL JOURNAL OF FORECASTING                                                                        24.6                   10
+CLIMATE SERVICES                                                                                            24.5                    2
+BRAIN AND SPINE                                                                                             24                      2
+JOURNAL OF IMMUNOLOGICAL METHODS                                                                            23.5917               120
+COMPUTATIONAL GEOMETRY-THEORY AND APPLICATIONS                                                              23.5333                15
+HARDWAREX                                                                                                   21.8                    5
+HEALTHCARE-THE JOURNAL OF DELIVERY SCIENCE AND INNOVATION                                                   21.6667                 6
+BOLETIN DE LA SOCIEDAD ESPANOLA DE CERAMICA Y VIDRIO                                                        21.1765                17
+JOURNAL OF INFECTION AND CHEMOTHERAPY                                                                       20.7143                28
+JOURNAL OF PURE AND APPLIED ALGEBRA                                                                         20.5                   76
+AMERICAN JOURNAL OF OBSTETRICS & GYNECOLOGY MFM                                                             20.3                   10
+EGYPTIAN JOURNAL OF AQUATIC RESEARCH                                                                        20.25                   4
+EUROPEAN JOURNAL OF OBSTETRICS & GYNECOLOGY AND REPRODUCTIVE BIOLOGY-X                                      20                      1
+COMPUTER STANDARDS & INTERFACES                                                                             19.9545                22
+RUSSIAN LITERATURE                                                                                          19.4545                22
+INSURANCE MATHEMATICS & ECONOMICS                                                                           19                     34
+JOURNAL OF STATISTICAL PLANNING AND INFERENCE                                                               18.8889                72
+EUROPEAN UROLOGY OPEN SCIENCE                                                                               18.4                    5
+GACETA SANITARIA                                                                                            17.9333                30
+JOURNAL OF THE AMERICAN PHARMACISTS ASSOCIATION                                                             17.6452                31
+CRITICAL CARE AND RESUSCITATION                                                                             17.25                   8
+ASIAN JOURNAL OF SOCIAL SCIENCE                                                                             17.1111                 9
+JOURNAL OF THE NEUROLOGICAL SCIENCES                                                                        16.825                160
+JACC-CLINICAL ELECTROPHYSIOLOGY                                                                             16.5625                16
+JOURNAL OF THE INDIAN CHEMICAL SOCIETY                                                                      15.6591               176
+EUROPEAN UROLOGY                                                                                            15.5114               176
+CEREBRAL CIRCULATION - COGNITION AND BEHAVIOR                                                               15                      1
+BUSINESS HORIZONS                                                                                           14.8824                34
+INFORMATION ECONOMICS AND POLICY                                                                            14.8333                 6
+BRAIN & DEVELOPMENT                                                                                         14.4                   70
+BULLETIN DES SCIENCES MATHEMATIQUES                                                                         13.3                   10
+JACC: CARDIOONCOLOGY                                                                                        13                      5
+AMERICAN JOURNAL OF PHARMACEUTICAL EDUCATION                                                                11.0789                76
+INTERNATIONAL JOURNAL OF PSYCHOPHYSIOLOGY                                                                   10.7826               115
+JOURNAL OF HEPATOLOGY                                                                                       10.212                434
+CASE REPORTS IN WOMENS HEALTH                                                                               10                      1
+EUROPEAN NEUROPSYCHOPHARMACOLOGY                                                                             8.01111               90
+ANAESTHESIA AND INTENSIVE CARE MEDICINE                                                                      7                     25
+INFORMATION MANAGEMENT                                                                                       0                      2
+
+AVERAGE CITATIONS PER DOCUMENT TYPE - Table
+Document Type                 Ave. Citations    No. of Papers
+--------------------------  ----------------  ---------------
+Review                            58.3987                 316
+Article; Proceedings Paper        34.5194                 310
+Article                           33.9252                6093
+Note                              29.1646                 243
+Proceedings Paper                 10.5                      4
+Discussion                        10.5                      2
+Editorial Material                 4.51                   200
+Software Review                    4                        2
+Letter                             3.68182                110
+Correction, Addition               1.71429                  7
+Correction                         1.30864                 81
+News Item                          0.6                      5
+Meeting Abstract                   0.583201               631
+Biographical-Item                  0.333333                 6
+Book Review                        0.0909091               33
+Poetry                             0                        1
+Item About an Individual           0                        4
+Reprint                            0                        1
+Retraction                         0                        1
+
+AVERAGE REFERENCES PER DOCUMENT TYPE - Table
+Document Type                 Ave. References    No. of Papers
+--------------------------  -----------------  ---------------
+Review                              91.5411                316
+Article                             39.29                 6093
+Article; Proceedings Paper          29.0484                310
+Proceedings Paper                   19.5                     4
+Note                                15.5597                243
+Editorial Material                   9.4                   200
+Reprint                              8                       1
+Letter                               7.37273               110
+News Item                            6.6                     5
+Software Review                      4                       2
+Discussion                           4                       2
+Book Review                          1.54545                33
+Correction, Addition                 1.42857                 7
+Correction                           1                      81
+Retraction                           1                       1
+Biographical-Item                    0.666667                6
+Item About an Individual             0.5                     4
+Meeting Abstract                     0.481775              631
+Poetry                               0                       1
+
+AVERAGE CITATIONS PER PUBLISHER - Table
+Publisher                                      Ave. Citations    No. of Papers
+-------------------------------------------  ----------------  ---------------
+AMER SOC BIOCHEMISTRY MOLECULAR BIOLOGY INC         105.584                327
+LIPID RESEARCH INC                                   57.25                   8
+APPLIED POULTRY SCIENCE INC                          48                      2
+ELSEVIER SCIENCE SA                                  43.75                   4
+GAUTHIER-VILLARS/EDITIONS ELSEVIER                   38.3                   10
+CAMBRIDGE UNIV PRESS                                 38.1935                31
+INST CHEMICAL ENGINEERS                              36.6667                 9
+AMER SOC HEMATOLOGY                                  33.4444                 9
+AUSTRALASIAN MED PUBL CO LTD                         32.5714                 7
+ELSEVIER SCIENCE BV                                  31.1773              3660
+AMER PHARMACEUTICAL ASSOC                            26.5                    8
+ELSEVIER                                             25.0541              3547
+VSP BV                                               24.6667                 3
+MUNKSGAARD INT PUBL LTD                              21.973                 37
+BUTTERWORTH-HEINEMANN LTD                            20                      4
+ELSEVIER SCIENCE INC                                 19.5455                11
+POULTRY SCIENCE ASSOC INC                            19.1429                 7
+KARGER                                               18.186                 43
+SPRINGER JAPAN KK                                    16.8571                 7
+PRA PRESS                                            16.5                    2
+INT ACADEMIC PUBL                                    14.5                    4
+NETHERLANDS INST SEA RES                             13                      1
+GAUTHIER-VILLARS                                     12.25                   8
+IDB HOLDING S P A                                     9                      1
+AMER ASSOC COLL PHARMACY                              8.83784               74
+TAYLOR & FRANCIS LTD                                  6.66667                3
+OXFORD UNIV PRESS                                     6.55556                9
+SCIENTIFIC PUBLISHERS-INDIA                           6                      1
+ELSEVIER SCIENCE SA LAUSANNE                          5.85714                7
+PWN-POLISH SCIENTIFIC PUBL                            5                      1
+SOC ESPANOLA CERAMICA VIDRIO                          5                      4
+SPRINGER-VERLAG BERLIN                                4.66667                3
+INDIAN CHEMICAL SOC                                   3.9569               116
+SCIENTIFIC PUBL-INDIA                                 3.6087                46
+METALLURGICAL INDUSTRY PRESS                          3                      2
+JAI PRESS INC                                         2.65                  20
+ELSEVIER SCI LTD                                      2                      1
+SOCIEDAD ESPANOLA CERAMICA VIDRIO                     2                      3
+BRILL ACADEMIC PUBLISHERS                             1.85714                7
+BRILL                                                 0                      1
+PTN PUBL CO                                           0                      2
+
+AVERAGE CITATIONS PER PUBLISHER - Table
+Publisher                                      Ave. References    No. of Papers
+-------------------------------------------  -----------------  ---------------
+TAYLOR & FRANCIS LTD                                  50.3333                 3
+ELSEVIER                                              46.1717              3547
+AMER SOC BIOCHEMISTRY MOLECULAR BIOLOGY INC           43.7951               327
+CAMBRIDGE UNIV PRESS                                  38.6129                31
+PWN-POLISH SCIENTIFIC PUBL                            34                      1
+INST CHEMICAL ENGINEERS                               32.5556                 9
+POULTRY SCIENCE ASSOC INC                             32.2857                 7
+AMER SOC HEMATOLOGY                                   31.4444                 9
+ELSEVIER SCI LTD                                      30                      1
+OXFORD UNIV PRESS                                     28.8889                 9
+SCIENTIFIC PUBLISHERS-INDIA                           27                      1
+LIPID RESEARCH INC                                    26.875                  8
+ELSEVIER SCIENCE BV                                   26.6464              3660
+VSP BV                                                22.3333                 3
+GAUTHIER-VILLARS/EDITIONS ELSEVIER                    21.4                   10
+BRILL ACADEMIC PUBLISHERS                             20.7143                 7
+ELSEVIER SCIENCE INC                                  19.9091                11
+MUNKSGAARD INT PUBL LTD                               19.8919                37
+SCIENTIFIC PUBL-INDIA                                 19.5435                46
+PRA PRESS                                             17.5                    2
+KARGER                                                17.4419                43
+AUSTRALASIAN MED PUBL CO LTD                          17.4286                 7
+SPRINGER JAPAN KK                                     16                      7
+INT ACADEMIC PUBL                                     14.5                    4
+AMER PHARMACEUTICAL ASSOC                             13.875                  8
+SPRINGER-VERLAG BERLIN                                13.3333                 3
+GAUTHIER-VILLARS                                      12.125                  8
+ELSEVIER SCIENCE SA                                   12                      4
+BUTTERWORTH-HEINEMANN LTD                             11                      4
+NETHERLANDS INST SEA RES                              11                      1
+INDIAN CHEMICAL SOC                                   10.8276               116
+AMER ASSOC COLL PHARMACY                              10.5946                74
+METALLURGICAL INDUSTRY PRESS                          10.5                    2
+SOC ESPANOLA CERAMICA VIDRIO                           9.5                    4
+JAI PRESS INC                                          8.4                   20
+IDB HOLDING S P A                                      8                      1
+APPLIED POULTRY SCIENCE INC                            8                      2
+SOCIEDAD ESPANOLA CERAMICA VIDRIO                      6.66667                3
+ELSEVIER SCIENCE SA LAUSANNE                           4.57143                7
+BRILL                                                  1                      1
+PTN PUBL CO                                            0                      2
+
+AVERAGE CITATIONS PER PUBLISHER CITY - Table
+Publisher City      Ave. Citations  Publishers
+----------------  ----------------  ----------------------------------------------------------------------
+ROCKVILLE                113.203    ['AMER SOC BIOCHEMISTRY MOLECULAR BIOLOGY INC']
+BETHESDA                 102.358    ['AMER SOC BIOCHEMISTRY MOLECULAR BIOLOGY INC', 'LIPID RESEARCH INC']
+ATHENS                    48        ['APPLIED POULTRY SCIENCE INC']
+CAMBRIDGE                 38.1935   ['CAMBRIDGE UNIV PRESS']
+RUGBY                     36.6667   ['INST CHEMICAL ENGINEERS']
+PYRMONT                   32.5714   ['AUSTRALASIAN MED PUBL CO LTD']
+WASHINGTON                30.1765   ['AMER SOC HEMATOLOGY', 'AMER PHARMACEUTICAL ASSOC']
+LAUSANNE                  28.2857   ['ELSEVIER SCIENCE SA', 'ELSEVIER SCIENCE SA LAUSANNE']
+AMSTERDAM                 28.2526   ['ELSEVIER', 'ELSEVIER SCIENCE BV']
+PARIS                     28.2353   ['GAUTHIER-VILLARS', 'GAUTHIER-VILLARS/EDITIONS ELSEVIER']
+ZEIST                     24.6667   ['VSP BV']
+COPENHAGEN                21.973    ['MUNKSGAARD INT PUBL LTD']
+NEW YORK                  19.5455   ['ELSEVIER SCIENCE INC']
+SAVOY                     19.1429   ['POULTRY SCIENCE ASSOC INC']
+BASEL                     18.186    ['KARGER']
+TOKYO                     16.8571   ['SPRINGER JAPAN KK']
+CINCINNATI                16.5      ['PRA PRESS']
+TEXEL                     13        ['NETHERLANDS INST SEA RES']
+BEIJING                   10.6667   ['METALLURGICAL INDUSTRY PRESS', 'INT ACADEMIC PUBL']
+OXFORD                    10.0714   ['BUTTERWORTH-HEINEMANN LTD', 'ELSEVIER SCI LTD', 'OXFORD UNIV PRESS']
+MILANO                     9        ['IDB HOLDING S P A']
+ALEXANDRIA                 8.83784  ['AMER ASSOC COLL PHARMACY']
+BRIDGEWATER                6.9      ['ELSEVIER']
+ABINGDON                   6.66667  ['TAYLOR & FRANCIS LTD']
+STAMFORD                   5.33333  ['JAI PRESS INC']
+WARSAW                     5        ['PWN-POLISH SCIENTIFIC PUBL']
+BERLIN                     4.66667  ['SPRINGER-VERLAG BERLIN']
+LAUSANNE 1                 4.5      ['ELSEVIER SCIENCE SA LAUSANNE']
+CALCUTTA                   3.9569   ['INDIAN CHEMICAL SOC']
+MADRID                     3.71429  ['SOC ESPANOLA CERAMICA VIDRIO', 'SOCIEDAD ESPANOLA CERAMICA VIDRIO']
+JODHPUR                    3.65957  ['SCIENTIFIC PUBL-INDIA', 'SCIENTIFIC PUBLISHERS-INDIA']
+LEIDEN                     1.625    ['BRILL ACADEMIC PUBLISHERS', 'BRILL']
+GREENWICH                  1.5      ['JAI PRESS INC']
+PARIS CEDEX O6             1        ['GAUTHIER-VILLARS']
+MELVILLE                   0        ['PTN PUBL CO']
+
+AVERAGE CITATIONS FOR FUNDED/UNFUNDED PAPERS - Bar Graph
+Funding      Ave. Citations    No. of Papers
+---------  ----------------  ---------------
+Unfunded            30.072              4848
+Funded              30.9279             3202
+
+AVERAGE METRICS PER RESEARCH AREA
+Research Area                                    Ave. Citations    Ave. Usage 180    Ave. Usage 2013    No. of Papers
+---------------------------------------------  ----------------  ----------------  -----------------  ---------------
+Public, Environmental & Occupational Health           80                0                    0.5                    2
+Oncology                                              76.9333           2.26667             22                     15
+Biochemistry & Molecular Biology                      66.9624           0.488591            10.047                745
+Operations Research & Management Science              48.4487           5.17949             54.6026                78
+Information Science & Library Science                 45.7021           6.61702             58.234                 47
+Physical Geography                                    45.0588           2.85294             34                     34
+Remote Sensing                                        45.0588           2.85294             34                     34
+Imaging Science & Photographic Technology             45.0588           2.85294             34                     34
+Electrochemistry                                      44.4624           4.62366             85.4624                93
+Energy & Fuels                                        44.0217           3.66667             68.413                138
+Geology                                               43.3704           3.48971             34.7695               243
+Transportation                                        43                0.25                 1.5                    4
+Meteorology & Atmospheric Sciences                    42.8133           4.25333             44.92                  75
+Health Care Sciences & Services                       40.6667           1.33333             18.6333                30
+Environmental Sciences & Ecology                      40.5917           6.38532             65.2339               218
+Forestry                                              40.0761           3.69565             42.4022                92
+Business & Economics                                  39.1827           2.74038             42.3462               104
+Biophysics                                            38.9098           2.87705             54.2131               122
+Water Resources                                       37.7846           3.36334             35.3698               311
+Agriculture                                           37.4262           2.87119             39.6651               427
+Forestry                                              37.2308           1.60897             33.8077               156
+Materials Science                                     37.2287           3.08532             57.0034               293
+Engineering                                           37.2134           4.39832             42.1681               595
+Immunology                                            37.1394           0.30303              6.95152              165
+Cell Biology                                          35.967            0.483516            12.7033                91
+Biophysics                                            34.4437           0.640845            14.2254               142
+Neurosciences & Neurology                             32.7475           0.446791             5.90625             1184
+Food Science & Technology                             32.5161           8.32258             41.6452                31
+Physics                                               32.3799           0.995633            21.6769               229
+Oceanography                                          31.7143           0.952381            31.2857                21
+Fisheries                                             31.3231           0.646154            20.3231                65
+Chemistry                                             31.0203           1.56419             32                    296
+Environmental Sciences & Ecology                      30.4198           2.18321             32.2366               131
+Geology                                               30.2              0.925               15.75                  40
+Mining & Mineral Processing                           30.2              0.925               15.75                  40
+Veterinary Sciences                                   29.2667           1.8                 26.5778                45
+Biotechnology & Applied Microbiology                  29.1296           3.27778             32.2778                54
+General & Internal Medicine                           28.5              0.125                5.75                   8
+Food Science & Technology                             27.6127           5.42197             41.9711               173
+Marine & Freshwater Biology                           27.2              0.96                26.56                  25
+Chemistry                                             26.0244           2.16472             31.1384              1026
+Materials Science                                     25.3448           1.84236             32.5369               203
+Allergy                                               25.2              0.8                 12.7556                45
+Mechanics                                             25.0294           1.26471             27.0098               102
+Engineering                                           24.57             1.4475              20.635                400
+Psychiatry                                            23.9375           1.38487             13.6349               304
+Business & Economics                                  23.7677           2.13889             20.0707               396
+Computer Science                                      22.7274           1.5048              14.5816               521
+Thermodynamics                                        22.4167           0.741667            17.3583               120
+Psychology                                            22.21             0.760274            11.4909               438
+Urology & Nephrology                                  20.8769           0.282051             2.54359              195
+Instruments & Instrumentation                         20.6              1.4                  6.8                    5
+Computer Science                                      20.3636           4.72727             32.9091                11
+Water Resources                                       20.1333           3                   12.3333                15
+Ophthalmology                                         19.5385           0.769231            18.5385                13
+Mathematics                                           19.1474           0.417544            10.0632               285
+Hematology                                            18.7105           0.421053             3.26316               38
+Pharmacology & Pharmacy                               18.5769           0.961538            14.3269               104
+Gastroenterology & Hepatology                         18.1636           0.238636             3.51591              440
+Substance Abuse                                       17.5312           0.46875              6.8125                32
+Life Sciences & Biomedicine - Other Topics            17.4              3.4                 29.8                   10
+Entomology                                            17.4              3.4                 29.8                   10
+Behavioral Sciences                                   17.3333           0.625                7.16667               24
+Science & Technology - Other Topics                   17.25             2.875               36.75                   8
+Behavioral Sciences                                   16.9935           0.506494            11.3701               154
+Telecommunications                                    16.8582           1.1773              10.6809               141
+Psychology                                            15.6508           1.63492             15.5079                63
+Science & Technology - Other Topics                   15.2979           1.57447             12.617                 47
+Mathematics                                           15.2456           0.385965             8.36842              114
+Zoology                                               14.2292           0.395833            13.2083                48
+Sport Sciences                                        14                0.827586            14.2069                29
+Cardiovascular System & Cardiology                    13.8571           0.414286             4.88571               70
+Research & Experimental Medicine                      13.2857           0.857143             5.14286                7
+Urology & Nephrology                                  12.5714           0                    2.14286                7
+Sociology                                             12.4              0.533333             5.53333               15
+Biotechnology & Applied Microbiology                  12.36             3.64                21.32                  25
+Polymer Science                                       12.25             7                   15.5                    4
+Integrative & Complementary Medicine                  12.1667           2.5                  8.66667                6
+Pediatrics                                            11.9857           0.0428571            2.8                   70
+Infectious Diseases                                   11.9643           0.0714286            6.03571               28
+Mathematical Methods In Social Sciences               10.6176           0.617647             9.61765               34
+Medical Informatics                                   10.4              4                   23.2                    5
+Neurosciences & Neurology                              9.5974           0.655844             7.12338              154
+Education & Educational Research                       8.60526          0.197368             4.68421               76
+Oncology                                               8.41667          0                    2                     12
+Physiology                                             7.69565          0.165217             4.58261              115
+Public, Environmental & Occupational Health            7.4878           0.707317             8.78049               41
+Pharmacology & Pharmacy                                7.37113          0.14433              4.06701              194
+Radiology, Nuclear Medicine & Medical Imaging          7.2              0                    2                      5
+Health Care Sciences & Services                        6.61111          0.611111             9.47222               36
+Radiology, Nuclear Medicine & Medical Imaging          6.55556          1                    5.66667                9
+Orthopedics                                            6.41667          0.333333             2.33333               12
+Astronomy & Astrophysics                               6                0.5                  0.5                    2
+Literature                                             5.32432          0.216216             2.81081               37
+Plant Sciences                                         5.25             2                   10.75                   4
+Transportation                                         4.75             1.25                 5.75                  12
+Nursing                                                4.5              0.1                  5.6                   10
+Cardiovascular System & Cardiology                     4.11765          0.294118             1.41176               17
+Education & Educational Research                       3                3.5                  4.5                    2
+Toxicology                                             3                1                    3                      1
+Emergency Medicine                                     2.71429          0                    1.14286                7
+Immunology                                             2.6              0.6                  1                      5
+Anesthesiology                                         2                0.04                 0.96                  25
+Dentistry, Oral Surgery & Medicine                     1.90909          0.454545             3.72727               11
+Obstetrics & Gynecology                                1.83333          0.666667             1.41667               12
+Area Studies                                           1.44444          0.222222             5.11111                9
+Social Sciences - Other Topics                         1.44444          0.222222             5.11111                9
+Endocrinology & Metabolism                             1                0.75                 2                      4
+Physiology                                             0.5              0                    0                      2
+Biodiversity & Conservation                            0.333333         0.333333             5.66667                3
+Parasitology                                           0                0                    0                      1
+Reproductive Biology                                   0                0                    0                      1
+
+AVERAGE CITATIONS PER AUTHOR COUNTRIES - Table
+Country                                         Ave. Citations    No. of Papers
+--------------------------------------------  ----------------  ---------------
+Wallis and Futuna                                    108                      1
+Paraguay                                              99.2                    5
+Equatorial Guinea                                     95                      1
+Guyana                                                92.9231                13
+Guatemala                                             89.3061                49
+Belize                                                85                      2
+Guinea-Bissau                                         82                      3
+Eswatini                                              79.2                    5
+Yemen                                                 77.8235                17
+United Kingdom                                        76.875                  8
+Tanzania, United Republic of                          74.4231                26
+Samoa                                                 71                      9
+Northern Ireland                                      70.1                   10
+Liberia                                               69.2143                14
+Guadeloupe                                            69                     11
+Greenland                                             67.3333               132
+Jamaica                                               67.1111                 9
+Bermuda                                               67                     10
+Comoros                                               66.25                  56
+Togo                                                  63.8889                 9
+Burundi                                               63.8514               249
+Marshall Islands                                      62.1667                18
+Luxembourg                                            61.0667                60
+Tajikistan                                            59                      5
+Christmas Island                                      58.3333                 6
+Sierra Leone                                          57.16                  50
+Burkina Faso                                          55.3333                 3
+Honduras                                              55.0455                66
+Malawi                                                54.75                   8
+Faroe Islands                                         54.2361                72
+Antarctica                                            53.3043                23
+Rwanda                                                52.5625                16
+Macao                                                 51.5444               259
+New Caledonia                                         50.8373               332
+Scotland                                              50.7419               124
+British Indian Ocean Territory                        50.6279               344
+Tokelau                                               50.5714                 7
+Moldova, Republic of                                  50.5572               201
+Kenya                                                 49.5955                89
+Northern Mariana Islands                              49.4353                85
+Peru                                                  49.0727               165
+Gambia                                                49                      9
+Western Sahara                                        48.525                 80
+Indonesia                                             48.1278               180
+Romania                                               47.9796               489
+Oman                                                  46.7034               118
+Tonga                                                 46.468                297
+Georgia                                               46.2406               320
+Nicaragua                                             45.9744              1094
+Bhutan                                                45.925                 40
+Venezuela, Bolivarian Republic of                     45.732                 97
+Barbados                                              45.375                 24
+Nauru                                                 45.0421               309
+Bolivia, Plurinational State of                       44.5465                86
+Liechtenstein                                         44.4585               277
+Suriname                                              44.383                 94
+Nigeria                                               44.2872               390
+Congo                                                 44.1333                15
+Saint Helena, Ascension and Tristan da Cunha          44.032                125
+Norway                                                43.8565               230
+Niger                                                 43.5526               523
+Lithuania                                             43.4174               115
+Sudan                                                 43.375                104
+Denmark                                               43.3314               169
+Finland                                               42.9692               195
+Namibia                                               42.7769               363
+Switzerland                                           42.7376               945
+Lao People's Democratic Republic                      42.6489               524
+Portugal                                              42.4495               881
+Türkiye                                               42.0025               406
+Saint Kitts and Nevis                                 42                     13
+Solomon Islands                                       41.9714                35
+Montenegro                                            41.8489               503
+Andorra                                               41.6351               444
+Cook Islands                                          41.0952                42
+Trinidad and Tobago                                   41.086                 93
+Lesotho                                               40.8438                64
+Israel                                                40.8372               393
+Ghana                                                 40.8302                53
+Gibraltar                                             40.6264                91
+Heard Island and McDonald Islands                     40.5714                 7
+Syrian Arab Republic                                  40.5152               132
+Philippines                                           40.4812               239
+Eritrea                                               40.2702               581
+American Samoa                                        40.0523               306
+Canada                                                40.052               1404
+Micronesia, Federated States of                       39.9231                13
+Sweden                                                39.913                517
+Hungary                                               39.6961               204
+Guernsey                                              39.2667                15
+Saint Pierre and Miquelon                             39.1304                23
+Timor-Leste                                           39.0408                98
+Sao Tome and Principe                                 39.0304               658
+Iceland                                               39.014                286
+Colombia                                              38.8944               502
+Cameroon                                              38.8636                44
+Germany                                               38.7908              1754
+Panama                                                38.6223               511
+Armenia                                               38.3834               326
+Turkey                                                38.3564               463
+Malaysia                                              38.3548                62
+Czechia                                               38.2738                84
+England                                               38.2485              1014
+Italy                                                 38.1008              1071
+United States                                         38.0749              3844
+Morocco                                               37.9932               731
+Saint Barthélemy                                      37.9697                33
+Bosnia and Herzegovina                                37.8769               130
+Albania                                               37.8674               430
+India                                                 37.7056              1457
+Réunion                                               37.6877               413
+Afghanistan                                           37.6842                38
+Côte d'Ivoire                                         37.5849               383
+Zambia                                                37.5                    8
+Norfolk Island                                        37.4571                35
+Mauritania                                            37.3824               204
+Thailand                                              37.3462               338
+Saint Lucia                                           37.2791                43
+Sri Lanka                                             37.2667                15
+Cayman Islands                                        37.1818                99
+Saudi Arabia                                          37.0304              4080
+French Southern Territories                           37                      7
+Ethiopia                                              36.9273               275
+United States Minor Outlying Islands                  36.7715               267
+Seychelles                                            36.7169               551
+South Georgia and the South Sandwich Islands          36.4706                34
+Austria                                               36.4228               622
+Argentina                                             36.2901               593
+Viet Nam                                              36                     20
+Antigua and Barbuda                                   35.9524               147
+Central African Republic                              35.9167                12
+French Polynesia                                      35.8462                13
+Slovenia                                              35.6867               316
+Australia                                             34.9893               654
+Bahamas                                               34.7174                46
+Costa Rica                                            34.5192               104
+Puerto Rico                                           34.4                  105
+Cabo Verde                                            34.3333                15
+New Zealand                                           34.1075                93
+Cyprus                                                33.9444                18
+Kiribati                                              33.8644                59
+Anguilla                                              33.7806               155
+Mali                                                  33.7308                26
+Holy See (Vatican City State)                         33.6298               181
+Wales                                                 33.4521                73
+Croatia                                               33.3966                58
+Malta                                                 33.1163                43
+Serbia                                                33.0636               346
+Uganda                                                32.9286                28
+Ireland                                               32.8435               230
+Ecuador                                               32.7741               239
+Virgin Islands, U.S.                                  32.7143               112
+Dominican Republic                                    32.6901                71
+Bonaire, Sint Eustatius and Saba                      32.6667                 3
+South Africa                                          32.6066               122
+Azerbaijan                                            32.5851                94
+Slovakia                                              32.5283                53
+Yugoslavia                                            32.3333                39
+Brazil                                                31.8778               491
+Bangladesh                                            31.6923                26
+United Arab Emirates                                  31.4533                75
+Mongolia                                              31.391                133
+Libya                                                 31.3387                62
+Iran, Islamic Republic of                             31.3207               502
+San Marino                                            31.3143                35
+Poland                                                31.3038               260
+Guinea                                                31.0617                81
+Isle of Man                                           31                    210
+Palestine, State of                                   30.7152               151
+France                                                30.5751               946
+Hong Kong                                             30.57                 100
+Estonia                                               30.5146               171
+South Sudan                                           30.4828                87
+Netherlands                                           30.3968               431
+Greece                                                30.1719               192
+Latvia                                                30.1667                18
+Tunisia                                               30.0157               127
+Spain                                                 29.7359              1155
+Brunei Darussalam                                     29.6842                19
+Turks and Caicos Islands                              29.5238                21
+Chile                                                 29.5163               215
+Belgium                                               29.4432               449
+Ukraine                                               29.4                   70
+Somalia                                               29.3776                98
+Jordan                                                29.3143                70
+Mayotte                                               29.2667                30
+Myanmar                                               29.1148                61
+Dominica                                              29.08                  25
+North Macedonia                                       29                      9
+Palau                                                 29                      1
+Gabon                                                 28.4706               272
+Uruguay                                               28.25                   4
+Russian Federation                                    28.0909                99
+Cuba                                                  28.0606                66
+Cambodia                                              28                      9
+Falkland Islands (Malvinas)                           28                      1
+Niue                                                  27.973                 37
+Aruba                                                 27.7755                49
+China                                                 26.4613              2517
+Japan                                                 26.437                881
+Bulgaria                                              26.1379                29
+Nepal                                                 25.9444                18
+Belarus                                               25.4                   10
+Pakistan                                              25.2947                95
+Taiwan, Province of China                             24.9327               223
+Madagascar                                            24.7727                44
+Åland Islands                                         24.3529                34
+Singapore                                             24.1429                77
+Guam                                                  23.5455                33
+Jersey                                                22.9118                34
+Kazakhstan                                            22.8333                 6
+Congo, The Democratic Republic of the                 22.5                   28
+Haiti                                                 22.4074                27
+Egypt                                                 22.3861               202
+Angola                                                22.3415                41
+Svalbard and Jan Mayen                                22.3333                 6
+Kyrgyzstan                                            22                      5
+Cocos (Keeling) Islands                               21.5147               136
+Grenada                                               21.5                   10
+Lebanon                                               21.4                   70
+Mozambique                                            21.3333                 6
+Russia                                                20.8316               196
+Tuvalu                                                20.5714                 7
+Turkmenistan                                          20.4706                17
+Mauritius                                             20.0135                74
+Mexico                                                19.5784               102
+Uzbekistan                                            19.4615                13
+Montserrat                                            19.0494                81
+Korea, Republic of                                    18.941                424
+Chad                                                  18.8                   35
+Pitcairn                                              18.7857                14
+Senegal                                               18.5625                32
+Algeria                                               18.5217                23
+Qatar                                                 17.8182                11
+El Salvador                                           17.0769                13
+Vanuatu                                               16.25                   4
+Benin                                                 15.4857                35
+Monaco                                                15.2222                90
+Saint Vincent and the Grenadines                      14.3333                 3
+Zimbabwe                                              13.5                    8
+Papua New Guinea                                      13.375                 16
+French Guiana                                         13.25                   4
+Saint Martin (French part)                            13.125                  8
+Maldives                                              12.375                  8
+Djibouti                                              12                      1
+Bahrain                                               11.85                  20
+Botswana                                              10.5714                 7
+Bouvet Island                                          9.6                   10
+Kuwait                                                 8.33333                9
+Korea, Democratic People's Republic of                 8                      4
+Iraq                                                   7.34146               41
+Curaçao                                                4.5                    4
+
+AVERAGE CITATIONS PER NUMBER OF UNIQUE AUTHOR COUNTRIES - Table
+  Unique Countries    Ave. Citations    No. of Papers
+------------------  ----------------  ---------------
+               107           95                     1
+                74            0                     1
+                69          186                     1
+                65           27                     1
+                54          128                     1
+                53           28                     1
+                49           86                     1
+                47           83.75                  4
+                46            6                     1
+                45          116                     2
+                44            4                     4
+                43          107                     1
+                42           22.6667                3
+                41           21.3333                3
+                40           77.4                   5
+                39           52                     4
+                38           41.4                   5
+                37           84.5556                9
+                36           40.9                  10
+                35          268                     3
+                34           72.3                  10
+                33           67.1667                6
+                32           42.5                  14
+                31           20.1667               12
+                30           32.75                 12
+                29           31.6429               14
+                28           24.1852               27
+                27           42.4286               21
+                26           44.4762               21
+                25           40.0667               30
+                24           43.0294               34
+                23           30.8529               34
+                22           59.5897               39
+                21           33.4615               39
+                20           86.0233               43
+                19           34.7                  40
+                18           20.8039               51
+                17           43.7797               59
+                16           25.918                61
+                15           27.8478               46
+                14           18.3226               62
+                13           25.8442               77
+                12           39.0704               71
+                11           24.7778               63
+                10           25.9398               83
+                 9           36.2755               98
+                 8           29.767               103
+                 7           27.6242              165
+                 6           38.3542              240
+                 5           30.7749              351
+                 4           37.2464              625
+                 3           32.6332             1006
+                 2           31.415              1094
+                 1           26.1631             2538
+
+AVERAGE CITATIONS PER LENGTH OF PAPER - Table
+  Length (Pages)    Ave. Citations    No. of Papers
+----------------  ----------------  ---------------
+              99           1                      1
+              77          83                      1
+              61          27                      1
+              58           1                      1
+              56          10                      1
+              51          26                      1
+              50          43                      1
+              49           0                      1
+              46           8.5                    2
+              45          24.5                    2
+              44          76.5                    2
+              43           3                      1
+              42          84.5                    2
+              41          27                      2
+              40          70.5                    4
+              38          14                      3
+              37          18.5                    2
+              36         140.714                  7
+              35          51.6667                 3
+              34          26.2                    5
+              33          78.3333                 6
+              32          76.2857                 7
+              31          68.4615                13
+              30          30.1429                 7
+              29          21.7273                11
+              28          64.5                   14
+              27          36.9091                11
+              26          26.6923                13
+              25         103.774                 31
+              24          81.7931                29
+              23          42.0294                34
+              22          59.359                 39
+              21          55                     41
+              20          38.6981                53
+              19          35.9639                83
+              18          42.6055               109
+              17          34.5487               113
+              16          33.5137               146
+              15          32.1813               193
+              14          33.4699               249
+              13          36.5815               325
+              12          32.5229               415
+              11          32.6844               545
+              10          31.7319               675
+               9          38.1669               743
+               8          36.1529               726
+               7          38.9301               701
+               6          36.4146               591
+               5          27.7615               436
+               4          26.9295               312
+               3           9.05668              247
+               2           2.18287              432
+               1           1.44522              575
+               0          16.9634                82
+
+AVERAGE CITATIONS PER NUMBER OF REFERENCES - Line
+  No. of References    Ave. Citations    No. of Papers
+-------------------  ----------------  ---------------
+                377         185                      1
+                338         153                      1
+                330          38                      2
+                326          63                      1
+                321          13                      1
+                300         261                      1
+                293          19                      1
+                286          88                      1
+                280         201                      1
+                260          23                      1
+                257         187                      2
+                250         214                      1
+                248          44                      1
+                244          11                      1
+                240           8                      1
+                235          27                      1
+                228         377                      1
+                223          23                      1
+                213         130.667                  3
+                211          22                      2
+                205         624                      1
+                200          35                      1
+                199          36                      1
+                198         116.5                    2
+                197           6                      1
+                195          26                      1
+                193           4                      1
+                192          92                      1
+                191          27                      1
+                190          21                      1
+                189          92.5                    2
+                186         115                      2
+                185          65.5                    2
+                184         194.5                    2
+                179          59                      2
+                178           5                      1
+                177          24                      1
+                176          36                      1
+                175          17                      1
+                172         113.5                    2
+                170         104                      1
+                168          21                      1
+                167         106.5                    4
+                165         105                      3
+                164          35                      2
+                162          88                      1
+                159           3                      1
+                158          24                      1
+                155          95                      1
+                152          55                      1
+                151           1                      1
+                150         115                      1
+                149          44                      1
+                148          37.25                   4
+                147          34                      2
+                146          22                      1
+                145          32.6667                 3
+                144          64                      2
+                143         127                      2
+                142         135.5                    2
+                141           5.5                    2
+                140          19                      2
+                139          28.2                    5
+                138         128                      1
+                137         406                      2
+                136          44.5                    2
+                135          33                      3
+                134          63                      1
+                133          37.25                   4
+                132           9.25                   4
+                131         107.75                   4
+                130           5                      1
+                129          80.8                    5
+                128           2                      1
+                127          10.5                    2
+                126          19                      1
+                125          16                      3
+                124          54.6667                 3
+                123          44                      3
+                122          35.25                   4
+                121          24                      4
+                120          23.2                    5
+                119          16.6667                 3
+                118          36.5                    2
+                117          42.6667                 3
+                116          71                      1
+                115          52.3333                 3
+                114          15.3333                 3
+                113          21.625                  8
+                112          20.3333                 3
+                111         103.5                    4
+                110          21                      7
+                109          97.75                   8
+                108          15.25                   4
+                107          29.2                    5
+                106          56.5455                11
+                105          42.4286                 7
+                104          50.5                    4
+                103          25.6667                 6
+                102          80.8333                 6
+                101          17.75                   8
+                100         104.286                  7
+                 99          11                      9
+                 98          38.3                   10
+                 97          16.1111                 9
+                 96          35.2667                15
+                 95          58                     11
+                 94          38.8                    5
+                 93          67.0769                13
+                 92          99.75                   8
+                 91          28.9                   10
+                 90          10.8333                12
+                 89          13.0769                13
+                 88          53.8                   10
+                 87          26.3529                17
+                 86          43.9375                16
+                 85          33.1579                19
+                 84          54.6875                16
+                 83          32.7895                19
+                 82          34.2222                18
+                 81          29.7647                17
+                 80          50.5789                19
+                 79          22.2381                21
+                 78          39.375                 16
+                 77          48.7368                19
+                 76          28.0385                26
+                 75          20.92                  25
+                 74          23.8095                21
+                 73          36.3103                29
+                 72          16.7917                24
+                 71          44.8378                37
+                 70          20                     26
+                 69          36.5714                35
+                 68          30.2128                47
+                 67          41.9474                38
+                 66          35.4242                33
+                 65          45.1818                33
+                 64          31.2083                48
+                 63          49.025                 40
+                 62          28.0851                47
+                 61          34.6818                44
+                 60          50.62                  50
+                 59          36.1207                58
+                 58          39.9242                66
+                 57          30.3333                60
+                 56          53.6338                71
+                 55          33.0429                70
+                 54          47.5385                65
+                 53          45.5517                58
+                 52          46.5                   92
+                 51          39.0361                83
+                 50          43.3864                88
+                 49          39.2143                84
+                 48          34.0659                91
+                 47          40.1562                96
+                 46          40.0532                94
+                 45          38.5225               111
+                 44          42.9752               121
+                 43          31.2609                92
+                 42          43.1698               106
+                 41          42.9237               118
+                 40          33.5556               117
+                 39          44.4757               103
+                 38          48.2903               124
+                 37          41.3448               145
+                 36          40.3488               129
+                 35          39.7857               126
+                 34          36.6016               128
+                 33          35.916                119
+                 32          33.8303               165
+                 31          30.1746               126
+                 30          41.3277               119
+                 29          33.5139               144
+                 28          38.0227               132
+                 27          38.7063               126
+                 26          31.4308               130
+                 25          25.4122               131
+                 24          27.6134               119
+                 23          28.9795               146
+                 22          30.6557               122
+                 21          29.1607               112
+                 20          39.6815               135
+                 19          32.944                125
+                 18          23.8362               116
+                 17          26.1311               122
+                 16          26.2604                96
+                 15          45.8304               112
+                 14          22.6881               109
+                 13          22.396                101
+                 12          17.283                106
+                 11          13.3333               105
+                 10          14.9138               116
+                  9          12.7629                97
+                  8          15.5                   90
+                  7          10.7467                75
+                  6           5.91045               67
+                  5          10.7564                78
+                  4           6.7541                61
+                  3           6.2125                80
+                  2           3.03636               55
+                  1           1.4094               149
+                  0           1.24313              691
+
+PERCENTAGE OF AFFILIATIONS PER YEAR - Line
+  Year  Affiliation %      Total References
+------  ---------------  ------------------
+  1938  0.00%                             1
+  1946  0.00%                             2
+  1947  0.00%                             2
+  1950  0.00%                             2
+  1952  0.00%                             6
+  1953  0.00%                             3
+  1954  0.00%                             1
+  1955  0.00%                             3
+  1956  0.00%                             2
+  1957  0.00%                             1
+  1958  0.00%                             3
+  1959  0.00%                             4
+  1960  0.00%                             1
+  1961  0.00%                             4
+  1962  0.00%                             6
+  1963  0.00%                             1
+  1964  0.00%                             3
+  1965  0.00%                             7
+  1966  14.29%                            7
+  1967  11.11%                            9
+  1968  0.00%                             8
+  1969  0.00%                            17
+  1970  5.56%                            18
+  1971  0.00%                            16
+  1972  0.00%                            12
+  1973  66.67%                           15
+  1974  96.00%                           25
+  1975  89.66%                           29
+  1976  100.00%                          17
+  1977  82.76%                           29
+  1978  23.40%                           47
+  1979  27.27%                           33
+  1980  42.55%                           47
+  1981  38.46%                           39
+  1982  41.67%                           48
+  1983  40.62%                           64
+  1984  52.00%                           50
+  1985  45.31%                           64
+  1986  60.66%                           61
+  1987  55.74%                           61
+  1988  56.92%                           65
+  1989  45.07%                           71
+  1990  52.31%                           65
+  1991  56.25%                           64
+  1992  43.90%                           82
+  1993  64.86%                           74
+  1994  58.33%                           72
+  1995  56.04%                           91
+  1996  61.36%                           88
+  1997  74.65%                          142
+  1998  89.29%                          112
+  1999  88.19%                          144
+  2000  92.52%                          147
+  2001  93.37%                          181
+  2002  92.62%                          122
+  2003  91.01%                          178
+  2004  93.18%                          176
+  2005  90.30%                          134
+  2006  92.77%                          166
+  2007  94.38%                          160
+  2008  96.45%                          197
+  2009  94.93%                          217
+  2010  96.17%                          209
+  2011  95.18%                          228
+  2012  96.89%                          225
+  2013  94.16%                          257
+  2014  95.93%                          270
+  2015  97.19%                          285
+  2016  96.02%                          327
+  2017  95.40%                          326
+  2018  95.44%                          351
+  2019  95.76%                          354
+  2020  92.93%                          382
+  2021  95.56%                          473
+  2022  95.75%                          447
+  2023  96.68%                          392
+  2024  87.50%                            8
+
+TOTAL PAPERS: 8050
+
+
+Process finished with exit code 0
